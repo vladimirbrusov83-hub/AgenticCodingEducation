@@ -1,0 +1,38 @@
+# Agentic Coding for Educators
+
+> A hands-on course teaching college and university faculty and academic librarians —
+> with no programming experience — to build and ship their own web tools using AI
+> (Claude artifacts → GitHub → Vercel → Claude Code). Fourteen modules across three
+> levels, from a first page in Claude to three live builds: a quiz app, a flashcard
+> study site, and a full course portal. Responsible building (privacy, accessibility,
+> FERPA, IRB, IP ownership, campus policy) is built in throughout.
+
+Site: https://learn.brusovcoach.org
+Audience: higher-ed faculty and academic librarians (academic higher-ed only; not K-12 or public libraries).
+Tracks: Faculty and Academic Librarian — same modules, worked examples tuned to each.
+Modules are sequential (1 → 14); each has a hands-on exercise and a 5-question quiz.
+
+## Level 1 — Foundations
+- You Can Build Software Now: /module/you-can-build-software-now
+- Meet Your AI Builder: /module/meet-your-ai-builder
+- How to Talk to AI: Prompting for Builders: /module/talking-to-ai-prompting
+- What Is a Website, Really?: /module/what-is-a-website
+- Plan Before You Build: /module/plan-before-you-build
+
+## Level 2 — Applied
+- Your Toolbox: Claude, GitHub, Vercel: /module/your-toolbox
+- Build #1: A Class Quiz App: /module/build-quiz-app
+- Getting It Online: /module/getting-it-online
+- Fixing and Changing Things: /module/fixing-and-changing
+- Build #2: A Flashcard Study Site: /module/build-flashcard-site
+
+## Level 3 — Advanced
+- Meet Claude Code: /module/meet-claude-code
+- Build #3: A Full Course Portal: /module/build-course-portal
+- Building Responsibly: Data, Privacy, Accessibility, Ownership & Policy: /module/building-responsibly
+- Good Habits, Costs & Your Capstone: /module/habits-costs-capstone
+
+## Pages
+- Full curriculum: /curriculum
+- Levels: /level/foundations, /level/applied, /level/advanced
+- About: /about
