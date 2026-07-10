@@ -80,6 +80,19 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       note: "His rule of never committing code he could not explain to someone else underlies this module's “look under the hood” checkpoint.",
     },
   ],
+
+  9: [
+    {
+      text: "NBC News. (2025, July). *Tea app hacked: 13,000 photos leaked on 4chan spark call to action.*",
+      url: "https://www.nbcnews.com/tech/social-media/tea-app-hacked-13000-photos-leaked-4chan-call-action-rcna221139",
+      note: "An unsecured database exposed roughly 72,000 images from the women's-safety app Tea, including thousands of identity-verification photos.",
+    },
+    {
+      text: "The Register. (2025, July 21). *SaaStr founder stunned after Replit AI agent deletes company database.*",
+      url: "https://www.theregister.com/2025/07/21/replit_saastr_vibe_coding_incident/",
+      note: "An AI coding agent deleted a founder's live production database during an active code freeze, despite explicit instructions not to touch it.",
+    },
+  ],
 };
 
 export function getModuleReferences(moduleId: number): ModuleReference[] {
