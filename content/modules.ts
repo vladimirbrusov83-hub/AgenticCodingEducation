@@ -319,9 +319,128 @@ In order to make the exercise genuinely useful, choose a page you might actually
       "Recognize why vague prompts produce disappointing results",
     ],
     estimatedMinutes: 30,
-    status: "coming-soon",
+    status: "published",
     description:
       "Good building starts with good asking. This module teaches the recipe of a strong build prompt — who it's for, what it should do, how it should look, and one example — and shows a weak prompt rewritten into a good one. You'll pick up a phrasebook of requests that work, the one-change-at-a-time habit, and a plain “keep it safe” line to add to every prompt.",
+    content: {
+      intro:
+        "In the previous module you built and saved a working page within a matter of minutes, and I want you to hold onto the memory of how that page came to exist: not from code you wrote, but from words you typed. In this module we examine those words closely, because the sentence you type into the chat window is the entire instrument of your building, and a professional who learns to phrase it well will consistently receive better results than one who does not.",
+      sections: [
+        {
+          heading: "The AI knows nothing about you — specificity is kindness",
+          body: `Claude is, in a genuine sense, a brilliant new colleague who has just walked into your department for the first time, and it is worth taking that image seriously before you type your next request. For example, a new colleague does not know which course you teach, which students you serve, or what "make it look professional" means to you specifically, and Claude does not know these things either, no matter how capable it otherwise is. This indicates that a vague instruction does not fail because the AI is limited, but because no reader, human or artificial, can produce a specific result from an unspecific request.
+
+It follows that specificity is not a technical requirement so much as an act of consideration toward the assistant you are working with. For example, "make a study tool" leaves Claude to guess your subject, your students' level, and your sense of a good design, while "make a flashcard tool for twenty vocabulary terms in an introductory biology course, with a clean and calm design" leaves nothing to guess. Such a small shift in wording changes the entire quality of what comes back. Additionally, the habit of specificity you build here in a prompt is the same habit you already practice when you write a clear assignment or a clear reference-desk answer, so you are not learning a foreign skill; you are applying a familiar one to a new setting.`,
+        },
+        {
+          heading: "The recipe of a good build prompt: WHO, WHAT, HOW, and one EXAMPLE",
+          body: `A strong build prompt follows a recipe of four parts, and once you know the recipe you no longer have to wonder what to type. In order to write a strong prompt, state WHO the tool is for, WHAT it should do, HOW it should look or feel, and one concrete EXAMPLE of the content inside it. For example, "build a flashcard tool for my students studying for a citation-style quiz, showing one term at a time with a button to flip to the definition, in a clean design with my library's blue and white colors, starting with the term 'primary source'" satisfies all four parts in a single sentence.
+
+Consider the weak version of this same request beside its rewrite, because the contrast makes the recipe concrete. A weak prompt, "make a study thing for my students," names none of the four parts and leaves Claude to invent an audience, a feature set, a look, and a subject on its own; the strong rewrite above names all four and leaves almost nothing to invention. This suggests that the gap between a disappointing build and a useful one is rarely a gap in the AI's ability, but a gap in what the prompt actually specified. Additionally, you do not need to write beautifully to follow this recipe; you need only cover the four parts, in any order, in language as plain as you would use with a colleague.`,
+        },
+        {
+          heading: "Iterating beats perfecting: small changes, one at a time",
+          body: `A common mistake among new builders is the belief that the first prompt must be perfect, and I want to correct that belief directly, because it produces hesitation rather than good results. In order to build well, you write a decent first prompt using the recipe above, look at what comes back, and then improve it through a short series of small, separate requests rather than one long, flawless instruction written in advance. For example, after your flashcard tool appears, you might notice that the text is too small, and you simply say so, rather than trying to have anticipated font size in your original prompt.
+
+The habit that makes this loop work is requesting one change at a time. For example, if you ask Claude to enlarge the text, add a progress counter, and change the color scheme in a single message, and the result disappoints you, it becomes difficult to know which of the three requests caused the problem; if you ask for one change and see its effect before asking for the next, you always know exactly what produced what. Such restraint is not slower in any meaningful sense, because each small exchange takes only seconds, and it keeps you, rather than the AI, in charge of the direction of the build.`,
+        },
+        {
+          heading: "A copy-paste phrasebook that works",
+          body: `It is useful to keep a small set of dependable phrases on hand, because a builder who is not sure how to say what they want often falls silent rather than asking. For example, "keep everything the same but change ___" lets you isolate a single change without risking the rest of the page; "that's not what I meant — here's what I see versus what I want" gives Claude the comparison it needs to correct course precisely; and "explain what you changed, in simple words" lets you understand a fix without needing to read any code.
+
+These phrases work because each one gives Claude a clear, bounded task rather than an open-ended feeling of dissatisfaction. For example, saying only "I don't like it" gives the AI nothing to act on, while "keep everything the same but make the heading larger" gives it exactly one instruction to carry out. Such phrasing is worth memorizing, or better, worth saving somewhere you can return to, because you will reach for it in nearly every build in this course. Additionally, these same phrases work regardless of what you are building, whether it is a quiz, a flashcard site, or the course portal you assemble near the end of this course.`,
+        },
+        {
+          heading: "“Ask for it safe” — the security habit from day one",
+          body: `I want you to adopt one additional habit sentence starting now, because it costs nothing to include and it measurably changes the safety of what you receive. In order to build safely from the beginning, add a line such as "keep it safe: no passwords or secret keys in the code, and check anything a user types" to your build prompts, particularly once a tool begins collecting information from other people. For example, this single sentence tells Claude to avoid the two most common beginner security mistakes, hardcoding sensitive values directly into a file and trusting user input without checking it.
+
+This is not a habit I am asking you to take on faith. Research examining prompting techniques for secure code generation found that explicit security instructions included in a prompt measurably reduce the security weaknesses present in the resulting code, compared with prompts that omit such instructions (Tony et al., 2025). This indicates that asking plainly for safety is not a superstition but an evidence-based habit, and it costs you only a single added sentence. Undoubtedly you will not remember every possible security concern as a non-programmer, and you do not need to; you need only the habit of asking, every time, for the tool to be built safely.`,
+        },
+        {
+          heading: "When it goes wrong: the reset move",
+          body: `Occasionally a build enters a state where each new request seems to make things worse rather than better, and it is worth knowing in advance what to do when that happens, so that frustration does not take over. In order to recover, describe the problem freshly, in one clear paragraph, rather than arguing back and forth over what went wrong in the previous few messages. For example, instead of continuing to say "no, still not right, try again," you might write, "here is the page as it currently looks and here is exactly what I want instead," starting the correction from a plain, current description rather than from an accumulated argument.
+
+If a fresh, clear description does not resolve the problem, the more decisive move is to start an entirely new conversation, carrying over only the working parts of your build. This suggests that a stuck conversation is not a failure on your part, but simply a normal occurrence that a new start easily resolves, in the same way that closing and reopening a stubborn document sometimes resolves more than continuing to fight with it. Additionally, keeping a downloaded copy of each version of your build, a habit you already practiced in the previous module, means that a reset never costs you the work you have already completed.`,
+        },
+        {
+          heading: "Your turn: rewrite a weak prompt",
+          body: `Before moving on, take the weak prompt named earlier in this module, "make a study thing for my students," and rewrite it yourself using the recipe: WHO it is for, WHAT it should do, HOW it should look, and one EXAMPLE of the content inside it. For example, choose a real subject from your own teaching or library work, so that the exercise produces something you might genuinely use, rather than an invented placeholder.
+
+Once you have written your rewrite, run both prompts in Claude, the original weak version and your specific rewrite, and compare the two results side by side. In order to complete this module fully, notice concretely where the two results differ, whether in the accuracy of the subject, the usefulness of the layout, or simply how close the second result lands to what you actually pictured. Such a direct comparison is the clearest evidence you will encounter that the recipe in this module is not an academic exercise but a habit worth carrying into every prompt you write from here forward.`,
+        },
+      ],
+      summary: [
+        "Explain why Claude, like any new colleague, cannot guess what you mean, and why specificity is a form of kindness to the assistant you are working with.",
+        "Write a build prompt using the four-part recipe: WHO it is for, WHAT it should do, HOW it should look, and one EXAMPLE.",
+        "Iterate through a series of small, separate requests instead of trying to write one perfect prompt in advance.",
+        "Use a small phrasebook of dependable requests to isolate changes and get plain-language explanations.",
+        "Add the “keep it safe” habit sentence to build prompts, understanding that explicit security instructions measurably reduce vulnerabilities.",
+        "Recover from a stuck build by describing the problem freshly or starting a new conversation, rather than arguing with the AI.",
+      ],
+    },
+    quiz: [
+      {
+        question: "What are the four parts of a strong build prompt?",
+        options: [
+          "Length, tone, grammar, and punctuation",
+          "WHO it is for, WHAT it should do, HOW it should look, and one EXAMPLE",
+          "A title, a date, a budget, and a deadline",
+          "Only the exact code you want written",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The recipe covers who the tool is for, what it should do, how it should look or feel, and one concrete example of the content inside it. Covering all four leaves little for the AI to guess.",
+      },
+      {
+        question: "Why does a prompt like “make it better” usually produce a disappointing result?",
+        options: [
+          "Because Claude cannot process short sentences",
+          "Because it does not specify what “better” means, leaving Claude to guess",
+          "Because it is grammatically incorrect",
+          "Because the free tier does not allow short prompts",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A vague request like “make it better” gives no specific direction, so Claude has to guess what you want changed. Naming the exact change gets a far more useful result.",
+      },
+      {
+        question: "What is the benefit of requesting one change at a time?",
+        options: [
+          "It is required by Claude's free tier",
+          "If the result disappoints you, you know exactly which request caused it",
+          "It makes the build take longer overall",
+          "It prevents you from downloading the file",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Asking for several changes at once makes it hard to tell which request caused a problem. One change at a time keeps you in control of the build at every step.",
+      },
+      {
+        question: "What does the “ask for it safe” habit sentence actually do?",
+        options: [
+          "It slows down the build for no benefit",
+          "It is only useful for large software companies",
+          "It tells Claude to avoid hardcoded secrets and check user input, and research shows explicit security prompts measurably reduce vulnerabilities",
+          "It replaces the need to test the tool yourself",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Research on prompting techniques for secure code generation found that explicit security instructions in a prompt measurably reduce weaknesses in the resulting code, so a single habit sentence has a real, evidenced effect.",
+      },
+      {
+        question:
+          "Which of these four prompts best follows the WHO, WHAT, HOW, EXAMPLE recipe?",
+        options: [
+          "“Make something for my class.”",
+          "“Build a quiz.”",
+          "“Build a ten-question quiz for my introductory chemistry students on lab safety terms, in a clean, calm design, starting with the term 'fume hood.'”",
+          "“Make it look nicer.”",
+        ],
+        correctIndex: 2,
+        explanation:
+          "This prompt names the audience, the feature, the look, and a concrete example term, satisfying all four parts of the recipe. The other three each omit most or all of it.",
+      },
+    ],
     relatedModules: ["meet-your-ai-builder", "build-quiz-app"],
   },
   {

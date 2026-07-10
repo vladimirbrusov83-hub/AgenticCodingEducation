@@ -39,6 +39,14 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       url: "https://anthropic.skilljar.com/ai-fluency-framework-foundations",
     },
   ],
+
+  3: [
+    {
+      text: "Tony, C., Díaz Ferreyra, N. E., Mutas, M., Dhiff, S., & Scandariato, R. (2025). Prompting techniques for secure code generation: A systematic investigation. *ACM Transactions on Software Engineering and Methodology.*",
+      url: "https://arxiv.org/abs/2407.07064",
+      note: "Found that explicit security instructions in a prompt measurably reduce security weaknesses in AI-generated code compared with prompts that omit them.",
+    },
+  ],
 };
 
 export function getModuleReferences(moduleId: number): ModuleReference[] {
