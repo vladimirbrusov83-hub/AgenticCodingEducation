@@ -828,9 +828,135 @@ With this spec saved, you have now completed Level 1 of this course. You have bu
       "Connect Vercel to GitHub",
     ],
     estimatedMinutes: 35,
-    status: "coming-soon",
+    status: "published",
     description:
       "A pure, numbered setup module. Claude builds it, GitHub stores it, Vercel puts it online — workshop, filing cabinet, storefront. You'll create both free accounts (signing into Vercel with GitHub to save passwords), authorize the connection so every GitHub update redeploys your live site in about thirty seconds, and learn what to do if a campus device or network blocks the sign-ups.",
+    content: {
+      intro:
+        "You have completed Level 1 with a saved page, a clear prompting recipe, enough vocabulary to follow along, and a written spec for your capstone. This module is different from every one before it: it asks nothing of your judgment and nothing of your creativity. It asks only that you follow a short numbered sequence of clicks, because the goal of this module is entirely mechanical, to open the two accounts that turn a file on your computer into a website the whole world can visit.",
+      sections: [
+        {
+          heading: "The three tools and their jobs: build, store, publish",
+          body: `Before opening a single new account, it is worth understanding why you need three separate tools rather than one, because the reason clarifies what each one is actually for. In order to hold the three roles clearly in mind, picture a workshop, a filing cabinet, and a storefront: Claude is the workshop, where you describe a tool and watch it get built; GitHub is the filing cabinet, where every version of your project is stored and tracked so nothing is ever truly lost; and Vercel is the storefront, the always-on location where the finished product is displayed to the public with its own address.
+
+Each tool does its one job well, and none of the three tries to do the others' work. For example, Claude does not keep a long-term, organized history of every change you have ever made to a project, which is exactly what GitHub is built for; and GitHub does not display your project as a live, visitable website, which is exactly what Vercel is built for. This indicates that the three-tool setup is not added complexity for its own sake, but a division of labor in which each piece specializes in the one thing it does best. Additionally, all three of these tools offer a free tier that covers everything this course, and very likely everything your capstone project, will ever need.
+
+It is worth pausing on why this particular combination, rather than some single all-in-one service, is what you are about to learn. For example, a single tool that tried to build, store, and publish all at once would either be far more complicated to learn or far more limited in what it could do, while three specialized tools connected together let each one improve independently without disturbing the others. Undoubtedly this pattern, small, focused tools working together rather than one large tool trying to do everything, is one you will recognize again once you reach Module 12 and begin assembling your full course portal from several working pieces.`,
+        },
+        {
+          heading: "GitHub account, step by step",
+          body: `A GitHub account is free, and creating one takes only a few minutes entirely through the website, with no separate program to install. In order to sign up, go to [github.com](https://github.com), choose a username you would be comfortable using professionally, since it will appear in the address of your projects, provide an email address, and confirm it when GitHub sends a verification message. This indicates that the process is identical in spirit to creating any other web account you already use, requiring nothing technical beyond a working email inbox.
+
+Once you are signed in, the one new idea worth understanding is the repository, often shortened to "repo," which is simply a project folder that GitHub remembers every version of. For example, when you place your quiz app inside a repository, GitHub keeps a complete history of every change you make to it from that point forward, meaning that if a future edit goes badly, an earlier, working version is never more than a few clicks away. Such a safety net is one of the most valuable things GitHub offers a beginning builder, and you do not need to understand how it works internally to benefit from it; you only need to know it is there.
+
+You do not need to create a repository yet, and I want to be explicit about that, because the next module walks you through creating your first one at the exact moment you have a real project to put inside it. For example, an empty repository created too early is simply one more unused account artifact to keep track of; waiting until Module 7, when your quiz app exists and is ready to be stored, keeps this setup module focused purely on the two accounts themselves.`,
+        },
+        {
+          heading: "Vercel account, step by step",
+          body: `A Vercel account is also free, and the fastest way to create one is to sign up using the GitHub account you just made, rather than creating yet another separate password to remember. In order to sign up this way, go to [vercel.com](https://vercel.com), choose "continue with GitHub," and approve the connection when GitHub asks whether Vercel may access your account. This indicates that a single click accomplishes two things at once: it creates your Vercel account, and it begins the exact connection the next section relies on.
+
+The free plan Vercel offers is considerably more generous than most new builders expect, and it is worth saying plainly that you are unlikely to outgrow it during this entire course. For example, the free tier includes enough bandwidth and enough separate projects to host every build you make here, the quiz app, the flashcard site, the course portal, and your capstone, all at once, without any cost and without any prompt to upgrade. Such generosity is deliberate on Vercel's part, since it is designed to let individual builders like you ship real, working sites at no cost.
+
+Once your account exists, take a moment to look around the Vercel dashboard, even though it will be empty of projects for now. For example, notice the button or link labeled "Add New" or "Import Project," because this is precisely where the next module will begin, and having already seen this screen once removes any hesitation about where to click when you are ready to publish your first real build.`,
+        },
+        {
+          heading: "Connecting them: update GitHub, live site updates itself",
+          body: `With both accounts created and Vercel already linked to GitHub from the previous step, the final piece of setup is authorizing Vercel to see the specific repositories you want it to publish. For example, inside Vercel you will be offered a screen labeled "Import Git Repository," and selecting a repository there tells Vercel to watch that project and publish whatever it finds inside. This indicates that from this point forward, Vercel is not something you need to operate manually each time you want to update your site; it simply watches for changes.
+
+The practical result of this connection is the single most satisfying moment in this module, and it is worth anticipating clearly before you experience it yourself. For example, once a repository is connected, updating a file inside it on GitHub causes your live website to rebuild and update itself automatically, typically within about thirty seconds, with no separate publishing step on your part. This suggests that "deploying a site," a phrase that once implied a technical, manual process, becomes for you simply the act of saving a change, which is a task you have already been doing since Module 2.
+
+This automatic rebuilding is worth naming explicitly, because it is the mechanism behind nearly every deploy instruction for the rest of this course. For example, when a later module tells you to "commit and push" a change, it means exactly this: save the updated file to your GitHub repository, and let the connection you set up here carry the update to your live site without any further action from you. Such a simple, repeatable pattern is what allows you to focus entirely on what you are building rather than on how it gets published each time.`,
+        },
+        {
+          heading: "Trouble spots",
+          body: `A short list of common snags is worth having in advance, so that a small hiccup does not feel like a sign you have done something wrong. For example, an email verification message can occasionally land in a spam folder rather than an inbox, a chosen username may already be taken and require a small variation, and the exact screens described here can shift slightly over time as GitHub and Vercel update their own designs. In order to handle any of these calmly, remember that the underlying ideas, a repository, a deployment, a connection between the two, remain stable even when a button has moved or been renamed; if a screen looks different from what this module describes, ask Claude to describe what you are currently looking at and it will orient you.
+
+One trouble spot deserves a more direct warning: some college and university networks or work laptops block personal sign-ups to services like GitHub and Vercel, whether through firewall rules, IT policy, or a requirement that you sign in only through an institutional single-sign-on system. For example, if a sign-up page fails to load or refuses to complete on a campus device or campus wifi, do not assume the fault lies with you or with the service; try a personal device on a home network instead, or ask your campus IT office whether an approved path for this kind of account already exists. This indicates that persistence against a campus firewall is rarely the right response; a different network is almost always the faster fix.
+
+It is worth adding that none of these trouble spots reflect a flaw in the plan this course is asking you to follow. For example, thousands of individual builders create GitHub and Vercel accounts on personal devices and home networks every day without incident, and the campus-specific obstacles named here affect a minority of readers, not the typical path through this module. Such reassurance is worth holding onto if you do hit a snag, since a blocked signup says something about your institution's network policy, not about your own aptitude for this work.`,
+        },
+        {
+          heading: "Your turn: complete the connection",
+          body: `Before moving to the next module, complete all three pieces of this setup in order: create your GitHub account, create your Vercel account by signing in with GitHub, and confirm the connection between them by reaching the "Import Git Repository" screen inside Vercel. For example, you do not need to import a real project yet, since that step arrives naturally in the next module when you build and publish your quiz app; you need only confirm that the screen is there and that Vercel recognizes your GitHub account.
+
+Your success check for this module is simple and requires no judgment call: you can log into all three tools, Claude, GitHub, and Vercel, and Vercel's dashboard offers you the option to import a Git repository. Once you can confirm that, your toolbox is complete, and the next module puts every piece of it to work at once, building, storing, and publishing your first real, shared tool.
+
+Take a moment, once your three accounts are open side by side, to notice that you have just done something a beginning builder several years ago genuinely could not have done in an afternoon: assembled the complete infrastructure a professional software team would use to ship a real, live product. In order to appreciate the scale of that, remember that this exact toolbox, Claude for building, GitHub for storing, Vercel for publishing, is the same toolbox working developers use every day; you are not using a simplified, beginner-only version of it.`,
+        },
+      ],
+      summary: [
+        "Explain the job of each tool using the workshop, filing cabinet, and storefront analogy: Claude builds, GitHub stores, Vercel publishes.",
+        "Create a free GitHub account and understand what a repository is: a project folder that remembers every version.",
+        "Create a free Vercel account by signing in with GitHub, and know that its free plan covers everything this course needs.",
+        "Connect Vercel to GitHub so that updating a file causes the live site to rebuild itself in about thirty seconds.",
+        "Recognize common setup snags, including campus firewalls and SSO-only networks, and know to try a different device or network rather than fighting them.",
+        "Confirm all three accounts work together by reaching Vercel's “Import Git Repository” screen.",
+      ],
+    },
+    quiz: [
+      {
+        question: "Which tool does which job in the workshop, filing cabinet, storefront analogy?",
+        options: [
+          "GitHub builds, Claude stores, Vercel publishes",
+          "Claude builds it, GitHub stores every version of it, Vercel publishes it live",
+          "Vercel builds it, Claude stores it, GitHub publishes it",
+          "All three do the exact same job as a backup for each other",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Claude is the workshop where you build, GitHub is the filing cabinet that stores and tracks every version, and Vercel is the storefront that publishes the finished result live.",
+      },
+      {
+        question: "What is a “repository” on GitHub?",
+        options: [
+          "A paid subscription tier",
+          "A project folder that GitHub remembers every version of",
+          "A type of website design template",
+          "A password manager",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A repository, or “repo,” is a project folder whose complete history GitHub tracks, so an earlier working version is always recoverable if a later change goes wrong.",
+      },
+      {
+        question: "Why sign up for Vercel using your GitHub account?",
+        options: [
+          "It is required and there is no other way to sign up",
+          "It creates the account and begins the GitHub connection in a single click, avoiding an extra password",
+          "It makes the free plan more generous",
+          "It is only necessary for paid accounts",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Signing up for Vercel with GitHub accomplishes two things at once: creating your Vercel account and starting the exact connection needed to publish your projects, with one password instead of two.",
+      },
+      {
+        question:
+          "Once GitHub and Vercel are connected, what happens about thirty seconds after you update a file on GitHub?",
+        options: [
+          "Nothing, until you manually click “publish”",
+          "Your live website automatically rebuilds and updates itself",
+          "GitHub deletes the old version",
+          "You must re-enter your password",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Once a repository is connected, Vercel watches it for changes and automatically rebuilds and updates your live site roughly thirty seconds after a change is saved on GitHub, with no manual publishing step.",
+      },
+      {
+        question:
+          "Is the free plan on GitHub and Vercel enough for the projects in this course?",
+        options: [
+          "No, a paid plan is required after Module 7",
+          "Yes, the free plans comfortably cover every build in this course, including the capstone",
+          "Only GitHub's free plan is enough; Vercel always requires payment",
+          "It depends on how many students are in your class",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Both GitHub's and Vercel's free tiers are generous enough to host every project you will build in this course, including your capstone, at no cost.",
+      },
+    ],
     relatedModules: ["build-quiz-app", "getting-it-online"],
   },
   {
