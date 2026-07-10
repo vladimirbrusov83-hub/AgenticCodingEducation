@@ -1133,9 +1133,133 @@ I want you to notice something about where this file currently lives: on your ow
       "Understand the update cycle",
     ],
     estimatedMinutes: 35,
-    status: "coming-soon",
+    status: "published",
     description:
       "Take the quiz from your computer to the internet — no commands, all through the web. You'll create a GitHub repository, upload your file and rename it index.html (the front-door name hosts look for), import it to Vercel, and watch a live URL appear. Then you'll learn the update loop and text the link to a colleague, opening it on your phone as the success check.",
+    content: {
+      intro:
+        "Your quiz works. It is tested, it holds your real questions, and it does exactly what your students or patrons need it to do. It is also, at this exact moment, invisible to every single one of them, because it lives only on your own computer. This module closes that gap using the two accounts you opened in Module 6, and it does so entirely through web pages you click through, with no command line and nothing to install.",
+      sections: [
+        {
+          heading: "Create your first repository",
+          body: `Return to GitHub, and this time, rather than only exploring the interface, you will create your first real repository, the project folder Module 6 introduced. In order to create one, look for a button labeled "New" or "New repository," give it a short, plain name such as class-quiz, choose "Public" so that Vercel and anyone with your link can reach it, and leave every other option at its default setting. This indicates that creating a repository requires no decisions beyond a name and a visibility setting; every advanced option GitHub offers here can simply be ignored for a project of this size.
+
+Public, in this context, means only that the project files themselves can be seen by anyone who knows where to look, not that your quiz is somehow more exposed than any other website; every ordinary website you have ever visited is "public" in exactly this sense. For example, choosing "Private" instead would prevent Vercel's free plan from publishing the project at all for most account types, so "Public" is the correct choice for everything you build in this course, provided your build follows the responsible default from Module 1 of collecting no personal data.
+
+Once the repository exists, take a moment to look at what GitHub shows you: an empty file list and a name at the top of the page, class-quiz, that now belongs to your account. This indicates that you have created a real, permanent home for this project, distinct from every other repository you will create later in this course for the flashcard site, the course portal, and your capstone, each of which will get its own repository following exactly this same first step.`,
+        },
+        {
+          heading: "Upload the file, and rename it index.html",
+          body: `With your new, empty repository open, look for an "Add file" or "Upload files" option, and drag your Module 7 quiz.html file directly into the browser window. For example, GitHub accepts a simple drag-and-drop from your desktop or downloads folder, the same gesture you would use to move a file between two folders, and it uploads the file as part of your repository once you confirm the change.
+
+Before you finish, rename the file to index.html, replacing whatever name it currently carries. This single rename matters more than it might appear to, because index.html is the specific name that essentially every hosting service on the internet, Vercel included, treats as a website's "front door": the file it opens automatically when a visitor arrives at your address with no further path specified. This indicates that the rename is not a stylistic preference; it is the one small, precise requirement that makes the difference between a working live site and a broken one, and it is worth double-checking before you move to the next step.
+
+Once the file is uploaded and renamed, GitHub will ask you to confirm the change with a short message, often called a "commit message." A single word or short phrase such as "add quiz" is entirely sufficient; you are not writing documentation, only leaving yourself a brief note in the project's history that Module 6 told you GitHub keeps automatically.`,
+        },
+        {
+          heading: "Import to Vercel and get a live URL",
+          body: `Return to Vercel, where Module 6 left you looking at the "Import Git Repository" screen, and this time you will actually use it. For example, select your class-quiz repository from the list Vercel shows you, accept the default settings on the screen that follows, since Vercel automatically recognizes a plain HTML project and needs no further configuration from you, and click "Deploy."
+
+What happens next is worth watching closely, because it is the payoff for every setup step in this and the previous module. For example, Vercel spends roughly thirty seconds building and publishing your project, after which it shows you a live web address, typically ending in .vercel.app, along with a small celebratory animation confirming the deploy succeeded. This indicates that the address now shown on your screen is not a preview or a draft; it is a genuine, live URL that anyone in the world can visit right now, and it is worth clicking it yourself immediately to see your own quiz appear exactly as a student would see it.
+
+I want you to pause on this moment rather than rush past it, because it is, in a real sense, the payoff for everything since Module 1. For example, the sentence you wrote down in that very first module, the tool you wished existed, is no longer only a sentence; a version of it, built by you, now sits at a real address, reachable by anyone, anywhere, at any hour, whether or not your own computer happens to be turned on.`,
+        },
+        {
+          heading: "Your update cycle: change, download, upload, redeploy",
+          body: `A live site is not a finished site forever; you will want to fix a typo, add a question, or adjust a color after today, and it is worth understanding the update cycle before you need it under time pressure. In order to update your live quiz, return to Claude and make your change using the describe, look, describe loop, download the new version of the file exactly as you did in Module 7, return to your GitHub repository, and upload the new file, choosing to replace the existing index.html when GitHub asks.
+
+The moment you confirm that replacement, the same automatic connection you authorized in Module 6 takes over, and Vercel rebuilds your live site within about thirty seconds, with no further action from you. This indicates that the entire loop, change, download, upload, redeploy, is one you will repeat often and casually throughout this course, and each pass through it takes only a couple of minutes once you have done it a first time. Additionally, GitHub's own history, the safety net described in Module 6, means that if a replacement ever goes wrong, an earlier working version remains only a few clicks away.
+
+It is worth drawing this loop out in your own mind as a simple, repeating circle rather than a list of steps to memorize: Claude changes the file, GitHub stores the new version and remembers the old one, Vercel notices and republishes, and your live URL never changes even as everything behind it updates. Undoubtedly this same circle, run dozens of times, is how every one of the remaining builds in this course will be maintained, including the multi-page course portal you assemble in Module 12.`,
+        },
+        {
+          heading: "Share it — and open it on your phone",
+          body: `With a live URL in hand, the entire reason for this module's work is now available to you: send the address to a colleague, post it in a course announcement, or text it to yourself and open it on your phone. For example, opening your quiz on a phone, on a completely different network from the one you built it on, is a genuinely convincing demonstration that the tool is now independent of your own computer, running instead on Vercel's always-on servers.
+
+A brief note on the address itself: a free .vercel.app URL is entirely sufficient for everything in this course, and there is no need to feel that a project is somehow unfinished without a custom domain of its own. Custom domains, such as a subdomain of your own institution or personal website, do exist and are simple to add later if you want one, but they are a polish step for a project you already love, not a requirement for sharing it with real students or patrons today.
+
+When you do share the link with a real colleague or a real class, notice how the reaction differs from showing someone a demonstration or a screenshot. For example, a working URL that opens correctly on a stranger's own phone, over a network you have never touched, is a far more convincing proof of what you have learned than any description of the process could be, and it is worth allowing yourself a genuine moment of satisfaction at that reaction.`,
+        },
+        {
+          heading: "Your turn: publish and confirm",
+          body: `Before moving to the next module, complete the full sequence yourself: create a repository, upload and rename your quiz.html to index.html, import the repository to Vercel, and deploy it. Your success check is specific and easy to confirm: you have a live .vercel.app URL, and you have opened it successfully on your phone.
+
+Once you have confirmed this, take a moment to notice what you have actually accomplished across these two modules. Two weeks ago, in course time, this exact tool did not exist; now it has real questions, has been tested like a student would use it, and sits at a permanent address anyone can visit. The next module addresses what happens when a live tool needs a fix, because a shipped project, unlike a private draft, occasionally needs one in front of a real audience, and knowing how to respond calmly is the next skill this course builds.
+
+Before you close this module, write your live URL down somewhere alongside your Module 5 spec, since you will return to this same repository, and this same update cycle, in the next module when something inevitably needs a small correction.`,
+        },
+      ],
+      summary: [
+        "Create a public GitHub repository through the web interface, understanding that “public” simply means visible, the way any ordinary website is.",
+        "Upload a finished .html file and rename it to index.html, the front-door name hosting services look for automatically.",
+        "Import the repository into Vercel and deploy it, producing a live, shareable URL in about thirty seconds.",
+        "Follow the update cycle — change in Claude, download, upload to GitHub, automatic redeploy — to publish a fix or improvement.",
+        "Share a live URL and confirm it works by opening it on a phone, on a different network from the one used to build it.",
+        "Recognize that a free .vercel.app address is fully sufficient, with a custom domain as an optional later polish step.",
+      ],
+    },
+    quiz: [
+      {
+        question: "Why must the uploaded file be renamed to index.html?",
+        options: [
+          "It is only a stylistic preference with no real effect",
+          "It is the specific name hosting services, including Vercel, automatically open as a site's “front door”",
+          "GitHub requires all files to be named index.html",
+          "It makes the file load faster",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Hosting services look for a file named index.html and open it automatically when a visitor arrives at your address. Without this exact name, the site will not load correctly.",
+      },
+      {
+        question: "What is the correct order for getting a build online?",
+        options: [
+          "Import to Vercel, then create a repository, then upload the file",
+          "Create a GitHub repository, upload and rename the file to index.html, then import and deploy on Vercel",
+          "Deploy on Vercel first, then build the quiz",
+          "Upload to Vercel directly without GitHub",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The repository must exist and contain the correctly named file before Vercel can import and deploy it. Each step depends on the one before it.",
+      },
+      {
+        question: "About how long does a Vercel deploy take?",
+        options: [
+          "Several hours",
+          "About thirty seconds",
+          "A full business day",
+          "It happens instantly with no wait at all",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Once you click Deploy, or once you replace a file on GitHub, Vercel typically finishes building and publishing the update within about thirty seconds.",
+      },
+      {
+        question: "How do you update a site that is already live?",
+        options: [
+          "You cannot update a live site once it is deployed",
+          "Change the file in Claude, download it, upload the new version to GitHub to replace the old one, and Vercel redeploys automatically",
+          "Delete the whole repository and start over",
+          "Contact Vercel support for every change",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The update cycle is change, download, upload as a replacement on GitHub, and automatic redeploy, the same connection set up in Module 6, with no manual publishing step.",
+      },
+      {
+        question: "Where do students or patrons go to use your finished quiz?",
+        options: [
+          "They must download and open the .html file themselves",
+          "The live .vercel.app URL Vercel gave you after deploying",
+          "Your personal Claude conversation",
+          "GitHub's homepage",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Anyone with the live URL, typically ending in .vercel.app, can visit and use the quiz directly in their browser, on any device, without needing any file of their own.",
+      },
+    ],
     relatedModules: ["build-quiz-app", "your-toolbox"],
   },
   {
