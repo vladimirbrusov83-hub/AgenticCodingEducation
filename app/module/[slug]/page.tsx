@@ -85,9 +85,30 @@ function renderInline(text: string): React.ReactNode {
   });
 }
 
+const IMAGE_RE = /^!\[([^\]]*)\]\(([^)]+)\)$/;
+
 function renderBody(text: string) {
   const paragraphs = text.split("\n\n").filter(Boolean);
   return paragraphs.map((para, i) => {
+    const image = para.trim().match(IMAGE_RE);
+    if (image) {
+      const [, alt, src] = image;
+      return (
+        <figure key={i} className="my-8">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={src}
+            alt={alt}
+            className="w-full rounded-xl border border-stone-200 bg-white"
+          />
+          {alt && (
+            <figcaption className="mt-2 text-center text-xs text-stone-400">
+              {alt}
+            </figcaption>
+          )}
+        </figure>
+      );
+    }
     if (para.includes("\n- ")) {
       const parts = para.split("\n- ");
       return (

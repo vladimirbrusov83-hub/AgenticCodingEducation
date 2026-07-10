@@ -206,6 +206,8 @@ In order to produce a strong first result, type a request that says who the page
           heading: "Changing it with words: the describe, look, describe loop",
           body: `Your first result is a starting point rather than a finished product, and the genuine skill you are learning is the loop of improving it through conversation. For example, you look at the page in the artifact, decide on one thing you would like to change, and describe that single change in plain words, such as "make the heading larger" or "add a section listing what people should bring." This iterative way of working, in which you shape a result through a series of small exchanges rather than a single perfect request, is a foundational practice in working well with AI (Dakan & Feller, 2025). This suggests that the loop you are learning here is not a beginner's shortcut but the same method that experienced builders rely on.
 
+![The describe, look, describe loop: describe a change in plain words, look at the result in the artifact panel, then describe the next change — repeating one change at a time.](/describe-look-describe.svg)
+
 The single most useful habit in this loop is to request one change at a time rather than many at once. For example, if you ask for five changes in one message and one of them is not what you intended, it becomes difficult to tell which request caused the problem; if you ask for one change and dislike the result, you simply describe the correction and continue. Such restraint keeps you in control of the build at every step. Additionally, if a change ever makes the page worse, you can simply ask Claude to undo it, because the conversation remembers what came before.`,
         },
         {
