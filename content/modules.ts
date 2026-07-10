@@ -1439,9 +1439,128 @@ Completing this loop once, deliberately and without real pressure, is what turns
       "Finish with a second live URL",
     ],
     estimatedMinutes: 45,
-    status: "coming-soon",
+    status: "published",
     description:
       "The shared-control build: checkpoints, not steps. You'll write your own spec for a flashcard site — cards that flip, “know it / still learning” sorting, a progress counter — build it against four checkpoints, make sure it works on a phone, and deploy it yourself from memory. Faculty build class-topic cards; academic librarians build research-skills or “know your library” cards. The reflection names exactly what you did without instructions.",
+    content: {
+      intro:
+        "Build #1 handed you a finished spec, an annotated prompt, and a numbered sequence to follow, training wheels on every step. This build removes them. I will tell you what the finished flashcard site needs to do and give you four checkpoints to verify it against, but the spec, the prompt, and the decisions in between are yours to make. This is deliberate: the gap between a guided build and an independent one is exactly the gap this course exists to close, and the only way to close it is to let you feel it yourself.",
+      sections: [
+        {
+          heading: "Your mission — you write the spec this time",
+          body: `Your mission is a flashcard study site with three specific features: cards that flip from a term to its definition when clicked, a way to sort each card into "know it" or "still learning" after seeing it, and a progress counter showing how many cards remain. If you teach a course, build flashcards for a genuinely difficult set of terms from your own subject, the vocabulary of a unit your students consistently stumble on, a list of dates and events, a set of formulas with their meanings spelled out in plain words. If you work in an academic library, build cards teaching database or research-skills vocabulary, terms such as peer review, citation chaining, or Boolean search, or a "know your library" set covering the services, floors, and staff roles that patrons ask about most at a reference desk.
+
+Choose real terms rather than placeholder ones, in the same spirit as Module 7's real quiz questions, since a flashcard set you might genuinely hand to a class or a workshop next week will teach you far more about whether your build actually works than an invented example ever could.
+
+Before you open Claude, return to the four questions from Module 5 and write your own one-page spec: who uses it, what they see first, what they can do, and what "done" looks like. I want you to genuinely try this yourself before reading any further, because struggling productively with a blank page for a few minutes is precisely the exercise this module is built around. If you get stuck, a reference spec follows below, but treat it as a check against your own attempt, not a replacement for making one: who uses it, my students studying for the vocabulary section of the unit exam; what they see first, a title and a "start" button; what they can do, click a card to flip it, sort it as known or still-learning, and see a running count of cards remaining; done, a visitor can move through every card and end with an accurate count of what still needs review.
+
+Notice that this spec is only slightly more complex than Build #1's, three features rather than one, and resist any temptation to expand it further before you have built even the small version. For example, a "shuffle the deck" button, a saved history of past study sessions, or separate decks for different topics are all reasonable second-version ideas, but each belongs on the someday list from Module 5, not inside today's build.`,
+        },
+        {
+          heading: "Build checkpoints, not step-by-step instructions",
+          body: `Once your spec is written, build the site the way you already know how: a clear prompt following the WHO, WHAT, HOW, EXAMPLE recipe from Module 3, followed by the describe, look, describe loop from Module 2 to refine it. This module will not tell you what to type at each stage, because you already have every tool you need; instead, verify your progress against four checkpoints, in any order that suits your build.
+
+Checkpoint one: do the cards flip correctly when clicked, showing the term on one side and the definition on the other? Checkpoint two: does the "know it / still learning" sort actually work, moving a card into the correct pile rather than only appearing to? Checkpoint three: does the progress counter count accurately as you move through the cards? Checkpoint four, addressed fully in the next section: does the site look decent on a phone screen, not only on your laptop? This indicates that a finished build here is not one that merely looks right at a glance, but one you have specifically verified against each of these four, in the same spirit as the deliberate wrong-answer test from Module 7.
+
+If a checkpoint fails, treat it exactly as Module 9 taught: a plain, three-part bug report, what you did, what you expected, what happened instead, handed back to Claude in the same conversation. This suggests that a failed checkpoint is not a setback specific to this build; it is simply the same ordinary debugging loop you have already practiced once, applied to a new project.`,
+        },
+        {
+          heading: "The phone check",
+          body: `It is worth stating plainly why this checkpoint gets its own section: a considerable share of your students or patrons will open whatever you build on a phone, not a laptop, whether because it is more convenient in the moment or because it is the device they have with them. A flashcard site that works beautifully on a wide monitor and cramps or breaks on a narrow phone screen has, in a real sense, failed half of its intended audience before a single card gets flipped.
+
+In order to check this yourself, ask Claude directly: "make sure this works well on a phone screen," and then test the result by narrowing your browser window on your computer until it is roughly phone-width, watching whether the cards, buttons, and counter remain usable and readable at that size. This indicates that you do not need an actual phone in hand to catch most mobile problems; a narrowed browser window reveals the same layout issues a phone screen would. Once the narrow-window version looks and behaves correctly, you have satisfied the fourth checkpoint.
+
+If you do have a phone within reach, it is still worth opening the deployed version on it once you finish this module, because a real device occasionally reveals a small detail, a button sitting slightly too close to another, text wrapping awkwardly, that a narrowed browser window does not perfectly reproduce. Such a final check costs a minute and closes any remaining doubt about the fourth checkpoint.`,
+        },
+        {
+          heading: "Deploy solo from memory",
+          body: `With your flashcard site built and verified against all four checkpoints, deploy it using the exact sequence from Module 8, this time working from memory rather than a numbered walkthrough. As a condensed reminder rather than a full guide: create a new GitHub repository, upload your downloaded file and rename it to index.html, import that repository into Vercel, and deploy it, watching for the live URL that appears roughly thirty seconds later.
+
+Notice, as you move through these steps, how much faster and more automatic they feel the second time. For example, deciding on a repository name, dragging a file into GitHub, and clicking "Deploy" inside Vercel no longer require conscious recall of what each screen is for; the sequence has become a habit rather than a set of instructions you are actively following. This is itself worth noticing, because it is direct evidence that a skill you could not have performed two modules ago is now simply something you know how to do.
+
+Give your new repository a name distinct from Module 7's, such as flashcards or study-cards, so that your two live projects remain clearly separate in both GitHub and Vercel. Each project you build for the rest of this course, the course portal in Module 12 and your capstone at the very end, will get exactly this same fresh repository, following the identical pattern you have now used twice.`,
+        },
+        {
+          heading: "Reflection: the gap is your new skill",
+          body: `Before moving on, take a few minutes to compare this build against Build #1. In Module 7, the spec was written for you, the prompt was annotated line by line, and the deploy steps were spelled out in full; in this module, you wrote your own spec, composed your own prompt, verified your own checkpoints, and deployed from memory. Name, in a sentence or two, what you did this time that you could not have done, or would not have known how to approach, before this course began.
+
+That gap, between what Build #1 required of you and what Build #2 just required of you, is precisely the skill this course has been building since Module 1, and it is worth taking seriously rather than passing over quickly. In order to make the reflection concrete, write your answer down alongside your flashcard site's live URL, because Build #3, the full course portal in Module 12, removes even the checkpoints and asks you to direct the entire project yourself, and this reflection is the evidence that you are already closer to ready for that than you might assume.
+
+I want to name one more thing this reflection often surfaces: a quiet shift in how you relate to Claude itself. In Build #1 it was reasonable to feel that Claude was doing most of the thinking while you supplied the content; in this build, the plan, the checkpoints, and the judgment about what counted as "working" were yours from the very start. That shift, from operator to director, is the exact progression Module 1 promised, and it is worth feeling proud of.`,
+        },
+      ],
+      summary: [
+        "Write your own one-page spec for a flashcard site using the four Module 5 questions, before consulting any reference spec.",
+        "Build against four checkpoints — cards flip, sorting works, the counter counts, and it looks decent on a phone — rather than following numbered steps.",
+        "Test the mobile experience directly by narrowing a browser window, since a large share of real users will open the site on a phone.",
+        "Deploy the finished site using the Module 8 sequence from memory: repository, upload and rename to index.html, import to Vercel, deploy.",
+        "Reflect on the concrete gap between Build #1's guided steps and Build #2's independent decisions, and recognize that gap as a genuine new skill.",
+      ],
+    },
+    quiz: [
+      {
+        question: "What should you do before opening Claude to start this build?",
+        options: [
+          "Nothing — jump straight into typing a prompt",
+          "Write your own one-page spec using the four Module 5 questions",
+          "Wait for a step-by-step walkthrough like Build #1",
+          "Copy someone else's flashcard site exactly",
+        ],
+        correctIndex: 1,
+        explanation:
+          "This build is “shared control”: you write your own spec first, using who uses it, what they see first, what they can do, and what “done” looks like, before building anything.",
+      },
+      {
+        question: "What are the four build checkpoints for this project?",
+        options: [
+          "Color scheme, font, logo, and slogan",
+          "Cards flip correctly, sorting works, the progress counter counts accurately, and it looks decent on a phone",
+          "Login screen, database, analytics, and a leaderboard",
+          "Spelling, grammar, file size, and load time",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The four checkpoints verify the actual features this build needs: working card flips, working know-it/still-learning sorting, an accurate counter, and a usable mobile layout.",
+      },
+      {
+        question: "Why does this module give the phone check its own section?",
+        options: [
+          "Phones are irrelevant to most students and patrons",
+          "A large share of real users will open the tool on a phone, and a site that only works on a laptop fails them",
+          "Only quizzes need to work on phones, not flashcard sites",
+          "It is purely a design preference with no real consequence",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Many students and patrons will use a phone, not a laptop. A flashcard site that breaks or cramps on a narrow screen effectively fails a significant part of its intended audience.",
+      },
+      {
+        question:
+          "How should you deploy the finished flashcard site?",
+        options: [
+          "A completely new, different process from Module 8",
+          "The same Module 8 sequence — repository, upload and rename to index.html, import to Vercel, deploy — worked from memory",
+          "It cannot be deployed without a paid Vercel plan",
+          "By emailing the file to Vercel support",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Build #2 uses the exact same deploy sequence taught in Module 8. The difference this time is recalling and running it yourself rather than following a numbered walkthrough.",
+      },
+      {
+        question:
+          "According to the reflection, what is the real skill this module measures?",
+        options: [
+          "How fast you can type",
+          "The gap between what Build #1 required of you (fully guided) and what Build #2 required (independent decisions)",
+          "Whether the flashcard site has a leaderboard",
+          "How many colors are used in the design",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Naming the concrete difference between the fully guided Build #1 and the independently planned, built, and deployed Build #2 is the reflection's whole point: that gap is evidence of a genuinely new skill.",
+      },
+    ],
     relatedModules: ["plan-before-you-build", "getting-it-online"],
   },
 
