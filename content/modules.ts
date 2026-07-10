@@ -980,9 +980,137 @@ Take a moment, once your three accounts are open side by side, to notice that yo
       "End with a downloaded, working quiz app",
     ],
     estimatedMinutes: 45,
-    status: "coming-soon",
+    status: "published",
     description:
       "The training-wheels build: the whole module is one guided project. Using a spec that's done for you, you'll run an annotated build prompt, hand Claude your own ten questions, make a couple of improvements one at a time, and test the quiz like a student — including getting an answer wrong on purpose. Faculty build a class-topic quiz; academic librarians build an information-literacy quiz. You finish with a working quiz.html on your computer.",
+    content: {
+      intro:
+        "Every module so far has taught you one piece of the whole picture: a recipe for prompts, plain-language vocabulary, a habit of planning. This module asks something different of you: to run the entire loop, spec to build to iteration to a finished, tested file, in one sitting, on a real quiz you will actually use. Think of this as a training-wheels build. Build #2 hands you more of the steering; Build #3, near the end of this course, hands you all of it. For now, I have written the spec for you, so that the entire module can be spent on the part that matters most: watching the loop work, start to finish.",
+      sections: [
+        {
+          heading: "The spec (done for you this time)",
+          body: `In Module 5 you learned to answer four questions before building anything, and for this first guided project I have already answered them for you, so that you can watch a good spec in action before you write your own again in Build #2. The spec is this: who uses it, your own students, studying a real topic from your course, or library patrons learning an information-literacy skill; what they see first, a title and a start button; what they can do, answer ten multiple-choice questions one at a time, see their score at the end, and press a "try again" button to restart; and what "done" looks like, a visitor can complete all ten questions and see an accurate final score, in a clean, cheerful design.
+
+Notice that this spec follows exactly the embarrassingly-small discipline from Module 5: ten questions and a score, nothing more. For example, it does not include accounts, a saved history across visits, or a leaderboard, each of which is a reasonable idea for later but none of which belongs in this first version. This indicates that the spec you are about to build from is not a simplified example invented for teaching purposes; it is the genuine, correctly-sized version 1 of a real quiz app.
+
+I have chosen ten questions specifically because it is large enough to feel like a genuine review tool rather than a toy, while remaining small enough to write, test, and finish within this single module. In order to keep the whole exercise realistic, pick a topic you would actually assign this semester, a unit exam, a citation-style refresher, a database-orientation checklist, rather than an invented subject, so that the quiz you finish with is one you might genuinely hand to a real class or a real workshop next week.`,
+        },
+        {
+          heading: "The build prompt, dissected",
+          body: `Below are two complete, copy-paste build prompts, one for a class-topic quiz and one for a library-orientation quiz, so that you can use whichever matches your own role, or adapt either one freely to your subject. If you teach a course, copy this: "Build a one-page quiz app for my class called [your course name]. Show a title and a start button first. Ask ten multiple-choice questions, one at a time, each with four answer options. After each answer, show whether it was correct before moving to the next question. At the end, show the final score out of ten and a 'try again' button that restarts the quiz. Use a clean, cheerful design with rounded buttons and a calm color scheme. Make it accessible: good contrast, readable text, works without a mouse. Keep it safe: no passwords or secret keys in the code."
+
+If you work in an academic library, copy this instead: "Build a one-page information-literacy quiz app for a library orientation session. Show a title and a start button first. Ask ten multiple-choice questions, one at a time, about using the library, evaluating sources, and finding research help, each with four answer options. After each answer, show whether it was correct before moving to the next question. At the end, show the final score out of ten and a 'try again' button that restarts the quiz. Use a clean, cheerful design with rounded buttons and a calm color scheme. Make it accessible: good contrast, readable text, works without a mouse. Keep it safe: no passwords or secret keys in the code."
+
+Both prompts follow the exact WHO, WHAT, HOW, EXAMPLE recipe from Module 3, plus the two habit sentences from Modules 3 and 4. For example, WHO is named in the opening sentence, WHAT is the numbered list of features, HOW is the design line about rounded buttons and calm colors, and the accessibility and safety habits close the prompt, exactly where you should place them in every build prompt from here forward. Paste your chosen version into Claude now and watch the quiz appear in the artifact panel.`,
+        },
+        {
+          heading: "Filling in your own questions",
+          body: `The quiz that just appeared is almost certainly using placeholder questions, since you have not yet told Claude what you actually want to ask, and this is the moment to hand over your real content. In order to give Claude your questions cleanly, write them as a simple numbered list in plain text, each question followed by its four answer choices with the correct one marked, such as: "1. What is a primary source? A) A textbook B) An original document from the time being studied [correct] C) A summary article D) An encyclopedia entry." Repeat this pattern for all ten questions.
+
+Once your list is ready, paste the whole thing into the conversation with a short instruction such as "replace the placeholder questions with these ten real questions." This indicates that Claude does not need your questions formatted in any special or technical way; a plain list, readable by a colleague, is exactly what it needs as well. Additionally, this is a good moment to draw directly on your own capstone spec from Module 5 if your quiz topic overlaps with it, since real, specific content is what turns a demonstration into a tool you will actually use.`,
+        },
+        {
+          heading: "The improvement round: one change at a time",
+          body: `With your real questions in place, spend a few minutes improving the quiz using the describe, look, describe loop from Module 2, picking two of the following four improvements rather than attempting all of them at once: add a simple countdown timer per question, shuffle the question order each time the quiz restarts, show a one-line explanation after each answer, or adjust the colors to match your institution's branding. For example, you might type "add a short explanation under each answer, showing why the correct choice is right," look at the result, and only then move on to your second chosen improvement.
+
+Practicing restraint here matters more than it might seem, precisely because a quiz app has enough moving parts, questions, scoring, a timer, a restart button, that several simultaneous changes can genuinely tangle with each other. This suggests that the one-change-at-a-time habit you have been building since Module 3 is not a beginner's formality in a build like this one; it is the difference between a smooth ten-minute improvement round and a confusing one.`,
+        },
+        {
+          heading: "Test like a student — get one answer wrong on purpose",
+          body: `A build is not finished until you have tested it the way its real audience will experience it, and for a quiz app that means clicking through it as a student or patron would, not simply glancing at it as its builder. In order to test thoroughly, click through the entire quiz twice: once answering every question correctly, to confirm the final score reads ten out of ten, and once deliberately choosing at least one wrong answer, to confirm the score correctly reflects the mistake and that the "wrong" feedback appears as expected.
+
+This deliberate-mistake test matters because it is the single most common gap in an untested build: a quiz that scores a perfect run correctly can still have a scoring bug that only shows itself once an answer is wrong. For example, a "try again" button that resets the questions but not the score, or a score counter that increments even on a wrong answer, are exactly the kind of quiet bugs that only a deliberately imperfect test run reveals. Once both test runs behave correctly, download the finished file, which will save as a single .html file exactly as your Module 2 poster did.
+
+If either test run turns up a problem, treat it exactly as Module 3 taught you to treat any disappointing result: describe precisely what you saw and what you expected instead, such as "I answered question three incorrectly, but the final score still showed ten out of ten — please fix the scoring," and let the describe, look, describe loop carry you to a correct result before you download anything.`,
+        },
+        {
+          heading: "Look under the hood for sixty seconds",
+          body: `Before moving on, spend one final minute doing something this course asks of you at every build: understanding, in your own plain words, how the thing you just made actually works. Ask Claude directly, "explain in simple words how the scoring works in this app," and read the answer slowly rather than skimming past it.
+
+This checkpoint is not a formality; it is the exact discipline Module 1 described as building responsibly, being able to explain what a tool you built actually does, rather than only that it appears to work (Willison, 2025). For example, once you can describe in one or two sentences how a correct answer becomes a point and how the final score gets calculated, you have moved from having merely operated Claude for ten minutes to genuinely understanding the tool you now own. Such understanding costs you one minute and pays for itself the first time a student ever asks you how the quiz works.
+
+This same one-minute habit is worth carrying into every build you make from this point forward, not only this one. For example, a course portal in Module 12 will have far more moving parts than a ten-question quiz, and the habit of asking "explain in simple words how this works" at each major milestone is what keeps a larger project from ever feeling like a black box you merely operate rather than a tool you genuinely understand.`,
+        },
+        {
+          heading: "Your turn: finish and confirm your deliverable",
+          body: `By the end of this module you should have exactly one file: a tested quiz.html sitting on your computer, built from your own real questions, containing at least two deliberate improvements, and verified with both a perfect run and a deliberately imperfect one. If any of these pieces is missing, this is the moment to close the gap before moving on, since Build #2 in Module 10 assumes you are already comfortable with this full loop.
+
+I want you to notice something about where this file currently lives: on your own computer, and nowhere else. Nobody but you can see it yet, no matter how good it is. That gap, between a finished, tested tool and a tool the world can actually visit, is exactly what the next module closes, using the GitHub and Vercel accounts you set up in Module 6.`,
+        },
+      ],
+      summary: [
+        "Use a spec that answers the four Module 5 questions before building, and recognize that ten questions and a score is the correctly-sized version 1.",
+        "Run a full, annotated build prompt that follows the WHO, WHAT, HOW, EXAMPLE recipe plus the safety and accessibility habit sentences.",
+        "Hand Claude a real set of ten questions as a plain numbered list, rather than leaving placeholder content in place.",
+        "Make at least two improvements one at a time, choosing from a timer, shuffled order, per-answer explanations, or institutional colors.",
+        "Test the finished quiz twice, once perfectly and once with a deliberate wrong answer, before downloading it.",
+        "Ask Claude to explain how the scoring works, in plain words, as a sixty-second check on your own understanding of the build.",
+        "Finish with a tested quiz.html on your computer, and recognize that it is not yet visible to anyone but you.",
+      ],
+    },
+    quiz: [
+      {
+        question:
+          "What is the correct order of steps for this build?",
+        options: [
+          "Download the file, then write the prompt, then add questions",
+          "Run the build prompt, add your real questions, make improvements one at a time, then test and download",
+          "Test the quiz before it is built",
+          "Publish it online first, then build it",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The loop runs: build with the annotated prompt, hand over your real questions, improve one change at a time, test thoroughly, then download. Publishing online comes only in the next module.",
+      },
+      {
+        question: "What is the best way to hand Claude your own ten questions?",
+        options: [
+          "Describe them verbally without writing them down",
+          "As a plain numbered list with the four answer choices and the correct one marked",
+          "As a spreadsheet formula",
+          "You cannot add your own questions; only placeholders are allowed",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A simple, plain-text numbered list, each question followed by its four choices with the correct one marked, is all Claude needs. No special formatting or technical structure is required.",
+      },
+      {
+        question: "Why does the module ask you to get one answer wrong on purpose while testing?",
+        options: [
+          "To make the quiz harder for real students",
+          "Because a scoring bug often only shows up when an answer is incorrect, not when every answer is right",
+          "It is not necessary; testing a perfect run is always enough",
+          "To check your typing speed",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A quiz that scores a perfect run correctly can still have a hidden bug, such as a score that does not reset properly, that only a deliberately wrong answer reveals during testing.",
+      },
+      {
+        question: "What does making one change at a time during the improvement round prevent?",
+        options: [
+          "It prevents the quiz from being downloaded",
+          "It prevents several changes from tangling together and makes it clear which request caused any given result",
+          "It has no real benefit for a quiz app specifically",
+          "It prevents you from adding a timer at all",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A quiz app has several moving parts, questions, scoring, a timer, a restart button, that can interact in confusing ways if changed all at once. One change at a time keeps each result traceable to its request.",
+      },
+      {
+        question: "Where does the finished quiz.html file live at the end of this module?",
+        options: [
+          "It is already live on the internet for anyone to visit",
+          "Only on your own computer, visible to no one else yet",
+          "Inside a GitHub repository automatically",
+          "It is deleted once you close the conversation",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The file exists only on your computer at this point, exactly as your Module 2 poster did. Making it visible to the world is the task of the next module, Getting It Online.",
+      },
+    ],
     relatedModules: ["talking-to-ai-prompting", "getting-it-online"],
   },
   {

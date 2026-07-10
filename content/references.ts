@@ -72,6 +72,14 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       url: "https://anthropic.skilljar.com/ai-fluency-framework-foundations",
     },
   ],
+
+  7: [
+    {
+      text: "Willison, S. (2025, March 19). *Not all AI-assisted programming is vibe coding (but vibe coding rocks)* [Blog post].",
+      url: "https://simonwillison.net/2025/Mar/19/vibe-coding/",
+      note: "His rule of never committing code he could not explain to someone else underlies this module's “look under the hood” checkpoint.",
+    },
+  ],
 };
 
 export function getModuleReferences(moduleId: number): ModuleReference[] {
