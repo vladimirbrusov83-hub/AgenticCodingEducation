@@ -609,9 +609,123 @@ Once you have looked, return to Claude and ask a direct question: "explain what 
       "Understand why planning saves hours of frustration",
     ],
     estimatedMinutes: 30,
-    status: "coming-soon",
+    status: "published",
     description:
       "The AI builds exactly what you ask — so knowing what you want is the whole game. This module gives you a one-page spec built from four questions (who uses it, what they see first, what they can do, what “done” looks like) and the discipline of an embarrassingly small version 1. You'll write the spec for your capstone idea and let Claude poke holes in it before you build.",
+    content: {
+      intro:
+        "You now know how to describe a change clearly, and it is tempting to conclude that the whole of building is simply talking to Claude well, one prompt at a time. It is not. A prompt describes one step, while a plan describes the destination, and this module teaches you to write the second before you spend much effort on the first, because the professionals who skip this step are the ones who end up building three different tools by accident on the way to building one.",
+      sections: [
+        {
+          heading: "Why “just start building” backfires",
+          body: `Claude builds exactly what you ask it to build, which is a genuine strength of the tool and, in the absence of a plan, also its central risk. For example, if you sit down and simply start describing features as they occur to you, a login screen here, a leaderboard there, a second color scheme because the first one no longer feels right, Claude will faithfully build every one of these things, because it has no way of knowing which of them you actually need. This indicates that the AI cannot supply the clarity you failed to bring to the conversation; it can only execute the clarity, or the confusion, that you hand it.
+
+It follows that the hours lost to a frustrating build are rarely the AI's fault, and are almost always the cost of skipping a plan. For example, a builder who starts typing with only a fuzzy sense of "something to help my students study" often ends up rebuilding the same tool three or four times as the real requirements slowly reveal themselves through trial and error. Such a process is exhausting and entirely avoidable. Additionally, the fifteen minutes spent writing a plan before you open the chat window will typically save you far more than fifteen minutes once you are inside it.`,
+        },
+        {
+          heading: "The one-page spec: four questions",
+          body: `A complete plan for a small tool fits comfortably on one page and requires answering only four questions in plain language. In order to write a one-page spec, answer: who uses it, what do they see first, what can they do, listed as three to five specific things, and what does "done" look like, meaning the concrete sign that the first version is finished and ready to use. For example, "who uses it: my students studying for the midterm; what they see first: a start button and the number of questions; what they can do: answer a question, see if it was right, see their score at the end; done: I can go through all ten questions and see a final score" answers all four in a few short lines.
+
+This structure works because it forces the kind of specificity that Module 3 taught you a strong prompt requires, but applied to the whole tool rather than to a single message. For example, once you can answer all four questions plainly, your first build prompt nearly writes itself, because you have already decided who it is for, what it does, and what it looks like when it is working. Such a spec costs you a few minutes of quiet thought, and it is the single habit most likely to keep a build project small, focused, and finished.`,
+        },
+        {
+          heading: "Start embarrassingly small: version 1 does one thing well",
+          body: `The most common planning mistake among new builders is not vagueness but ambition, and I want you to resist it directly. In order to plan a first version well, choose one thing for it to do, and do that one thing completely, rather than sketching out every feature you can eventually imagine. For example, version 1 of a quiz app is five questions and a score at the end; it is not user accounts, not a grade book that tracks every student over a semester, and not a leaderboard comparing classes against each other.
+
+Such restraint is not a failure of imagination but a discipline that protects your first success. For example, a version 1 that does one thing well is something you can finish in an afternoon and actually use next week, while a version 1 that tries to do everything is something you may still be building, unfinished, a month from now. This suggests that every feature beyond the single core purpose belongs on a separate list for later, not inside your first spec. Additionally, once version 1 exists and works, adding a second feature to a tool that already runs is a far easier task than building five features at once from nothing.`,
+        },
+        {
+          heading: "Worked example: an academic librarian's research-guide page",
+          body: `Consider a concrete pass through the four questions, because seeing the recipe applied removes any remaining uncertainty about how to use it. An academic librarian wants a self-owned alternative to a LibGuides research page for a course-integrated instruction session, and answers the four questions as follows: who uses it: students in ENGL 102 doing their first research paper; what they see first: the course name and a short welcome line; what they can do: browse three to five recommended databases with one-line descriptions, see a short list of search terms to try, and click through to a citation-help section; done: a student can find a relevant database and a citation example without asking a question at the reference desk.
+
+Notice what this spec deliberately leaves out, because the omission is as instructive as the content. For example, it does not include a live chat widget, a login for saving favorite sources, or an analytics dashboard showing which links students clicked, all of which are reasonable ideas for a later version but none of which belong inside a first, embarrassingly small build. This indicates that a strong spec is defined as much by what it excludes as by what it includes.`,
+        },
+        {
+          heading: "Let Claude improve your plan",
+          body: `Once your one-page spec is written, the AI itself is a useful second reader before you build anything, and I want you to use it that way rather than moving straight into building. In order to stress-test a plan, paste your spec into a fresh conversation with Claude and ask two direct questions: "What questions do you have before building this?" and "What should I cut from version 1?" For example, Claude may point out that your spec never says what happens when a student gets an answer wrong, or that one of your five features is really two features wearing one name.
+
+This kind of collaborative refinement, in which you supply the judgment about what matters and the AI supplies a second set of eyes on the plan itself, is a natural extension of the working relationship described in Anthropic's own framework for effective AI collaboration (Dakan & Feller, 2025). This suggests that asking Claude to critique your plan before you build is not a workaround but a genuinely good use of the tool, and it typically takes only a minute or two to reveal a gap you had not noticed on your own.`,
+        },
+        {
+          heading: "Your turn: write and refine your capstone spec",
+          body: `Before moving on, return to the one tool you wrote down in Module 1 as the thing you most wish existed, and write its one-page spec using the four questions: who uses it, what they see first, what they can do, and what "done" looks like. For example, keep your list of things it can do to three or five items, deliberately choosing the smallest version of the idea that would still be genuinely useful to you.
+
+Once your spec is written, paste it into Claude and ask the two questions from the previous section, then revise your spec based on what comes back. In order to complete this module fully, save the final version of your spec somewhere you will find it again, in the same deliberate folder habit you built in Module 2, because this is the exact document you will hand to Claude when you build this capstone tool later in the course.`,
+        },
+      ],
+      summary: [
+        "Explain why Claude builds exactly what you ask, and why a vague or missing plan, not the AI, is the usual source of a frustrating build.",
+        "Write a one-page spec by answering four questions: who uses it, what they see first, what they can do, and what “done” looks like.",
+        "Keep a version 1 small enough to do one thing completely, saving every additional idea for a later version.",
+        "Read a worked spec for a research-guide page and identify what it deliberately leaves out and why.",
+        "Use Claude as a second reader on a plan, asking what questions it has and what to cut, before building anything.",
+        "Write, refine, and save the one-page spec for your own capstone idea.",
+      ],
+    },
+    quiz: [
+      {
+        question: "What are the four questions in a one-page spec?",
+        options: [
+          "Budget, timeline, staff, and software license",
+          "Who uses it, what do they see first, what can they do, and what does “done” look like",
+          "Title, author, date, and word count",
+          "Color scheme, font, logo, and slogan",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A complete one-page spec answers who the tool is for, what they see first, what they can do (3–5 specific things), and what finished looks like.",
+      },
+      {
+        question:
+          "Which of these belongs in version 1 of a quiz app, and which should wait?",
+        options: [
+          "Five questions and a final score belong in v1; user accounts and a leaderboard should wait",
+          "A leaderboard belongs in v1; questions can be added later",
+          "User accounts belong in v1; a score does not matter",
+          "All features should be built at once so nothing is missing",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Version 1 does one thing well: showing questions and a score. Accounts, grade books, and leaderboards are reasonable later ideas, not part of an embarrassingly small first version.",
+      },
+      {
+        question: "Why do vague plans typically fail?",
+        options: [
+          "Because Claude refuses to build without a formal document",
+          "Because the AI builds exactly what you ask, and it cannot supply clarity you never provided",
+          "Because vague plans take longer to type",
+          "Because Claude only accepts plans written in bullet points",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The AI executes what it is told. If a plan is vague, the build reflects that vagueness, often producing several rebuilt versions before the real requirements become clear.",
+      },
+      {
+        question:
+          "A colleague's version-1 plan includes a quiz, a login system, a grade book, a leaderboard, and a chat widget. What is the problem?",
+        options: [
+          "There is no problem — more features are always better",
+          "It is oversized for a version 1; it should be cut down to the one core feature the tool needs first",
+          "The plan is missing a color scheme",
+          "The plan should have five questions, not five features",
+        ],
+        correctIndex: 1,
+        explanation:
+          "This spec tries to do everything at once instead of doing one thing well. A strong version 1 keeps only the core feature and saves the rest for later.",
+      },
+      {
+        question: "What should you do with your spec before you start building?",
+        options: [
+          "Delete it, since specs are just for planning",
+          "Paste it into Claude and ask what questions it has and what to cut from version 1",
+          "Keep it private so the AI cannot see it",
+          "Translate it into code yourself first",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Asking Claude to critique the spec before building, what questions it has and what to cut, surfaces gaps and oversized features in a minute or two, before any building time is spent.",
+      },
+    ],
     relatedModules: ["you-can-build-software-now", "build-quiz-app"],
   },
 

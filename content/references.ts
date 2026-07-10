@@ -55,6 +55,13 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       note: "Requires state and local government entities, including public colleges and universities, to make web content and mobile apps conform to WCAG 2.1 AA, with compliance required by April 2027 for larger entities.",
     },
   ],
+
+  5: [
+    {
+      text: "Dakan, R., & Feller, A. (2025). *AI fluency: Framework & foundations* [Online course]. Anthropic Academy.",
+      url: "https://anthropic.skilljar.com/ai-fluency-framework-foundations",
+    },
+  ],
 };
 
 export function getModuleReferences(moduleId: number): ModuleReference[] {
