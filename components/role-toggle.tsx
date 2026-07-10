@@ -3,7 +3,7 @@
 import { useRole, type ActiveRole } from "@/components/role-context";
 
 const OPTIONS: { value: Exclude<ActiveRole, null> | ""; label: string }[] = [
-  { value: "", label: "Both tracks" },
+  { value: "", label: "Both" },
   { value: "educator", label: "Faculty" },
   { value: "librarian", label: "Academic Librarian" },
 ];
@@ -16,10 +16,10 @@ export default function RoleToggle({ compact = false }: { compact?: boolean }) {
       <span
         className={`text-xs font-medium text-stone-500 ${compact ? "" : "hidden lg:inline"}`}
       >
-        Your track:
+        Examples for:
       </span>
       <select
-        aria-label="Choose your learning track"
+        aria-label="Choose which build examples to see"
         value={role ?? ""}
         disabled={!hydrated}
         onChange={(e) => setRole((e.target.value || null) as ActiveRole)}

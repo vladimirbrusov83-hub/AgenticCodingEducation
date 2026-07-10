@@ -9,7 +9,7 @@ const cards = [
     label: "I'm faculty",
     subtitle: "Professors, lecturers, adjuncts, instructional designers",
     description:
-      "You teach in higher ed. The worked examples and project ideas lean toward course tools — quiz apps, study guides, syllabus and schedule sites, rubric helpers — with FERPA and accessibility built in.",
+      "You teach in higher ed. Same 14-module course either way — the hands-on builds just include a course-flavored version for you to follow (a class quiz, a study-guide portal), alongside FERPA and accessibility guidance throughout.",
     color: "#185FA5",
     light: "#E6F1FB",
     border: "#b8d5f2",
@@ -19,7 +19,7 @@ const cards = [
     label: "I'm an academic librarian",
     subtitle: "Reference, instruction, scholarly communication, systems",
     description:
-      "You work in a college or university library. Examples lean toward research guides (a self-owned LibGuides alternative), info-literacy tutorials, booking widgets, and collection tools — with patron privacy and accessibility built in.",
+      "You work in a college or university library. Same 14-module course either way — the hands-on builds just include a library-flavored version for you to follow (an info-literacy quiz, a self-owned research guide), alongside patron-privacy and accessibility guidance throughout.",
     color: "#0F6E56",
     light: "#E1F5EE",
     border: "#b2e8d4",
@@ -38,7 +38,7 @@ export default function RoleEntry() {
               Picking up where you left off
             </p>
             <p className="text-stone-700 text-sm mt-0.5">
-              Examples are tuned for{" "}
+              Same 14 modules for everyone — the hands-on builds include a version for{" "}
               <span className="font-semibold">
                 {role === "educator" ? "faculty" : "academic librarians"}
               </span>
