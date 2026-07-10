@@ -1726,9 +1726,125 @@ Once you have found those files sitting in your folder, exactly where Claude Cod
       "Establish the professional deploy loop",
     ],
     estimatedMinutes: 60,
-    status: "coming-soon",
+    status: "published",
     description:
       "The you-drive build: your spec, your decisions, Claude Code as the crew. You'll build a multi-page portal for a course or program you run — home page, several lesson pages, a resources page, shared navigation — hand Claude Code the whole spec and review its plan, and learn git add/commit/push as “gather, label, publish.” Faculty build a course portal; academic librarians build a self-owned research-guide or program portal. You end owning the same deploy loop professionals use.",
+    content: {
+      intro:
+        "Build #1 gave you every step. Build #2 gave you checkpoints instead of steps. This build gives you a goal and a crew, and asks you to direct the whole project yourself. For example, you will write the spec, hand it to Claude Code rather than claude.ai, review its plan before a single file gets created, and finish by learning the three words that turn a finished project into a permanently live one. This is the build this entire course has been preparing you to make.",
+      sections: [
+        {
+          heading: "The project: a multi-page portal you run",
+          body: `Your project is a real portal for one course or program you currently run, built from four pieces: a home page introducing it, at least three lesson or topic pages, a resources page, and shared navigation connecting all of them so a visitor can move between pages without getting lost. For example, if you teach a course, this might be a home page, three unit pages covering real content from your syllabus, and a resources page linking readings or tools; if you work in an academic library, this might be a self-owned research-guide or program portal, a home page, three pages covering distinct research skills or services, and a resources page listing databases or contacts.
+
+Write a one-page spec for this portal before opening Claude Code, using the exact four questions from Module 5: who uses it, what they see first, what they can do, and what "done" looks like. For example, "who uses it: students in my course; what they see first: a home page with a welcome message and a link to each unit; what they can do: read three lesson pages and reach a resources page from any page on the site; done: a visitor can navigate to all four pages and back without a broken link" is a complete, workable spec for this project. This indicates that even a project this size begins with the identical discipline you have practiced since your very first flashcard site, only scaled up to four connected pages instead of one.
+
+It is worth resisting the pull toward a fifth or sixth page before you have finished the first four, in the same embarrassingly-small spirit Module 5 taught. For example, additional pages, a schedule, a syllabus archive, a discussion board, are all reasonable second-version ideas, but this build is measured by whether four connected, working pages exist, not by how many you attempted.`,
+        },
+        {
+          heading: "Directing a bigger build — you're the architect",
+          body: `Open Claude Code inside a new, empty folder, exactly as you practiced in Module 11, and hand it your entire spec in one message rather than describing the project piece by piece. For example, paste your full one-page spec and add a single instruction: "please plan this project before building anything, and show me your plan." This indicates that a project of this size benefits from a distinct planning step, one Claude Code is specifically able to offer, that a single-file build never required.
+
+Read the plan Claude Code returns carefully, in the same plain-language spirit as every build prompt in this course, checking that its proposed pages, navigation, and structure genuinely match what you asked for. For example, if the plan lists only two lesson pages when your spec called for three, or omits shared navigation entirely, this is precisely the moment to say so, before a single file exists, exactly as Module 5 taught you to let Claude poke holes in a spec before building. Once the plan looks right, a single word, "go," is enough to set the whole build in motion.
+
+This suggests that your role throughout this build is architect rather than builder: you set the goal, review the plan, and approve the direction, while Claude Code, acting as your crew, does the file-by-file work. Additionally, watch as it works exactly as Module 11 described, proposing each file and waiting for your approval, only now doing so across an entire multi-page project rather than a single one.`,
+        },
+        {
+          heading: "The three magic words: add, commit, push",
+          body: `As Claude Code works, you will begin hearing three short words that describe how a change moves from your own computer to the wider world, and it is worth translating them into plain language now rather than treating them as jargon. For example, "add" means gathering the files that changed into a single group ready to be saved; "commit" means labeling that group with a short note describing what changed, the same commit-message habit briefly introduced in Module 8; and "push" means sending that labeled group to GitHub, where Module 6's connection to Vercel picks it up automatically.
+
+You do not need to type any of these three words yourself if you would rather not, since Claude Code runs them for you the moment you ask it to "commit and push this." For example, a single plain sentence stands in for three separate technical operations that a professional developer would otherwise type by hand, one after another. This indicates that the underlying mechanics of professional software publishing, the exact process real development teams use daily, are available to you through a single plain-language request, in the same way Module 3's build recipe let you access good prompting through four simple questions rather than technical study.`,
+        },
+        {
+          heading: "Connect to Vercel once",
+          body: `Before your portal can go live, connect its new GitHub repository to Vercel exactly as you did in Module 8: open Vercel, choose "Import Git Repository," select the repository Claude Code created, and deploy it. For example, this is the same three-tool loop from Module 6, Claude builds, GitHub stores, Vercel publishes, only this time Claude Code itself is the one placing files into GitHub on your behalf rather than you dragging a downloaded file by hand.
+
+Once this one-time connection exists, every future "push" behaves exactly like the update cycle from Module 8. For example, Vercel notices the change and rebuilds your live site within about thirty seconds, with no further action from you, regardless of whether the change came from a hand-uploaded file or from Claude Code pushing on your behalf. This indicates that from this point forward, "push" is simply the word for what you already know as "publish," and the entire deploy mechanism you assembled piece by piece across three earlier modules is now working together as a single, seamless loop.`,
+        },
+        {
+          heading: "The professional loop you now own",
+          body: `With your portal live, you now hold the complete, professional deploy loop in your hands: open Claude Code, ask for a change in plain language, check the result, say "commit and push this," and the live site updates within thirty seconds. For example, this loop is not a simplified, beginner's version of how real software teams work; it is, in its essential shape, the same loop professional developers use every day, whether they are updating a small course portal or a large commercial product.
+
+I want you to sit with that fact rather than pass over it quickly. For example, the distance you have traveled since Module 1, when building software meant, for most people, filing a request and waiting, now ends with you personally directing a four-page, professionally deployed website using the identical mechanism the industry itself relies on. Undoubtedly that is a genuine transformation, not a modest one. Additionally, this is the loop you will use for the rest of this course, including your capstone, so it is worth practicing it once more before moving on.`,
+        },
+        {
+          heading: "Your turn: build, deploy, and change it once more",
+          body: `Before moving to the next module, complete the full build: write your spec, hand it to Claude Code, review and approve its plan, let it build all four pages with working navigation, connect the repository to Vercel, and confirm your portal is live with at least four working, connected pages. For example, click through every page yourself, the way Module 7 asked you to test a quiz like a student, to confirm the navigation genuinely connects all four.
+
+Once your portal is live, make one small, real change through the complete professional loop. For example, ask Claude Code to fix a typo, adjust a heading, or add one sentence to your resources page, check the result the moment it appears, and say "commit and push this." This indicates that you have now practiced, start to finish, the exact deploy loop you will return to for every project from here forward, including the capstone that closes this course.`,
+        },
+      ],
+      summary: [
+        "Write a one-page spec for a four-piece portal — home page, three or more lesson pages, a resources page, shared navigation — using the Module 5 four questions.",
+        "Hand Claude Code the full spec, review its proposed plan before any file is created, and approve it to begin the build.",
+        "Translate git add, commit, and push into plain language: gather the changes, label the save point, send it to GitHub.",
+        "Connect the new repository to Vercel once, exactly as in Module 8, so every future push deploys automatically.",
+        "Own the professional deploy loop: open Claude Code, request a change, check it, commit and push, live in about thirty seconds.",
+        "Build, deploy, and make one real post-launch change through the full loop, confirming all four pages and their navigation work.",
+      ],
+    },
+    quiz: [
+      {
+        question: "What do “add,” “commit,” and “push” mean in plain words?",
+        options: [
+          "Delete, rename, and download",
+          "Gather the changed files, label the save point, and send it to GitHub",
+          "Three different ways to start Claude Code",
+          "Steps only professional developers are allowed to use",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Add gathers the changes, commit labels that group with a short note, and push sends it to GitHub, where the Vercel connection deploys it automatically.",
+      },
+      {
+        question: "What should you do before Claude Code builds anything in this module?",
+        options: [
+          "Nothing — let it start building immediately",
+          "Hand it your full spec, ask it to plan first, and review that plan in plain words before approving",
+          "Write the code yourself first",
+          "Skip planning since Claude Code always gets it right",
+        ],
+        correctIndex: 1,
+        explanation:
+          "For a project this size, hand over the whole spec, let Claude Code propose a plan, and review it carefully before saying “go,” the same spirit as Module 5's “let Claude improve your plan” step.",
+      },
+      {
+        question: "Once your repository is connected to Vercel, how do changes reach the live site?",
+        options: [
+          "You must manually re-upload a file to GitHub every time",
+          "Asking Claude Code to “commit and push” sends the change to GitHub, and Vercel redeploys automatically within about thirty seconds",
+          "Changes never reach the live site automatically",
+          "You must reconnect Vercel every time you make a change",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Once connected, every push behaves like Module 8's update cycle: Vercel notices the change and rebuilds the live site automatically in about thirty seconds.",
+      },
+      {
+        question: "For a multi-page project like this course portal, which tool is the right choice?",
+        options: [
+          "claude.ai and its single artifact panel",
+          "Claude Code, since it works across many files and can handle GitHub directly",
+          "Neither tool can build multiple pages",
+          "A completely different, unrelated tool",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Module 11 established the rule: claude.ai suits a quick single file, while Claude Code suits multi-page projects and anything involving GitHub, exactly the shape of this build.",
+      },
+      {
+        question: "What does “you're the architect” mean in this build?",
+        options: [
+          "You must design every visual detail by hand",
+          "You set the spec and goal, review the plan, and approve the direction, while Claude Code does the file-by-file work",
+          "You are not involved in any decisions",
+          "It means you must already know how to code",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Being the architect means directing the project: writing the spec, reviewing the proposed plan, and approving it, while Claude Code, as the crew, carries out the actual file creation.",
+      },
+    ],
     relatedModules: ["meet-claude-code", "getting-it-online"],
   },
   {
