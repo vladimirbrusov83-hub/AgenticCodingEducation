@@ -1585,9 +1585,125 @@ I want to name one more thing this reflection often surfaces: a quiet shift in h
       "Run a first session",
     ],
     estimatedMinutes: 40,
-    status: "coming-soon",
+    status: "published",
     description:
       "Artifacts are perfect for one file; Claude Code works directly on your computer's files, handles many of them, and does the GitHub steps for you — a contractor working in your house rather than mailing you furniture. This module demystifies the terminal (a handful of commands, all provided), walks through installing and logging in, and runs a first session where Claude Code creates files itself while you approve each step.",
+    content: {
+      intro:
+        "Everything so far has happened inside a browser tab: claude.ai, an artifact panel, a downloaded file you carried to GitHub by hand. That approach is genuinely sufficient for a single page, and it will remain your tool of choice for a quick draft or a one-off tool for the rest of your working life. This module introduces a second tool, Claude Code, built for exactly the moment your projects start to outgrow a single file, and it asks you to open something that intimidates many non-programmers on sight: a plain, dark window called a terminal. By the end of this module, I want that intimidation gone.",
+      sections: [
+        {
+          heading: "Why upgrade from claude.ai for bigger projects",
+          body: `Claude.ai and its artifact panel are genuinely excellent for one thing: a single file you can watch appear, refine, and download. For example, every build so far in this course, your poster, your quiz, your flashcard site, has been exactly this kind of project, and claude.ai has served each one well. This indicates that nothing about the tool itself has let you down; it has simply reached the edge of what it was designed for.
+
+Claude Code, by contrast, works directly on the files sitting on your own computer, rather than inside a browser tab you copy things out of. For example, when your course portal in the next module spans fourteen linked pages, Claude Code can create, connect, and update every one of them in place, and it can carry out the GitHub steps you have been doing by hand, creating a repository, uploading files, committing changes, on your behalf. In order to picture the difference plainly, think of claude.ai as a furniture maker who mails you a finished chair one piece at a time, and Claude Code as a contractor who works directly inside your house, moving between rooms as the project grows. Additionally, this is not a replacement for what you have already learned; it is a second, more capable tool for a specific kind of job, and Module 11's final section tells you exactly when to reach for each one.`,
+        },
+        {
+          heading: "The terminal without fear",
+          body: `A terminal is simply a plain, text-based way of talking to your own computer, typing a short instruction and pressing enter rather than clicking an icon, and it has existed since long before graphical interfaces did. For example, where you might normally double-click a folder icon to open it, a terminal accomplishes the identical task by typing a short word and the folder's name; nothing about this is more dangerous than clicking, only less familiar.
+
+It is worth being direct about the fear many non-programmers carry into this moment, because it is common and almost entirely unearned. For example, in order to work with Claude Code throughout this entire course, you will use roughly five commands, all of which this module and the next provide to you exactly as typed, with nothing to memorize and nothing to invent on your own. This indicates that you are not learning "the terminal" as a general skill; you are learning five specific, provided phrases, in the same way you learned five or six specific build-prompt phrases in Module 3.
+
+Undoubtedly the single most reassuring fact about Claude Code is that it asks before it acts. For example, before creating a file, changing one, or running any command that affects your computer, it shows you exactly what it intends to do and waits for your approval, in the same describe, look, describe rhythm you have practiced since Module 2. Additionally, ordinary use of a terminal, typing the commands this course provides, cannot meaningfully damage your computer; the commands that could are not part of your five, and Claude Code's habit of asking first is a further safeguard on top of that.`,
+        },
+        {
+          heading: "Installing, step by step",
+          body: `Claude Code installs through a single command typed into your terminal, and because installation instructions occasionally change as the tool improves, this module points you to the source that is always current rather than a fixed set of steps that could go stale. For example, visit Anthropic's official Claude Code documentation, find the installation section for your operating system, Mac, Windows, or Linux, and copy the exact command shown there into your terminal.
+
+Once the install finishes, you will be asked to log in with your Claude account, the same one you created in Module 2, connecting Claude Code to the account you already have rather than creating a new one. This indicates that Claude Code is not a separate product requiring a separate subscription decision; it is a different way of working with the same Claude you already know. For example, success looks like a simple, welcoming prompt inside your dark terminal window, ready for your first instruction, rather than any error message or stalled progress bar. If a screen looks different from what the documentation describes, remember Module 6's advice: the underlying ideas stay stable even when a specific screen changes, and asking Claude directly to help interpret what you are looking at is always available to you.
+
+It is worth naming one small but common snag before you begin: an install command occasionally fails on a first attempt because of an unrelated, outdated piece of software already on your computer. For example, if the exact error message means nothing to you, and it very well may not, copy it in full and paste it into a claude.ai conversation, asking plainly what it means and what to try next. This suggests that even a stalled install is not a dead end; it is simply one more moment where describing precisely what you see, the same habit from Module 9's bug reports, gets you unstuck.`,
+        },
+        {
+          heading: "Your first session: it acts, you approve",
+          body: `With Claude Code installed, create a new, empty folder somewhere findable, such as your Desktop, and open Claude Code inside it using the single command the documentation provides. For example, once it starts, type a plain-language request such as "build a simple one-page 'about my course' site," in the same spirit as your very first Module 2 prompt, and watch what happens next closely.
+
+The genuine difference from claude.ai reveals itself immediately. For example, rather than showing you a page inside an artifact panel, Claude Code tells you it intends to create a specific file, names it, and waits for your approval before doing so. This indicates that the core habit from Module 2, describe, look, describe, has not disappeared; it has simply moved from watching an artifact update to watching Claude Code narrate and request approval for each file it touches. Additionally, once you approve, open your folder in your computer's ordinary file browser, and you will find the actual file sitting there, exactly as if you had built it yourself by hand, because in every meaningful sense, you did.`,
+        },
+        {
+          heading: "When to use which tool",
+          body: `With both tools now available to you, a short, practical rule settles which one to reach for on any given day. For example, choose claude.ai and its artifact panel for a quick single-file tool, a draft you want to see appear instantly, or anything you expect to finish in one sitting, exactly as you have done through Module 10. Choose Claude Code instead for a multi-page project, an update to a project that already spans several files, or any task that involves GitHub directly, since it carries out those steps for you rather than asking you to do them by hand.
+
+This indicates that the choice is not a matter of one tool being more advanced or more "real" than the other; it is a matter of matching the tool to the size of the job, in the same way a builder reaches for a screwdriver for one task and a drill for another. For example, the very next module, your full course portal, is precisely the kind of multi-page project Claude Code was built for, which is why this module exists exactly where it does in the course.`,
+        },
+        {
+          heading: "Your turn: install and build your first Claude Code page",
+          body: `Before moving on, complete the whole sequence yourself: install Claude Code following the current official instructions, log in with your existing Claude account, create a new empty folder, open Claude Code inside it, and ask it to build a one-page "about my course" site. For example, approve each step as Claude Code proposes it, and once it finishes, open your folder in your file browser to confirm the files genuinely exist on your own computer.
+
+Once you have found those files sitting in your folder, exactly where Claude Code told you they would be, you have crossed the threshold this module exists to cross: from a tool that shows you a result inside a browser tab to a tool that works, with your approval at every step, directly on your own machine. For example, the next module puts this new tool to its first real test, a full, multi-page course portal that would be considerably more cumbersome to build one artifact at a time.`,
+        },
+      ],
+      summary: [
+        "Explain why Claude Code suits multi-page projects and GitHub work better than claude.ai's single-file artifact panel.",
+        "Understand a terminal as a plain, text-based way of instructing your computer, using only the handful of commands this course provides.",
+        "Recognize that Claude Code asks for approval before acting, following the same describe, look, describe rhythm learned in Module 2.",
+        "Install Claude Code from the current official documentation and log in with an existing Claude account.",
+        "Run a first session, approving each file Claude Code proposes, and find the resulting files in your own computer's file browser.",
+        "Choose the right tool for a given project: claude.ai for a quick single file, Claude Code for multi-page projects and GitHub work.",
+      ],
+    },
+    quiz: [
+      {
+        question: "What is the main advantage of Claude Code over claude.ai for a bigger project?",
+        options: [
+          "It is entirely unrelated to Claude and requires a separate account",
+          "It works directly on your computer's files, handles many files at once, and can carry out GitHub steps for you",
+          "It only works for JavaScript projects",
+          "It removes the need to ever approve a change",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Claude Code works directly on files on your own computer rather than inside a browser artifact, handles multi-file projects, and can carry out GitHub steps like creating repositories and committing changes on your behalf.",
+      },
+      {
+        question: "What is a terminal?",
+        options: [
+          "A specialized programming language only experts can learn",
+          "A plain, text-based way of instructing your computer, typing a command instead of clicking an icon",
+          "A separate physical device you must purchase",
+          "A type of virus scanner",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A terminal is simply a text-based way of talking to your computer. This course uses roughly five specific, provided commands, nothing you need to invent yourself.",
+      },
+      {
+        question: "Does Claude Code make changes to your files without asking first?",
+        options: [
+          "Yes, it acts freely with no approval needed",
+          "No — it shows you what it intends to do and waits for your approval before acting",
+          "Only on Windows computers",
+          "Only if you disable a setting",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Claude Code narrates its intended action and waits for your approval before creating or changing a file, following the same describe, look, describe rhythm from Module 2.",
+      },
+      {
+        question: "What does it mean that Claude Code “works on your files”?",
+        options: [
+          "It uploads your files to a public website automatically",
+          "It creates and edits real files sitting in a folder on your own computer, which you can find in your file browser",
+          "It only works with files already on GitHub",
+          "It replaces your computer's operating system",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Once you approve a step, Claude Code creates or edits actual files in the folder you opened it in. You can open your ordinary file browser afterward and find them there.",
+      },
+      {
+        question: "Roughly how many terminal commands does this course require you to know?",
+        options: [
+          "Several hundred",
+          "A handful — roughly five, all provided by the course",
+          "None — the terminal is never used",
+          "A different command for every single build",
+        ],
+        correctIndex: 1,
+        explanation:
+          "This course uses roughly five terminal commands throughout, all provided exactly as typed, in the same way Module 3 provided a small phrasebook of prompt phrases.",
+      },
+    ],
     relatedModules: ["build-course-portal", "meet-your-ai-builder"],
   },
   {
