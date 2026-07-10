@@ -2041,9 +2041,123 @@ Once the rebuild works, run the accessibility prompt from Module 4 on the result
       "Complete and ship the capstone, and know where to go next",
     ],
     estimatedMinutes: 45,
-    status: "coming-soon",
+    status: "published",
     description:
       "The finish line. You'll get honest monthly cost numbers (the free tiers are genuinely enough), the habits of people whose projects don't break, and a clear-eyed look at the limits where a real developer is warranted. Then you build and ship your capstone — the tool from your Module 1 index card — against a ship checklist: no personal data, accessibility checked, no secrets, tested with odd input, and the IRB and ownership gates cleared. A closing reflection names what you can now do that you couldn't before.",
+    content: {
+      intro:
+        "You have built three real, working tools and shipped every one of them to a live address. This closing module asks three last, practical questions before you build the one project that started this entire course: what does this actually cost, what habits keep a shipped tool from quietly rotting, and where exactly do your own limits sit. Then it hands the rest of the module to you, because the only thing left to teach is the tool you have been carrying in your pocket since Module 1.",
+      sections: [
+        {
+          heading: "What this hobby costs — free tiers and honest numbers",
+          body: `It is worth answering the cost question directly rather than leaving it vague, because uncertainty about price is a genuine reason some builders hesitate. For example, GitHub's free tier and Vercel's free tier, the two services behind every deploy in this course, remain free indefinitely for the kind of small, single-builder projects you have made here; neither ever required a credit card at any point in this course.
+
+Claude itself offers a free tier sufficient for a considerable amount of building, and a paid subscription, priced similarly to a modest streaming service, for anyone who outgrows it through heavier daily use. For example, in order to make sense of what you might see mentioned as "tokens" if you ever explore a paid plan more closely, think of a token roughly as the meter on an old prepaid phone plan: a rough unit of usage that a subscription simply covers a generous allotment of, rather than something you need to track sentence by sentence. This indicates that for the scope of this course, and very likely for your capstone and the projects that follow it, the honest monthly cost of everything you have learned here is zero, and it remains reasonable even if your habits grow considerably more ambitious than this course required.
+
+Pricing details for any of these services can shift over time, so treat the specific numbers here as a snapshot rather than a permanent guarantee, and check each service's own pricing page if a firm figure ever matters to your decision. This suggests that the durable fact worth remembering is not a dollar amount at all, but the shape of the arrangement: free tiers exist specifically to let an individual builder like you work seriously, at real scale, before money ever enters the conversation.`,
+        },
+        {
+          heading: "Habits of people whose stuff doesn't break",
+          body: `A small number of habits separate builders whose projects hold up over a semester from builders whose projects quietly decay, and none of them require any skill beyond what this course has already given you. For example, GitHub already keeps every version of your project without any extra effort on your part, exactly as Module 6 explained, which means the single most important backup habit is simply committing and pushing your changes rather than leaving them sitting only in a conversation.
+
+Testing after every change, not only after a big one, catches problems while they are still small and easy to describe. For example, a one-line changelog note, "added a fourth lesson page," costs a few seconds and saves considerable confusion when you return to a project weeks later. Additionally, the mobile check from Module 10 deserves to become a permanent habit rather than a one-time exercise, since a tool that looked fine on your laptop in September can quietly fail a phone screen you never personally tested again. This suggests one further rule worth holding as close to inviolable as any in this course: never edit only the live version of something students are actively using mid-semester. In order to change a tool safely while people depend on it, make and test the change first, exactly as Module 9 taught, and only then push it live.`,
+        },
+        {
+          heading: "Knowing your limits (and that's fine)",
+          body: `Vibe-coding covers a genuinely large share of what an educator or academic librarian will ever need to build, and it is worth being equally honest about where its edge sits. For example, a project that handles real payments, one that manages logins tied to real student accounts and real grades, or one that stores genuinely sensitive data at any meaningful scale has crossed into territory where a professional developer, not this course, is the responsible next step.
+
+This is not a failure of what you have learned; it is simply an accurate map of where the terrain changes. It is evident that recognizing this boundary is itself a mark of a mature builder rather than a limited one. For example, in the same way a skilled home cook knows exactly which dish belongs to a professional kitchen instead, a skilled vibe-coder knows exactly which project belongs to a professional developer. Additionally, everything you have built in this course, three shipped projects and the capstone ahead, sits comfortably inside the ninety percent vibe-coding genuinely covers, and knowing where the remaining ten percent begins is what keeps you safely, confidently inside it.`,
+        },
+        {
+          heading: "The capstone and its ship checklist",
+          body: `Now build the tool you have been carrying since Module 1: return to your original index card, the one wish-list sentence you wrote before you had built anything, and to the one-page spec you wrote and refined for it in Module 5. For example, build it using whichever tool suits its size, claude.ai for a single page, Claude Code for something spanning several, following the exact spec-to-build-to-deploy loop you have now practiced three times over.
+
+Before you consider your capstone finished, run it against a ship checklist rather than trusting a quick glance, in the same "it looks like it works" spirit Module 9 warned about. For example, in order to ship responsibly, confirm: it solves your real problem, it lives at a working URL, it works on a phone, and one real colleague or student has actually used it and told you one thing to improve. Additionally, confirm the five compliance checks from Module 13 in one pass: no personal data collected, or the repository kept private with your institution's policy already checked; the accessibility prompt run and spot-checked yourself; no secrets sitting anywhere in the code; the tool tested once with a deliberately wrong or odd input; and, if relevant, the two thirty-second gates cleared, an IRB check if the tool gathers data for research, and a known IP position if it lives on university systems and ownership matters to you. This indicates that "done" for a capstone means more than "it runs"; it means it has survived the exact scrutiny a professional would apply before calling any project ready.`,
+        },
+        {
+          heading: "Where to go from here",
+          body: `Once your capstone is live, the most valuable next step is simply to share it: send the link to a colleague, mention it in a department meeting, or post it wherever your peers already look for new tools. For example, teaching a colleague the Module 2 loop, the free account, the artifact panel, the describe-look-describe rhythm, is widely considered one of the strongest ways to cement your own understanding of it, since explaining a skill to someone else reliably surfaces the parts you had only half-understood yourself.
+
+Beyond that, a simple ladder of ambition awaits whenever you are ready for it. For example, in order to grow past this course at your own pace, add one new feature to a project you have already shipped, build a second tool for your whole department rather than only your own class or desk, or aim, over time, at something serving your entire program or campus. This suggests that the three builds behind you were never the ceiling of what this course prepared you for; they were the floor.`,
+        },
+        {
+          heading: "Look back — a short reflection",
+          body: `Before you close this course, reread the index card from Module 1, the single sentence naming the one tool you wished existed, back when that wish was still just a sentence. For example, list, alongside it, the three tools you have actually shipped: a quiz app, a flashcard site, a full course portal, each one live at its own real address.
+
+Write one final sentence, in your own words, naming something you can now do that you genuinely could not do when you began this course. That sentence, more than any quiz score or finished project, is the true measure of what these fourteen modules were built to give you. While the specific tools you built here are small, the shift underneath them is not: you are, as of this module, someone who identifies a real problem in your own teaching or library work and simply builds the solution, rather than someone who waits for it to be built by somebody else. Undoubtedly you must carry that identity forward, past this course, into whatever your students and patrons need next.`,
+        },
+      ],
+      summary: [
+        "State the honest monthly cost of everything in this course: free, using GitHub's and Vercel's free tiers and Claude's free tier, with a modest paid option only for heavier use.",
+        "Adopt the habits that keep a shipped tool from decaying: commit and push often, test after every change, keep a one-line changelog, and never edit only the live version mid-semester.",
+        "Recognize the honest edge of vibe-coding — real payments, real student-account logins, and sensitive data at scale — as the signal to bring in a professional developer.",
+        "Build and ship the capstone against a full checklist: solves the real problem, live URL, works on a phone, tested by a real person, and every Module 13 compliance check cleared.",
+        "Share the capstone, teach a colleague the Module 2 loop, and use the feature/department/program ladder to keep growing past this course.",
+        "Reread the Module 1 index card, list the three shipped builds, and write one sentence naming what you can now do that you could not do before.",
+      ],
+    },
+    quiz: [
+      {
+        question: "In plain words, what is a “token” in the context of an AI subscription?",
+        options: [
+          "A physical device you must buy separately",
+          "A rough unit of AI usage, similar to minutes on an old prepaid phone plan, that a subscription covers a generous allotment of",
+          "A password required to log in",
+          "A type of file format",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A token is roughly a unit of usage, the same idea as minutes on an old phone plan. A subscription covers a generous allotment, so you do not need to track usage sentence by sentence.",
+      },
+      {
+        question: "Which of these projects has crossed into territory where a professional developer is warranted?",
+        options: [
+          "A quiz app for your own class",
+          "A flashcard site for research-skills vocabulary",
+          "A tool handling real payments and logins tied to real student accounts",
+          "A course portal with four connected pages",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Real payments, logins tied to real student accounts, and sensitive data at scale sit outside what vibe-coding is meant to cover. Recognizing this boundary is a sign of a mature builder, not a limited one.",
+      },
+      {
+        question: "What is the key version-safety habit this module emphasizes?",
+        options: [
+          "Never make any changes once a tool is live",
+          "Never edit only the live version of a tool students are actively using mid-semester — make and test the change first, then push it live",
+          "Delete old versions to save space",
+          "Only GitHub's paid plan keeps version history",
+        ],
+        correctIndex: 1,
+        explanation:
+          "GitHub already keeps every version automatically. The habit that protects real users is testing a change before pushing it live, never editing the live version directly while people depend on it.",
+      },
+      {
+        question: "What does the capstone's ship checklist require?",
+        options: [
+          "Only that the tool loads without crashing",
+          "It solves the real problem, has a live URL, works on a phone, was tested by a real person, and clears every Module 13 compliance check",
+          "A minimum of ten pages",
+          "A paid subscription to Claude, GitHub, and Vercel",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Shipping responsibly means more than “it runs”: solving the real problem, a working live URL, a working phone experience, real feedback, and the full set of Module 13 checks, no personal data, accessibility, no secrets, odd-input testing, and the IRB/IP gates where relevant.",
+      },
+      {
+        question: "True or false: you need to pay for GitHub and Vercel to complete this course.",
+        options: [
+          "True — both require a paid plan after Module 8",
+          "False — their free tiers are genuinely sufficient for every project in this course",
+          "True, but only for the capstone",
+          "False, but only if you never deploy more than one project",
+        ],
+        correctIndex: 1,
+        explanation:
+          "GitHub's and Vercel's free tiers comfortably cover every build in this course, including the capstone, with no payment required at any point.",
+      },
+    ],
     relatedModules: ["plan-before-you-build", "building-responsibly"],
   },
 ];
