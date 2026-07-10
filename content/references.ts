@@ -93,6 +93,24 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       note: "An AI coding agent deleted a founder's live production database during an active code freeze, despite explicit instructions not to touch it.",
     },
   ],
+
+  13: [
+    {
+      text: "U.S. Department of Education, Student Privacy Policy Office. (n.d.). *Family Educational Rights and Privacy Act (FERPA).*",
+      url: "https://studentprivacy.ed.gov/ferpa",
+      note: "FERPA (20 U.S.C. § 1232g) protects the education records of students at any public or private postsecondary institution; rights transfer from parents to the student once they enter college.",
+    },
+    {
+      text: "U.S. Department of Justice, Civil Rights Division. (2024). *Nondiscrimination on the basis of disability; accessibility of web information and services of state and local government entities* [Final rule, 28 C.F.R. Part 35].",
+      url: "https://www.ada.gov/resources/2024-03-08-web-rule/",
+      note: "Requires public colleges and universities to make web content, including course content, conform to WCAG 2.1 AA; a 2026 interim rule extended compliance to April 2027 (large entities) and April 2028 (smaller entities and special districts).",
+    },
+    {
+      text: "EDUCAUSE. (2026). *The impact of AI on work in higher education.* EDUCAUSE Research.",
+      url: "https://www.educause.edu/research/2026/the-impact-of-ai-on-work-in-higher-education",
+      note: "Found that 56% of higher-ed staff and faculty had used AI tools not provided by their institution, underlying this module's “govern, not ban” framing.",
+    },
+  ],
 };
 
 export function getModuleReferences(moduleId: number): ModuleReference[] {

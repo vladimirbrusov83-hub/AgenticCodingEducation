@@ -1872,9 +1872,152 @@ Once your portal is live, make one small, real change through the complete profe
       "Adopt the golden default: collect no personal data, build inside the approved path",
     ],
     estimatedMinutes: 50,
-    status: "coming-soon",
+    status: "published",
     description:
       "The compliance-spine module and the course's real moat. In plain words: CSV and JSON are just organized lists you can feed into your builds; student records are the bright red line (FERPA); public college and university web content must meet accessibility standards (ADA Title II / Section 504); research-facing tools may need IRB review; and your institution may own software you build on its time and systems. The golden default runs through all of it — collect no personal data, and build inside your campus's approved path. Not legal advice.",
+    content: {
+      intro:
+        "Every module so far has taught you how to build. This one teaches you where the fences are, and I want to be direct about why it runs longer than any module before it: this is the compliance spine of the whole course, and it is the single thing that separates a professional-quality builder from an enthusiastic one. None of what follows is legal advice; your own institution's policy and counsel govern in every case. What this module gives you instead is a plain-language map of the territory, so that you recognize a fence the moment you approach it rather than discovering it only after you have crossed one.",
+      sections: [
+        {
+          heading: "Data is just organized lists — CSV and JSON in plain words",
+          body: `Every build in this course so far has used content you typed directly into a prompt, ten quiz questions here, a set of flashcards there, and it is worth learning two plain, ordinary formats that let you hand Claude far larger sets of content at once. For example, a CSV file, short for comma-separated values, is simply a spreadsheet saved as plain text, with each row on its own line and each column separated by a comma, the exact format Excel or Google Sheets produces the moment you choose "Export as CSV."
+
+A JSON file organizes the same information differently, as a labeled list that computers, and Claude, read especially easily. For example, the same three books that might sit in three rows of a spreadsheet, "Book, Author, Year," become, in JSON, a labeled entry for each book with its title, author, and year explicitly named. This indicates that CSV and JSON are not mysterious technical formats reserved for programmers; they are simply two different plain-text ways of writing down the same organized list, and you have almost certainly already created a CSV file without realizing it, the moment you exported a spreadsheet.`,
+        },
+        {
+          heading: "Feeding data to your builds",
+          body: `Once you have a spreadsheet, exporting it as a CSV and handing it to Claude or Claude Code is remarkably simple: paste the exported text, or attach the file directly, and say plainly, "use this as the question bank for my quiz." For example, a fifty-row spreadsheet of exam questions, built once in a tool you already know how to use, replaces ten hardcoded questions you would otherwise have had to type by hand into a prompt.
+
+This matters for a reason beyond simple convenience. In order to update a quiz built this way, you edit the spreadsheet and hand Claude the new version, rather than describing each change in a conversation. For example, adding a hundred new questions later costs you a spreadsheet edit rather than a hundred new sentences typed one at a time into a chat. This indicates that a data-driven build scales far more gracefully than a hand-typed one. Additionally, this same pattern, a CSV or JSON file handed to Claude as raw material, applies equally to reading lists, event calendars, and vocabulary sets, any list-shaped content your work already produces.`,
+        },
+        {
+          heading: "The bright red line: student records and FERPA",
+          body: `Some content must never be pasted into an AI chat or uploaded to a public repository, and it is worth naming this line with complete clarity rather than leaving it implied. For example, names tied to grades, student ID numbers, email addresses, transcripts, and enrollment lists all sit on the wrong side of that line, without exception, regardless of how convenient it would be to paste a real class roster into a build prompt.
+
+The federal law behind this line is FERPA, the Family Educational Rights and Privacy Act, which protects the education records of students at any public or private postsecondary institution, and which applies to you personally the moment real student data is involved in anything you build (U.S. Department of Education, Student Privacy Policy Office, n.d.). This indicates that FERPA is not an abstract policy that lives in a compliance office somewhere; it is a direct constraint on what you, specifically, may type into a chat window. There is no doubt that the safest response to a law this direct is a single, consistent default rather than a case-by-case judgment call each time. For example, this course's own golden default keeps every build free of this risk entirely: collect no personal data at all, keep everything inside a visitor's own browser, exactly the way this course's own progress tracker works, and use fake, invented names and numbers while you are still building and testing. It is worth adding one clarifying note: COPPA, the federal rule protecting children under thirteen online, is a K-12 concern that does not apply to your adult college students; FERPA, not COPPA, is the line that matters in this course.`,
+        },
+        {
+          heading: "Everyone must be able to use it — accessibility law with teeth",
+          body: `Module 4 introduced accessibility as good practice; this section returns to it as law. The United States Department of Justice's rule under Title II of the Americans with Disabilities Act requires public colleges and universities to make their web content, including course content, meet the WCAG 2.1 AA accessibility standard, and a 2026 interim rule extended the original compliance dates by one year: large public entities with a population of fifty thousand or more now face an April 2027 deadline, while smaller entities and special districts face April 2028 (U.S. Department of Justice, 2024). For example, private institutions are not exempt from this pressure either, since parallel expectations exist under the ADA and Section 504 of the Rehabilitation Act.
+
+This is also where higher education handles disability accommodation more broadly, and it is worth stating plainly that there is no IEP, the K-12 individualized education plan, once a student reaches college; the relevant framework is ADA and Section 504 instead. For example, in order to build accessibly by habit rather than by afterthought, run the plain checklist from Module 4 on every build: readable text size, sufficient color contrast, full keyboard usability, and image descriptions for anything visual, closed with the same magic prompt, "make this accessible: good contrast, readable text, works without a mouse." This suggests that building accessibility in from the first prompt is considerably cheaper than retrofitting it after a tool is already in front of real students, in the same way it is cheaper to design a ramp into a new building than to add one after construction is finished.`,
+        },
+        {
+          heading: "Does this need IRB review? A thirty-second gate",
+          body: `An Institutional Review Board, or IRB, is the campus committee that approves research conducted on human subjects, and it is worth learning one plain gate rather than an entire research-ethics course. For example, if your tool collects data from real people specifically to answer a research question, or with the intention of publishing or presenting findings, a survey, a study screener, anything where generating research data is the point, stop and contact your IRB office before you build or launch it, since even a simple form can require review.
+
+If your tool instead exists to help you teach your own class or run your own library service, a quiz for your students, a room-booking widget for your branch, it almost certainly does not need this review. For example, this indicates that the deciding question is purpose, not complexity: a technically simple survey built for research purposes can require IRB review, while a technically complex course portal built purely to teach does not. Additionally, when genuine uncertainty remains after asking yourself this question, the single correct move is a short email to your campus IRB office; this module is a gate to teach you when to ask, not a substitute for asking.`,
+        },
+        {
+          heading: "Who owns what you build? The IP self-check",
+          body: `A question few courses like this one ever raise directly is who owns the software you build, and the honest answer is that it depends on your institution's intellectual property policy, which varies from campus to campus. Universities generally let faculty keep ownership of traditional scholarly works and course materials, but many claim ownership of software specifically when it makes significant use of university resources or is tied closely to your job duties. For example, a study guide you build entirely on your own laptop, on your own time, for your own class is likely yours in the plain sense that matters to you; a tool built on university time, on university systems, that the institution then comes to depend on operationally, may not be.
+
+The professional move here is a simple three-step checklist rather than a legal deep dive. First, know that your institution's IP policy exists, and get a rough sense of what it says before you build something you might later want to own outright or share widely. For example, a five-minute read of your faculty handbook's IP section, or a short email to a department chair or your campus's technology-transfer office, resolves most uncertainty. Second, when genuine doubt remains, ask directly, the same instinct this module has taught for FERPA and IRB questions alike. Third, if ownership matters to you for a particular project, keep it on personal accounts and personal time, deliberately separate from university systems. This indicates that knowing your position before you build, not after, is how you keep what is genuinely yours; frame this as a form of empowerment rather than a source of anxiety. This is not legal advice, and your institution's actual policy and counsel govern in every case.`,
+        },
+        {
+          heading: "Play by your institution's rules — the golden path",
+          body: `Most colleges and universities now maintain some form of AI, data, and IT policy, and the documented best practice among institutions facing widespread informal AI use is to govern that use rather than attempt to ban it outright. It is evident why: Module 1's own EDUCAUSE data showed that fifty-six percent of higher-ed staff and faculty already use AI tools their institution does not officially provide (EDUCAUSE, 2026), so a ban would simply push existing behavior further out of view rather than end it. For example, in order to build inside your institution's golden path rather than around it, sign in through your campus's official single sign-on when a tool genuinely needs accounts, use whichever AI tools your institution has actually licensed and approved for work-related tasks, and never put real personal data, student names, ID numbers, grades, or patron records, into any AI prompt, regardless of which tool you are using.
+
+This indicates that working with your campus IT or instructional-technology office, rather than quietly around it, is the professional norm this course is built to instill. For example, telling your department what you built, keeping a simple one-line inventory of your live tools, and routing anything that touches real data through officially approved channels costs you almost nothing and protects you considerably. As with the previous section, this is not legal advice; your institution's own counsel and written policy govern.`,
+        },
+        {
+          heading: "Public vs. private repositories",
+          body: `It is worth returning to a term from Module 8 with more precision now that your projects may carry more sensitive content. For example, a public GitHub repository means exactly what it sounds like: anyone on Earth who knows or finds the address can read every file inside it, which is entirely appropriate for the quiz, flashcard, and portal projects you have built so far, none of which contain personal data.
+
+In order to make a repository private instead, GitHub's settings offer a straightforward toggle, and private is the correct choice whenever a project's content should not be publicly readable, for reasons unrelated to whether the project itself is otherwise appropriate to build. For example, a private repository is worth considering for an early, unfinished draft you are not ready to show anyone, though it is worth remembering that Vercel's free plan may require a public repository for automatic deployment on some account types, exactly as Module 8 noted. This suggests that the safest posture remains the one this entire module has repeated: keep real personal data out of your builds entirely, so that the public-versus-private question never becomes the only thing standing between a mistake and the public internet.`,
+        },
+        {
+          heading: "Practical patterns: question banks, reading lists, calendars",
+          body: `With the fences now clearly marked, it is worth closing on the wide, genuinely safe territory that remains, because this module is not meant to leave you cautious about building; it is meant to leave you confident about building the right things well. For example, question banks, reading lists, event calendars, and vocabulary sets are all safe, high-value content to feed into your builds using the CSV and JSON patterns from earlier in this module, since none of them involve any individual's personal information.
+
+Consider a worked example that ties the whole module together: updating your Module 7 quiz to load fifty questions from a spreadsheet instead of the ten you originally typed by hand. For example, export your expanded question bank as a CSV, hand it to Claude or Claude Code with the instruction "load these fifty questions from this file instead of the ten currently in the app," and then run the Module 4 accessibility prompt on the result before considering it finished. This indicates that the practical, everyday use of everything in this module is not restrictive at all; it is simply the professional habit of building bigger, richer tools while keeping every one of them safely on the right side of every line this module has drawn.`,
+        },
+        {
+          heading: "Your turn: rebuild with real data, safely",
+          body: `Before moving on, build a fifteen-row spreadsheet of quiz questions or a book list, entirely free of any real person's personal information, and export it as a CSV. For example, hand this file to Claude Code or claude.ai and ask it to rebuild your Module 7 quiz or Module 10 flashcard site to load its content from this file rather than from questions typed directly into the original prompt.
+
+Once the rebuild works, run the accessibility prompt from Module 4 on the result, and confirm the golden default holds throughout: no personal data anywhere in the file, no student records anywhere near a prompt, and a tool that would remain entirely appropriate even if its repository were fully public. For example, undoubtedly the single habit this long module has been building toward is exactly this: bigger, richer, data-driven tools that never cross the lines this module exists to mark.`,
+        },
+      ],
+      summary: [
+        "Explain CSV and JSON in plain words as two ordinary formats for organized lists, and export a spreadsheet as CSV to feed a build.",
+        "Hand a data file to Claude or Claude Code as a question bank or content source, rather than retyping content by hand.",
+        "Identify the bright red line — student names, IDs, grades, transcripts, enrollment lists — and state the golden default: collect no personal data, use fake data while building.",
+        "Explain why public college and university web content must meet WCAG 2.1 AA accessibility standards, and run the Module 4 accessibility prompt on every build.",
+        "Apply the thirty-second IRB gate: research-purpose data collection needs a check; a tool built purely to teach or run a library service almost never does.",
+        "Run the three-step IP self-check before building something you may want to own or share: know the policy, ask when in doubt, keep personal projects on personal accounts.",
+        "Build inside your institution's golden path — official sign-on, approved AI tools, no real personal data in any prompt — rather than around it.",
+        "Distinguish public from private GitHub repositories and know that the golden default makes the distinction far less risky either way.",
+        "Rebuild a real project to load fifty rows of safe, non-personal data from a CSV file, and confirm it remains fully accessible.",
+      ],
+    },
+    quiz: [
+      {
+        question:
+          "Which of these is safe to paste into an AI chat while building a class quiz?",
+        options: [
+          "A spreadsheet of quiz questions and answers with no student names",
+          "A class roster with student names and grades",
+          "A list of student email addresses",
+          "An enrollment list with ID numbers",
+        ],
+        correctIndex: 0,
+        explanation:
+          "A question bank with no personal information is safe and high-value content. Rosters, grades, emails, and ID numbers are all student records protected by FERPA and must never be pasted into an AI tool.",
+      },
+      {
+        question:
+          "What does the 2024 DOJ rule under ADA Title II require of public colleges and universities?",
+        options: [
+          "Nothing — the rule only applies to K-12 schools",
+          "Web content and mobile apps, including course content, must meet the WCAG 2.1 AA accessibility standard",
+          "Only new websites built after 2027 must be accessible",
+          "It is a voluntary guideline with no compliance date",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The rule requires public higher-ed web content, including course content, to conform to WCAG 2.1 AA, with compliance dates of April 2027 for larger public entities and April 2028 for smaller ones after a 2026 extension.",
+      },
+      {
+        question: "Which of these tools needs a check with the IRB office before building?",
+        options: [
+          "A quiz you built for your own class",
+          "A room-booking widget for your library",
+          "A survey designed to collect data from participants for a research study you plan to publish",
+          "A flashcard site for your own students",
+        ],
+        correctIndex: 2,
+        explanation:
+          "The IRB gate turns on purpose: a survey built specifically to generate research data for publication needs a check before launch, while tools built purely to teach or run a library service almost never do.",
+      },
+      {
+        question:
+          "According to the IP self-check, who may own a tool built heavily on university time and systems that the institution comes to depend on?",
+        options: [
+          "It is always entirely yours, with no exceptions",
+          "It may belong to the institution, depending on your campus's IP policy — know the policy and ask when in doubt",
+          "It automatically becomes public domain",
+          "Ownership never applies to software, only to written scholarship",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Many institutions claim ownership of software built using significant university resources or tied to job duties, even while letting faculty keep traditional scholarly works. Knowing the policy before building, and asking when unsure, is the professional move.",
+      },
+      {
+        question:
+          "Why does this module recommend “collect no personal data” combined with “build inside the golden path”?",
+        options: [
+          "Because it is required by every single campus without exception",
+          "Because together they are the safest default: no real data ever touches an AI prompt, and any tool you build stays inside institutionally approved, governed channels",
+          "Because it removes the need to ever think about accessibility",
+          "Because it means you never need to ask your IT office anything",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Collecting no personal data removes the risk at its source, and building inside institutionally approved tools and channels, rather than around them, keeps you aligned with how most campuses now choose to govern AI use rather than ban it.",
+      },
+    ],
     relatedModules: ["what-is-a-website", "habits-costs-capstone"],
   },
   {
