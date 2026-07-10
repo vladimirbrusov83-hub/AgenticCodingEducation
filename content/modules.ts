@@ -177,9 +177,122 @@ Keep that note somewhere you will see it, because it becomes your capstone, the 
       "Build a first working page in about ten minutes",
     ],
     estimatedMinutes: 30,
-    status: "coming-soon",
+    status: "published",
     description:
       "Hands-on from the first minute. You'll create a free Claude account, tour the chat window, and use a guided prompt to build a real one-page site for a class or library program you run — watching it appear live in an artifact panel. Then you'll change it with plain-language requests and download the finished .html file to your own computer.",
+    content: {
+      intro:
+        "In the previous module you named the tool you most wish existed. In this one you will build something real, and you will do it within the next ten or fifteen minutes, before any part of you has the chance to conclude that building is meant for other people.",
+      sections: [
+        {
+          heading: "Getting your Claude account",
+          body: `The only tool you need for your first several builds is a free account with Claude, the AI assistant built by Anthropic that you will work with throughout this course (Anthropic, 2025). For example, in order to create one, you open a web browser, go to [claude.ai](https://claude.ai), and sign up with an email address or an existing Google account, in the same few steps you would use for any other website. This indicates that the barrier to beginning is genuinely small, and that no software needs to be installed on your computer for the work in this module.
+
+The free tier of Claude is sufficient for everything in the first half of this course, and I want you to begin there rather than paying for anything. For example, the free account allows you to hold conversations and to build the small single-page tools that these early modules focus on, which is all you require until you reach the more advanced builds later. Such a starting point is deliberate, because it lets you discover whether this way of working suits you before you spend a single dollar on it. Additionally, if a campus device or network blocks the sign-up, a later module addresses that specific obstacle; for now, a personal device and an ordinary internet connection are enough.`,
+        },
+        {
+          heading: "The chat window, and what an artifact is",
+          body: `Once you are signed in, the screen you see is simpler than you might expect: a single box at the bottom where you type, and a space above it where the conversation appears. For example, you type a request in ordinary language, press enter, and Claude replies in the space above, exactly as it would in any messaging application you already use. Such familiarity is intentional on the part of the designers, and it means that the interface itself requires almost nothing to learn.
+
+The one feature that is genuinely new is the artifact, and it is worth defining clearly because the rest of this course depends on it. An artifact is a separate panel that opens beside the conversation and displays the actual thing you are building, whether that is a web page, a document, or a small tool, updating live as you ask for changes (Anthropic, 2025). This indicates that you are never left guessing at what the AI has produced, because you can see the finished result beside the words that created it. Additionally, because the artifact shows the working page rather than only its code, you can judge it the way your students or patrons eventually will, which is simply by looking at it.`,
+        },
+        {
+          heading: "Your first build, right now",
+          body: `With the account created and the interface understood, you will now build a real one-page site, because the fastest way to learn what a build feels like is to run one. For example, decide on a small, genuine subject from your own work: an instructor might make a welcome page for a course, and an academic librarian might make a page announcing a workshop or a new research guide. Such a subject does not need to be important; it only needs to be real enough that you can judge whether the result is any good.
+
+In order to produce a strong first result, type a request that says who the page is for, what it should contain, and roughly how it should look. For example, you might type: "Build a one-page welcome site for my course or library workshop. Include a friendly heading, a short paragraph describing it, the date and location, and a clean, calm design in blue tones. Keep it accessible and make it work on a phone." This indicates that even your very first prompt already follows the recipe you will practice throughout the course, which is to describe the outcome plainly rather than to specify any code. Within a few seconds the page appears in the artifact panel beside your request, and you have built something real.`,
+        },
+        {
+          heading: "Changing it with words: the describe, look, describe loop",
+          body: `Your first result is a starting point rather than a finished product, and the genuine skill you are learning is the loop of improving it through conversation. For example, you look at the page in the artifact, decide on one thing you would like to change, and describe that single change in plain words, such as "make the heading larger" or "add a section listing what people should bring." This iterative way of working, in which you shape a result through a series of small exchanges rather than a single perfect request, is a foundational practice in working well with AI (Dakan & Feller, 2025). This suggests that the loop you are learning here is not a beginner's shortcut but the same method that experienced builders rely on.
+
+The single most useful habit in this loop is to request one change at a time rather than many at once. For example, if you ask for five changes in one message and one of them is not what you intended, it becomes difficult to tell which request caused the problem; if you ask for one change and dislike the result, you simply describe the correction and continue. Such restraint keeps you in control of the build at every step. Additionally, if a change ever makes the page worse, you can simply ask Claude to undo it, because the conversation remembers what came before.`,
+        },
+        {
+          heading: "Saving your work as an .html file",
+          body: `A build that lives only inside a conversation is not yet yours to keep, and the final step of this module is to save your page as a file on your own computer. For example, the artifact panel includes an option to copy or download the result, and choosing to download it produces a single file whose name ends in .html, which is the standard format that every web browser can open. This indicates that your work now exists independently of the conversation that created it, and that you could open it, share it, or later put it on the internet.
+
+I want you to save this file somewhere deliberate rather than lose it in a downloads folder, because it is the first of many you will keep. For example, you might create a single folder named for this course and place every build you make inside it, so that your growing collection of tools stays in one findable place. Such a small habit of organization costs nothing now and saves considerable frustration later, particularly once you have built several tools. Additionally, this single .html file is exactly the kind of file that a later module will teach you to publish to a live web address, so keeping it safe is the first step toward putting it online.`,
+        },
+        {
+          heading: "Your turn: build and save your own page",
+          body: `Before moving on, complete the full sequence yourself, from empty screen to saved file, because this module is only valuable if you actually run it. For example, create your free account, build a one-page site for a real course or library program you run, make at least two improvements to it one at a time, and download the finished .html file to a folder you have chosen. Such a complete pass, however small the page, means you have already done the thing that this entire course is about.
+
+In order to make the exercise genuinely useful, choose a page you might actually want, rather than a throwaway example, because a real subject teaches you more than an invented one. For example, a page you would be willing to show a colleague forces you to judge the result honestly, which is exactly the skill that separates a builder from a person who has merely watched a demonstration. When you have a saved .html file that you are reasonably pleased with, you have completed this module and are ready to learn why your plain-language requests work as well as they do.`,
+        },
+      ],
+      summary: [
+        "Create a free Claude account and reach the chat window in a few minutes, with no software to install.",
+        "Explain what an artifact is: a live panel that shows the actual page you are building beside the conversation.",
+        "Run a first build by describing who a page is for, what it should contain, and how it should look.",
+        "Use the describe, look, describe loop, changing one thing at a time to stay in control of the build.",
+        "Download your finished work as a single .html file and store it in a deliberate place.",
+        "Recognize that you have completed a full build, from idea to saved file, which is the core of everything ahead.",
+      ],
+    },
+    quiz: [
+      {
+        question: "What is an “artifact” in Claude?",
+        options: [
+          "A saved password",
+          "A live panel beside the conversation that shows the actual page you are building",
+          "A type of file format you have to buy",
+          "A folder on your computer",
+        ],
+        correctIndex: 1,
+        explanation:
+          "An artifact is the panel that opens beside the chat and displays the working page, document, or tool live, updating as you ask for changes, so you can judge the result simply by looking at it.",
+      },
+      {
+        question: "Which account do you need to start building in this module?",
+        options: [
+          "A paid developer account",
+          "A free Claude account",
+          "A GitHub account",
+          "A campus IT account",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The free tier of Claude is enough for the single-page builds in the first half of the course. You begin there before paying for anything.",
+      },
+      {
+        question:
+          "What is the best habit inside the “describe, look, describe” loop?",
+        options: [
+          "Ask for as many changes as possible in one message",
+          "Request one change at a time",
+          "Avoid changing anything after the first result",
+          "Edit the code directly yourself",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Requesting one change at a time keeps you in control: if a single change is wrong, you know exactly which request caused it and can correct just that one thing.",
+      },
+      {
+        question: "When you download your build, what kind of file do you get?",
+        options: [
+          "A .pdf",
+          "A single file whose name ends in .html",
+          "A .zip of raw code",
+          "Nothing is saved",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The artifact downloads as one .html file, the standard format every browser can open. Your work then exists independently of the conversation that created it.",
+      },
+      {
+        question: "What should a strong first build prompt include?",
+        options: [
+          "Only the exact code to write",
+          "Who the page is for, what it should contain, and roughly how it should look",
+          "A long list of programming terms",
+          "Nothing, so the AI can guess",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Even your first prompt should describe the outcome: who it is for, what it contains, and how it looks, rather than specifying code. Describing the result plainly is the whole skill.",
+      },
+    ],
     relatedModules: ["you-can-build-software-now", "what-is-a-website"],
   },
   {

@@ -28,6 +28,17 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       url: "https://ai-in-academic-libraries.vercel.app",
     },
   ],
+
+  2: [
+    {
+      text: "Anthropic. (2025). *Claude* [Large language model]. Anthropic.",
+      url: "https://claude.ai",
+    },
+    {
+      text: "Dakan, R., & Feller, A. (2025). *AI fluency: Framework & foundations* [Online course]. Anthropic Academy.",
+      url: "https://anthropic.skilljar.com/ai-fluency-framework-foundations",
+    },
+  ],
 };
 
 export function getModuleReferences(moduleId: number): ModuleReference[] {
