@@ -27,6 +27,16 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       text: "Brusova, Y. (2025). *AI for academic libraries* [Curriculum portal]. Vercel.",
       url: "https://ai-in-academic-libraries.vercel.app",
     },
+    {
+      text: "Willison, S. (2025, March 19). *Not all AI-assisted programming is vibe coding (but vibe coding rocks)* [Blog post].",
+      url: "https://simonwillison.net/2025/Mar/19/vibe-coding/",
+      note: "Distinguishes vibe coding (accepting AI-written code without review) from reviewed AI-assisted programming, and states his rule of never committing code he could not explain to someone else.",
+    },
+    {
+      text: "EDUCAUSE. (2026). *The impact of AI on work in higher education.* EDUCAUSE Research.",
+      url: "https://www.educause.edu/research/2026/the-impact-of-ai-on-work-in-higher-education",
+      note: "Found that 94% of higher-ed staff and faculty had used AI tools for work in the prior six months, and 56% had used AI tools not provided by their institution.",
+    },
   ],
 
   2: [
