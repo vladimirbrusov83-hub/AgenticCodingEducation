@@ -47,6 +47,14 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       note: "Found that explicit security instructions in a prompt measurably reduce security weaknesses in AI-generated code compared with prompts that omit them.",
     },
   ],
+
+  4: [
+    {
+      text: "U.S. Department of Justice, Civil Rights Division. (2024). *Nondiscrimination on the basis of disability; accessibility of web information and services of state and local government entities* [Final rule, 28 C.F.R. Part 35].",
+      url: "https://www.ada.gov/resources/2024-03-08-web-rule/",
+      note: "Requires state and local government entities, including public colleges and universities, to make web content and mobile apps conform to WCAG 2.1 AA, with compliance required by April 2027 for larger entities.",
+    },
+  ],
 };
 
 export function getModuleReferences(moduleId: number): ModuleReference[] {

@@ -464,9 +464,129 @@ Once you have written your rewrite, run both prompts in Claude, the original wea
       "Learn enough vocabulary to follow along when Claude explains things",
     ],
     estimatedMinutes: 25,
-    status: "coming-soon",
+    status: "published",
     description:
       "Enough plain-words vocabulary to never feel lost — no code memorization. You'll learn the skeleton/clothing/muscles analogy for HTML, CSS, and JavaScript, peek inside your downloaded file to see it's just readable text, and meet the single-file idea that makes one .html file easy to save, share, and put online. It closes with a first, gentle introduction to accessibility and one magic prompt to make any build usable by everyone.",
+    content: {
+      intro:
+        "You have now built two pages and rewritten a prompt using a clear recipe, and it is a reasonable moment to ask what, precisely, you have been making. In this module I do not ask you to memorize any code; I ask only that you come away with enough plain-language vocabulary to follow along comfortably when Claude explains what it has built, in the same way that you do not need to know automotive engineering to understand a mechanic who tells you what is wrong with your car.",
+      sections: [
+        {
+          heading: "A website is a document the browser draws",
+          body: `A website, however elaborate it appears, is at its foundation a document, and the browser on your computer is the program that reads that document and draws it onto your screen. For example, when you open the .html file you saved in Module 2, your browser reads through it from top to bottom and renders a heading, a paragraph, and a button in the positions and colors the document describes, in much the same way that a person reading a musical score produces sound from written notation. This indicates that nothing mysterious happens between your saved file and the page you see; a program simply reads instructions and displays the result.
+
+It follows that every website you visit, however large, is fundamentally the same kind of object as your own small page, differing only in scale and complexity. For example, a university library's catalog and your one-page workshop announcement are both documents that a browser reads and draws, and the library's is simply built from many more such documents working together. Such a realization is worth sitting with, because it means the gap between what you have already built and what a professional web team builds is a gap of scale, not a gap of kind.`,
+        },
+        {
+          heading: "HTML is the skeleton, CSS the clothing, JavaScript the muscles",
+          body: `Three technologies do nearly all of the work inside the file you downloaded, and a simple analogy makes their roles clear without requiring you to read a line of any of them. In order to picture the analogy, think of HTML as the skeleton of the page, the plain structure of headings, paragraphs, and buttons that determines what exists and in what order; CSS as the clothing, the colors, spacing, and fonts that determine how that structure looks; and JavaScript as the muscles, the instructions that make something happen when a visitor clicks, types, or scrolls.
+
+This division of labor explains a great deal about how Claude describes its own work to you. For example, when Claude says it "changed the styling," it is working in CSS, the clothing, and the underlying content has not moved; when it says it "added a click handler," it is working in JavaScript, the muscles, giving the page a new behavior. Such vocabulary lets you follow a conversation about your own build without needing to read the code itself, which is precisely the goal of this module. Additionally, all three exist together, side by side, inside the single file you have already been downloading.`,
+        },
+        {
+          heading: "The single-file idea",
+          body: `A remarkable feature of the pages you have built so far is that the skeleton, the clothing, and the muscles all live inside one file, an approach commonly called a single-file app. For example, your Module 2 poster is not three separate files that must travel together and stay carefully organized; it is one file whose name ends in .html, and every part of the page it produces is contained inside it. This indicates that the single-file approach removes an entire category of beginner mistakes, such as a page breaking because one of several linked files went missing.
+
+This structure is well suited to a beginning builder for reasons that go beyond simplicity. For example, a single file is easy to save to a folder, easy to attach to an email or share on a flash drive, and, as a later module will show, easy to put online, because there is only ever one thing to move or upload. Such convenience is not an accident of this course; it is a deliberate choice, and every project you build here, from the quiz app onward, will follow the same single-file approach for exactly this reason.`,
+        },
+        {
+          heading: "Where websites live: your computer vs. online",
+          body: `The .html file sitting in your folder right now exists only on your own computer, and only you can open it, which is different from being "on the internet" in the sense that anyone with a link can visit it. For example, your file becomes visible to the world only once it is placed on a hosting service, which is simply another computer, one that stays turned on and connected at all times, unlike your laptop, which you close and carry away. This indicates that "putting a site online" is not a mysterious transformation of the file itself, but a matter of moving an identical copy of it onto a computer that never sleeps.
+
+Once your file sits on such a service, it receives a URL, an address other people can type or click to reach it, in the same way that a physical address lets a letter find your office. This suggests that the entire path from a page on your computer to a page the public can visit involves only two ideas: a computer that stays on, and an address that points to it. A later module in this course walks through that exact process for the tools you build here, so for now it is enough to hold the distinction between "on my computer" and "online" clearly in mind.`,
+        },
+        {
+          heading: "The words you will hear: a plain-language mini-glossary",
+          body: `A short, plain-language glossary will keep you oriented as Claude uses these terms in conversation, and none of them require more than a single sentence to understand. A *file* is one saved piece of work, such as your .html page; a *folder* is a container that holds files, the way a physical folder holds papers; a *browser* is the program, such as Chrome or Safari, that reads a file and draws the page you see. A *URL* is the address that points to a page online; to *deploy* means to move your finished file onto a hosting service so that its URL becomes reachable by others; a *host* is the always-on computer that stores your file and serves it up when someone visits its URL; and a *repository* is an organized, tracked folder, often on a service called GitHub, that keeps a history of every version of your project as you build it.
+
+For example, when a later module tells you to "deploy your site" or says your file now "lives in a repository," these are the precise, ordinary meanings behind the words, and you can return to this short list any time a term feels unfamiliar. This indicates that the vocabulary of building is small and learnable in a single sitting, not a vast technical language that takes years to acquire.`,
+        },
+        {
+          heading: "Websites everyone can use — accessibility in plain words",
+          body: `A website that only some visitors can use is, in a real sense, an incomplete one, and it is worth introducing this idea now, before you build anything more elaborate than a poster. In order to build an accessible page, keep the text at a readable size, choose colors with enough contrast that text stands out clearly from its background, make sure every feature works for a visitor using only a keyboard rather than a mouse, and describe images in words for visitors who use a screen reader. For example, a research guide with pale gray text on a white background may look elegant to you and be nearly unreadable to a patron with low vision, which is exactly the kind of gap that accessible design closes.
+
+This is not only a matter of courtesy; for public colleges and universities, it is increasingly a matter of law. The United States Department of Justice issued a rule under Title II of the Americans with Disabilities Act requiring state and local government entities, including public institutions of higher education, to make their web content and mobile applications conform to established accessibility guidelines, with compliance required by April 2027 for larger entities (U.S. Department of Justice, 2024). This indicates that the habit you build here is not merely good practice but is becoming an enforceable expectation for institutions like the one you may work for. Fortunately, the fix requires only one more habit sentence in your prompts: "make this accessible: good contrast, readable text, works without a mouse." Add it to every build from here forward, the same way you added "keep it safe" in the previous module.`,
+        },
+        {
+          heading: "Your turn: peek inside and ask Claude to explain",
+          body: `Before moving on, open the .html file you saved in Module 2 using a plain text editor, such as TextEdit on a Mac or Notepad on Windows, rather than double-clicking it to open it in a browser. For example, once it is open, spend about sixty seconds looking through it, and try to find the name of your class or program somewhere in the visible text. You do not need to understand the surrounding lines to do this; you need only confirm that what you are looking at is ordinary, readable text rather than something incomprehensible, and then close the file without saving any changes.
+
+Once you have looked, return to Claude and ask a direct question: "explain what the first ten lines of an HTML file do, like I'm not a programmer." In order to get the most from this exercise, read the explanation slowly and notice how many of the words in it, skeleton, clothing, file, browser, you now already recognize from this module. Such a moment, seeing a plain-language explanation land as genuinely understandable rather than intimidating, is exactly the shift in confidence this module is built to produce.`,
+        },
+      ],
+      summary: [
+        "Explain that a website is a document a browser reads and draws, no different in kind from the pages you have already built, only larger in scale.",
+        "Use the skeleton, clothing, and muscles analogy to describe what HTML, CSS, and JavaScript each do.",
+        "Explain what a single-file app is and why it suits a beginning builder.",
+        "Distinguish a file on your own computer from a page that is “online,” and know what a URL and a host are.",
+        "Use a short, plain-language glossary — file, folder, browser, URL, deploy, host, repository — to follow builder conversations without getting lost.",
+        "Describe what makes a page accessible, why it increasingly matters as a matter of law for public institutions, and add the accessibility habit sentence to a build prompt.",
+      ],
+    },
+    quiz: [
+      {
+        question:
+          "Which analogy correctly matches HTML, CSS, and JavaScript to their roles?",
+        options: [
+          "HTML is the clothing, CSS is the muscles, JavaScript is the skeleton",
+          "HTML is the skeleton (structure), CSS is the clothing (look), JavaScript is the muscles (behavior)",
+          "HTML is the muscles, CSS is the skeleton, JavaScript is the clothing",
+          "All three do exactly the same job",
+        ],
+        correctIndex: 1,
+        explanation:
+          "HTML provides the structure of a page (the skeleton), CSS controls how it looks (the clothing), and JavaScript makes it do things when a visitor interacts with it (the muscles).",
+      },
+      {
+        question: "What is a “single-file app”?",
+        options: [
+          "A program that only opens once",
+          "A website whose structure, look, and behavior all live inside one .html file",
+          "A file that can only be viewed by one person",
+          "A type of hosting service",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A single-file app keeps the HTML, CSS, and JavaScript together in one file, which is easy to save, share, and later put online, and avoids the problem of linked files going missing.",
+      },
+      {
+        question: "What does it mean to “deploy” a site?",
+        options: [
+          "To delete the file from your computer",
+          "To move your finished file onto a hosting service so its URL becomes reachable by others",
+          "To rename the file",
+          "To open it in a text editor",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Deploying means placing your file on a host, an always-on computer, so that anyone with its URL can visit the page, rather than only you on your own computer.",
+      },
+      {
+        question: "What is a URL?",
+        options: [
+          "A type of file extension",
+          "The address that points to a page online",
+          "A programming language",
+          "A password used to protect a website",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A URL is the address other people can type or click to reach your page online, similar to a street address pointing to a physical location.",
+      },
+      {
+        question:
+          "True or false: to build with Claude, you must understand every line of code it produces.",
+        options: [
+          "True — you cannot build responsibly otherwise",
+          "False — you need only enough plain-language vocabulary to follow along and judge the result",
+          "True, but only for JavaScript",
+          "False, because code does not matter at all",
+        ],
+        correctIndex: 1,
+        explanation:
+          "This course does not ask you to memorize code. Plain-language vocabulary, of the kind covered in this module, is enough to follow Claude's explanations and judge whether a result matches what you asked for.",
+      },
+    ],
     relatedModules: ["meet-your-ai-builder", "building-responsibly"],
   },
   {
