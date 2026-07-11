@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <!-- terminal window -->
+  <rect x="16" y="16" width="1168" height="728" rx="16" fill="#1e1e2e" stroke="#181825" stroke-width="1.5"/>
+  <circle cx="52" cy="44" r="6.5" fill="#f87171"/>
+  <circle cx="74" cy="44" r="6.5" fill="#fbbf24"/>
+  <circle cx="96" cy="44" r="6.5" fill="#34d399"/>
+  <text x="600" y="49" font-size="14" fill="#7f849c" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif">my-course — Claude Code</text>
+  <line x1="16" y1="76" x2="1184" y2="76" stroke="#313244" stroke-width="1.5"/>
+
+  <!-- prompt line -->
+  <text x="48" y="128" font-size="16" fill="#a6e3a1">➜  my-course</text>
+  <text x="200" y="128" font-size="16" fill="#cdd6f4">claude</text>
+
+  <!-- user request -->
+  <text x="48" y="176" font-size="16" fill="#89b4fa">&gt; build a simple one-page "about my course" site</text>
+
+  <!-- claude thinking / plan -->
+  <text x="48" y="224" font-size="16" fill="#f9e2af">✳ Claude Code</text>
+  <text x="48" y="252" font-size="16" fill="#cdd6f4">I'll create one file for your page. Here is what I want to do:</text>
+
+  <!-- proposed action box -->
+  <rect x="48" y="278" width="1088" height="150" rx="10" fill="#181825" stroke="#313244" stroke-width="1.5"/>
+  <text x="72" y="312" font-size="14" fill="#7f849c">Create file</text>
+  <text x="72" y="344" font-size="16" fill="#a6e3a1">+  index.html</text>
+  <text x="96" y="374" font-size="15" fill="#89dceb">a welcome heading, a short intro, and a clean layout</text>
+  <text x="96" y="400" font-size="15" fill="#89dceb">in calm colors, works on a phone</text>
+
+  <!-- approval prompt -->
+  <text x="48" y="472" font-size="16" fill="#cdd6f4">Do you want to create this file?</text>
+  <rect x="48" y="496" width="360" height="44" rx="8" fill="#313244" stroke="#585b70" stroke-width="1.5"/>
+  <text x="72" y="524" font-size="16" fill="#a6e3a1">❯ 1. Yes, create it</text>
+  <text x="72" y="576" font-size="16" fill="#7f849c">  2. No, let me change the request</text>
+
+  <text x="48" y="648" font-size="15" fill="#7f849c">Claude Code always asks before it touches a file — nothing happens without your yes.</text>
+</svg>

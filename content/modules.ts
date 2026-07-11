@@ -220,7 +220,9 @@ It is worth adding one practical note before you begin: use a personal email add
 
 The one feature that is genuinely new is the artifact, and it is worth defining clearly because the rest of this course depends on it. An artifact is a separate panel that opens beside the conversation and displays the actual thing you are building, whether that is a web page, a document, or a small tool, updating live as you ask for changes (Anthropic, 2025). This indicates that you are never left guessing at what the AI has produced, because you can see the finished result beside the words that created it. Additionally, because the artifact shows the working page rather than only its code, you can judge it the way your students or patrons eventually will, which is simply by looking at it.
 
-Undoubtedly the artifact panel is the single feature that makes this entire course possible for a non-programmer, and it is worth pausing on why. In order to appreciate the shift, consider that before this kind of tool existed, judging a piece of software required reading its code, a skill this course deliberately does not ask you to acquire. The artifact instead lets you judge a build the same way you would judge a printed handout or a finished webpage anywhere else: by looking at it, clicking on it, and deciding whether it does what you wanted.`,
+Undoubtedly the artifact panel is the single feature that makes this entire course possible for a non-programmer, and it is worth pausing on why. In order to appreciate the shift, consider that before this kind of tool existed, judging a piece of software required reading its code, a skill this course deliberately does not ask you to acquire. The artifact instead lets you judge a build the same way you would judge a printed handout or a finished webpage anywhere else: by looking at it, clicking on it, and deciding whether it does what you wanted.
+
+![The artifact panel: your request on the left, and the live page it built on the right, updating as you ask for changes.](/images/walkthrough/claude-artifact-desktop.svg)`,
         },
         {
           heading: "Your first build, right now",
@@ -863,6 +865,8 @@ Once your account exists, take a moment to look around the Vercel dashboard, eve
           heading: "Connecting them: update GitHub, live site updates itself",
           body: `With both accounts created and Vercel already linked to GitHub from the previous step, the final piece of setup is authorizing Vercel to see the specific repositories you want it to publish. For example, inside Vercel you will be offered a screen labeled "Import Git Repository," and selecting a repository there tells Vercel to watch that project and publish whatever it finds inside. This indicates that from this point forward, Vercel is not something you need to operate manually each time you want to update your site; it simply watches for changes.
 
+![Vercel's "Import Git Repository" screen — where you point Vercel at the project you want to put online.](/images/walkthrough/vercel-import-desktop.svg)
+
 The practical result of this connection is the single most satisfying moment in this module, and it is worth anticipating clearly before you experience it yourself. For example, once a repository is connected, updating a file inside it on GitHub causes your live website to rebuild and update itself automatically, typically within about thirty seconds, with no separate publishing step on your part. This suggests that "deploying a site," a phrase that once implied a technical, manual process, becomes for you simply the act of saving a change, which is a task you have already been doing since Module 2.
 
 This automatic rebuilding is worth naming explicitly, because it is the mechanism behind nearly every deploy instruction for the rest of this course. For example, when a later module tells you to "commit and push" a change, it means exactly this: save the updated file to your GitHub repository, and let the connection you set up here carry the update to your live site without any further action from you. Such a simple, repeatable pattern is what allows you to focus entirely on what you are building rather than on how it gets published each time.`,
@@ -1160,6 +1164,8 @@ Once the repository exists, take a moment to look at what GitHub shows you: an e
 
 Before you finish, rename the file to index.html, replacing whatever name it currently carries. For example, index.html is the specific name that essentially every hosting service on the internet, Vercel included, treats as a website's "front door": the file it opens automatically when a visitor arrives at your address with no further path specified. This indicates that the rename is not a stylistic preference; it is the one small, precise requirement that makes the difference between a working live site and a broken one, and it is worth double-checking before you move to the next step.
 
+![Dragging your file into GitHub and naming it index.html — the "front door" name every host looks for.](/images/walkthrough/github-upload-desktop.svg)
+
 Once the file is uploaded and renamed, GitHub will ask you to confirm the change with a short message, often called a "commit message." A single word or short phrase such as "add quiz" is entirely sufficient; you are not writing documentation, only leaving yourself a brief note in the project's history that Module 6 told you GitHub keeps automatically.`,
         },
         {
@@ -1167,6 +1173,8 @@ Once the file is uploaded and renamed, GitHub will ask you to confirm the change
           body: `Return to Vercel, where Module 6 left you looking at the "Import Git Repository" screen, and this time you will actually use it. For example, select your class-quiz repository from the list Vercel shows you, accept the default settings on the screen that follows, since Vercel automatically recognizes a plain HTML project and needs no further configuration from you, and click "Deploy."
 
 What happens next is worth watching closely, because it is the payoff for every setup step in this and the previous module. For example, Vercel spends roughly thirty seconds building and publishing your project, after which it shows you a live web address, typically ending in .vercel.app, along with a small celebratory animation confirming the deploy succeeded. This indicates that the address now shown on your screen is not a preview or a draft; it is a genuine, live URL that anyone in the world can visit right now, and it is worth clicking it yourself immediately to see your own quiz appear exactly as a student would see it.
+
+![The payoff: Vercel's success screen with your live web address, ready for anyone to visit.](/images/walkthrough/vercel-deploy-success-desktop.svg)
 
 I want you to pause on this moment rather than rush past it, because it is, in a real sense, the payoff for everything since Module 1. For example, the sentence you wrote down in that very first module, the tool you wished existed, is no longer only a sentence; a version of it, built by you, now sits at a real address, reachable by anyone, anywhere, at any hour, whether or not your own computer happens to be turned on.`,
         },
@@ -1630,7 +1638,9 @@ It is worth naming one small but common snag before you begin: an install comman
           heading: "Your first session: it acts, you approve",
           body: `With Claude Code installed, create a new, empty folder somewhere findable, such as your Desktop, and open Claude Code inside it using the single command the documentation provides. For example, once it starts, type a plain-language request such as "build a simple one-page 'about my course' site," in the same spirit as your very first Module 2 prompt, and watch what happens next closely.
 
-The genuine difference from claude.ai reveals itself immediately. For example, rather than showing you a page inside an artifact panel, Claude Code tells you it intends to create a specific file, names it, and waits for your approval before doing so. This indicates that the core habit from Module 2, describe, look, describe, has not disappeared; it has simply moved from watching an artifact update to watching Claude Code narrate and request approval for each file it touches. Additionally, once you approve, open your folder in your computer's ordinary file browser, and you will find the actual file sitting there, exactly as if you had built it yourself by hand, because in every meaningful sense, you did.`,
+The genuine difference from claude.ai reveals itself immediately. For example, rather than showing you a page inside an artifact panel, Claude Code tells you it intends to create a specific file, names it, and waits for your approval before doing so. This indicates that the core habit from Module 2, describe, look, describe, has not disappeared; it has simply moved from watching an artifact update to watching Claude Code narrate and request approval for each file it touches.
+
+![Claude Code asks before it acts: it says what it wants to do and waits for your yes before touching a file.](/images/walkthrough/claude-code-approval-desktop.svg) Additionally, once you approve, open your folder in your computer's ordinary file browser, and you will find the actual file sitting there, exactly as if you had built it yourself by hand, because in every meaningful sense, you did.`,
         },
         {
           heading: "When to use which tool",

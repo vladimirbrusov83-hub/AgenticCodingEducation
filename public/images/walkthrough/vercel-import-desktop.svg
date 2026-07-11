@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <rect x="16" y="16" width="1168" height="728" rx="16" fill="#ffffff" stroke="#e7e5e4" stroke-width="1.5"/>
+  <circle cx="52" cy="44" r="6.5" fill="#f87171"/>
+  <circle cx="74" cy="44" r="6.5" fill="#fbbf24"/>
+  <circle cx="96" cy="44" r="6.5" fill="#34d399"/>
+  <rect x="150" y="31" width="560" height="26" rx="13" fill="#f5f5f4"/>
+  <text x="172" y="49" font-size="14" fill="#78716c">vercel.com/new</text>
+  <line x1="16" y1="76" x2="1184" y2="76" stroke="#e7e5e4" stroke-width="1.5"/>
+
+  <!-- header -->
+  <polygon points="60,150 84,150 72,128" fill="#111111"/>
+  <text x="100" y="150" font-size="26" font-weight="700" fill="#111111">Vercel</text>
+  <text x="60" y="216" font-size="30" font-weight="700" fill="#1c1917">Import Git Repository</text>
+  <text x="60" y="250" font-size="16" fill="#78716c">Choose the project you want to put online.</text>
+
+  <!-- repo list -->
+  <rect x="60" y="288" width="1080" height="72" rx="12" fill="#ffffff" stroke="#e7e5e4" stroke-width="1.5"/>
+  <rect x="84" y="312" width="24" height="24" rx="6" fill="#f5f5f4"/>
+  <text x="128" y="322" font-size="17" font-weight="600" fill="#1c1917">class-quiz</text>
+  <text x="128" y="344" font-size="13" fill="#a8a29e">updated just now</text>
+  <rect x="988" y="308" width="128" height="36" rx="9" fill="#111111"/>
+  <text x="1012" y="331" font-size="14" font-weight="600" fill="#ffffff">Import</text>
+
+  <rect x="60" y="376" width="1080" height="72" rx="12" fill="#ffffff" stroke="#e7e5e4" stroke-width="1.5"/>
+  <rect x="84" y="400" width="24" height="24" rx="6" fill="#f5f5f4"/>
+  <text x="128" y="410" font-size="17" font-weight="600" fill="#1c1917">study-cards</text>
+  <text x="128" y="432" font-size="13" fill="#a8a29e">updated 2 days ago</text>
+  <rect x="988" y="396" width="128" height="36" rx="9" fill="#ffffff" stroke="#d6d3d1" stroke-width="1.5"/>
+  <text x="1012" y="419" font-size="14" font-weight="600" fill="#44403c">Import</text>
+
+  <rect x="60" y="464" width="1080" height="72" rx="12" fill="#ffffff" stroke="#e7e5e4" stroke-width="1.5"/>
+  <rect x="84" y="488" width="24" height="24" rx="6" fill="#f5f5f4"/>
+  <text x="128" y="498" font-size="17" font-weight="600" fill="#1c1917">course-portal</text>
+  <text x="128" y="520" font-size="13" fill="#a8a29e">updated 5 days ago</text>
+  <rect x="988" y="484" width="128" height="36" rx="9" fill="#ffffff" stroke="#d6d3d1" stroke-width="1.5"/>
+  <text x="1012" y="507" font-size="14" font-weight="600" fill="#44403c">Import</text>
+
+  <text x="60" y="600" font-size="14" fill="#a8a29e">Connected to GitHub · showing your repositories</text>
+</svg>
