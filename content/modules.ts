@@ -985,7 +985,13 @@ Take a moment, once your three accounts are open side by side, to notice that yo
       "The training-wheels build: the whole module is one guided project. Using a spec that's done for you, you'll run an annotated build prompt, hand Claude your own ten questions, make a couple of improvements one at a time, and test the quiz like a student — including getting an answer wrong on purpose. Faculty build a class-topic quiz; academic librarians build an information-literacy quiz. You finish with a working quiz.html on your computer.",
     content: {
       intro:
-        "Every module so far has taught you one piece of the whole picture: a recipe for prompts, plain-language vocabulary, a habit of planning. This module asks something different of you: to run the entire loop, spec to build to iteration to a finished, tested file, in one sitting, on a real quiz you will actually use. Think of this as a training-wheels build. Build #2 hands you more of the steering; Build #3, near the end of this course, hands you all of it. For now, I have written the spec for you, so that the entire module can be spent on the part that matters most: watching the loop work, start to finish.",
+        `Every module so far has taught you one piece of the whole picture: a recipe for prompts, plain-language vocabulary, a habit of planning. This module asks something different of you: to run the entire loop, spec to build to iteration to a finished, tested file, in one sitting, on a real quiz you will actually use. Think of this as a training-wheels build. Build #2 hands you more of the steering; Build #3, near the end of this course, hands you all of it. For now, I have written the spec for you, so that the entire module can be spent on the part that matters most: watching the loop work, start to finish.
+
+Here is exactly what you are working toward, a finished quiz mid-question and the same quiz showing a final score:
+
+![A finished quiz app showing question 1 of 10, with four answer options.](/images/screenshots/quiz-question-desktop.png)
+
+![The same quiz's finished state, showing a final score of 10 out of 10 and a "try again" button.](/images/screenshots/quiz-score-desktop.png)`,
       sections: [
         {
           heading: "The spec (done for you this time)",
@@ -1470,7 +1476,13 @@ If a checkpoint fails, treat it exactly as Module 9 taught: a plain, three-part 
 
 In order to check this yourself, ask Claude directly: "make sure this works well on a phone screen," and then test the result by narrowing your browser window on your computer until it is roughly phone-width, watching whether the cards, buttons, and counter remain usable and readable at that size. This indicates that you do not need an actual phone in hand to catch most mobile problems; a narrowed browser window reveals the same layout issues a phone screen would. Additionally, once the narrow-window version looks and behaves correctly, you have satisfied the fourth checkpoint.
 
-If you do have a phone within reach, it is still worth opening the deployed version on it once you finish this module. For example, a real device occasionally reveals a small detail, a button sitting slightly too close to another, text wrapping awkwardly, that a narrowed browser window does not perfectly reproduce. Such a final check costs a minute and closes any remaining doubt about the fourth checkpoint.`,
+If you do have a phone within reach, it is still worth opening the deployed version on it once you finish this module. For example, a real device occasionally reveals a small detail, a button sitting slightly too close to another, text wrapping awkwardly, that a narrowed browser window does not perfectly reproduce. Such a final check costs a minute and closes any remaining doubt about the fourth checkpoint.
+
+Here is a finished flashcard site at phone width, one card mid-flip and one showing progress, so you know what to check your own build against:
+
+![A flashcard site at phone width, showing a flipped card with its answer and the "still learning" / "know it" buttons.](/images/screenshots/flashcard-flip-mobile.png)
+
+![The same flashcard site at phone width, showing progress counts for cards left, known, and still learning.](/images/screenshots/flashcard-progress-mobile.png)`,
         },
         {
           heading: "Deploy solo from memory",
@@ -1731,7 +1743,13 @@ Once you have found those files sitting in your folder, exactly where Claude Cod
       "The you-drive build: your spec, your decisions, Claude Code as the crew. You'll build a multi-page portal for a course or program you run — home page, several lesson pages, a resources page, shared navigation — hand Claude Code the whole spec and review its plan, and learn git add/commit/push as “gather, label, publish.” Faculty build a course portal; academic librarians build a self-owned research-guide or program portal. You end owning the same deploy loop professionals use.",
     content: {
       intro:
-        "Build #1 gave you every step. Build #2 gave you checkpoints instead of steps. This build gives you a goal and a crew, and asks you to direct the whole project yourself. For example, you will write the spec, hand it to Claude Code rather than claude.ai, review its plan before a single file gets created, and finish by learning the three words that turn a finished project into a permanently live one. This is the build this entire course has been preparing you to make.",
+        `Build #1 gave you every step. Build #2 gave you checkpoints instead of steps. This build gives you a goal and a crew, and asks you to direct the whole project yourself. For example, you will write the spec, hand it to Claude Code rather than claude.ai, review its plan before a single file gets created, and finish by learning the three words that turn a finished project into a permanently live one. This is the build this entire course has been preparing you to make.
+
+Here is what a finished portal looks like, the home page with its levels and lessons, and a lesson page open with its own content:
+
+![A finished course portal's home page, showing levels, lesson cards, and estimated times.](/images/screenshots/portal-home-desktop.png)
+
+![A single lesson page from the same portal, with a heading, body text, and a "try this" callout.](/images/screenshots/portal-lesson-desktop.png)`,
       sections: [
         {
           heading: "The project: a multi-page portal you run",
