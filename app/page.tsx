@@ -118,8 +118,8 @@ export default function HomePage() {
               Pick your track
             </h2>
             <p className="text-stone-500 text-base max-w-xl mx-auto">
-              Every module works for both, but the worked examples and project ideas tune to
-              your world. Your choice is saved and follows you across the site.
+              Every module works for both. The worked examples and project ideas come in a
+              faculty version and a librarian version, shown side by side throughout the course.
             </p>
           </div>
           <RoleEntry />

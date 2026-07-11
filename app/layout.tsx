@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
-import { RoleProvider } from "@/components/role-context";
 import { Analytics } from "@vercel/analytics/next";
 
 const SITE_URL =
@@ -60,11 +59,9 @@ export default function RootLayout({
         />
       </head>
       <body className="flex flex-col min-h-screen">
-        <RoleProvider>
-          <Nav />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </RoleProvider>
+        <Nav />
+        <main className="flex-1">{children}</main>
+        <Footer />
         <Analytics />
       </body>
     </html>

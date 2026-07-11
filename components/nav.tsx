@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import RoleToggle from "@/components/role-toggle";
 
 const navLinks = [
   { href: "/curriculum", label: "Curriculum" },
@@ -50,12 +49,9 @@ export default function Nav() {
               {link.label}
             </Link>
           ))}
-          <div className="ml-2 mr-1">
-            <RoleToggle />
-          </div>
           <Link
             href="/level/foundations"
-            className="ml-1 px-4 py-2 rounded-lg text-sm font-medium text-white transition-colors"
+            className="ml-2 px-4 py-2 rounded-lg text-sm font-medium text-white transition-colors"
             style={{ backgroundColor: "#185FA5" }}
           >
             Start Learning
@@ -102,9 +98,6 @@ export default function Nav() {
               {link.label}
             </Link>
           ))}
-          <div className="px-3 py-2.5">
-            <RoleToggle compact />
-          </div>
           <Link
             href="/level/foundations"
             className="block mt-2 px-3 py-2.5 rounded-lg text-sm font-medium text-white text-center"
