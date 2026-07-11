@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <rect x="16" y="16" width="1168" height="728" rx="16" fill="#1e1e2e" stroke="#181825" stroke-width="1.5"/>
+  <circle cx="52" cy="44" r="6.5" fill="#f87171"/>
+  <circle cx="74" cy="44" r="6.5" fill="#fbbf24"/>
+  <circle cx="96" cy="44" r="6.5" fill="#34d399"/>
+  <text x="600" y="49" font-size="14" fill="#7f849c" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif">Terminal</text>
+  <line x1="16" y1="76" x2="1184" y2="76" stroke="#313244" stroke-width="1.5"/>
+
+  <!-- a couple of harmless lines then a waiting prompt -->
+  <text x="48" y="132" font-size="16" fill="#a6e3a1">➜  ~</text>
+  <text x="100" y="132" font-size="16" fill="#cdd6f4">cd Desktop/my-course</text>
+  <text x="48" y="168" font-size="16" fill="#a6e3a1">➜  my-course</text>
+  <rect x="196" y="155" width="11" height="20" fill="#cdd6f4"/>
+
+  <!-- reassurance line at bottom -->
+  <text x="48" y="700" font-size="15" fill="#7f849c" font-family="ui-sans-serif, system-ui, sans-serif">Just a window that waits for a short instruction — you type, then press enter.</text>
+</svg>

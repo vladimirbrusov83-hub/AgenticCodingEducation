@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <rect x="16" y="16" width="1168" height="728" rx="16" fill="#0d1117"/>
+  <circle cx="52" cy="44" r="6.5" fill="#f87171"/>
+  <circle cx="74" cy="44" r="6.5" fill="#fbbf24"/>
+  <circle cx="96" cy="44" r="6.5" fill="#34d399"/>
+  <rect x="150" y="31" width="560" height="26" rx="13" fill="#21262d"/>
+  <text x="172" y="49" font-size="14" fill="#8b949e">github.com/signup</text>
+  <line x1="16" y1="76" x2="1184" y2="76" stroke="#21262d" stroke-width="1.5"/>
+
+  <!-- logo + title -->
+  <circle cx="600" cy="150" r="20" fill="#ffffff"/>
+  <text x="600" y="212" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">Welcome to GitHub</text>
+  <text x="600" y="244" font-size="15" fill="#8b949e" text-anchor="middle">Let's begin the adventure — it's free.</text>
+
+  <!-- form card -->
+  <rect x="380" y="284" width="440" height="376" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="412" y="332" font-size="14" fill="#c9d1d9">Username</text>
+  <rect x="412" y="344" width="376" height="42" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+  <text x="430" y="371" font-size="15" fill="#c9d1d9">prof-rivera</text>
+
+  <text x="412" y="418" font-size="14" fill="#c9d1d9">Email</text>
+  <rect x="412" y="430" width="376" height="42" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+  <text x="430" y="457" font-size="15" fill="#8b949e">you@example.edu</text>
+
+  <text x="412" y="504" font-size="14" fill="#c9d1d9">Password</text>
+  <rect x="412" y="516" width="376" height="42" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+  <text x="430" y="543" font-size="18" fill="#8b949e" letter-spacing="2">••••••••••</text>
+
+  <rect x="412" y="588" width="376" height="46" rx="9" fill="#238636"/>
+  <text x="600" y="617" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">Create account</text>
+</svg>

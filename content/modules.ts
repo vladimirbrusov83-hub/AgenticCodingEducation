@@ -218,6 +218,8 @@ It is worth adding one practical note before you begin: use a personal email add
           heading: "The chat window, and what an artifact is",
           body: `Once you are signed in, the screen you see is simpler than you might expect: a single box at the bottom where you type, and a space above it where the conversation appears. For example, you type a request in ordinary language, press enter, and Claude replies in the space above, exactly as it would in any messaging application you already use. Such familiarity is intentional on the part of the designers, and it means that the interface itself requires almost nothing to learn.
 
+![The Claude chat window: you type a request in plain language, the same way you would write a colleague.](/images/walkthrough/claude-chat-desktop.svg)
+
 The one feature that is genuinely new is the artifact, and it is worth defining clearly because the rest of this course depends on it. An artifact is a separate panel that opens beside the conversation and displays the actual thing you are building, whether that is a web page, a document, or a small tool, updating live as you ask for changes (Anthropic, 2025). This indicates that you are never left guessing at what the AI has produced, because you can see the finished result beside the words that created it. Additionally, because the artifact shows the working page rather than only its code, you can judge it the way your students or patrons eventually will, which is simply by looking at it.
 
 Undoubtedly the artifact panel is the single feature that makes this entire course possible for a non-programmer, and it is worth pausing on why. In order to appreciate the shift, consider that before this kind of tool existed, judging a piece of software required reading its code, a skill this course deliberately does not ask you to acquire. The artifact instead lets you judge a build the same way you would judge a printed handout or a finished webpage anywhere else: by looking at it, clicking on it, and deciding whether it does what you wanted.
@@ -849,6 +851,8 @@ It is worth pausing on why this particular combination, rather than some single 
           heading: "GitHub account, step by step",
           body: `A GitHub account is free, and creating one takes only a few minutes entirely through the website, with no separate program to install. In order to sign up, go to [github.com](https://github.com), choose a username you would be comfortable using professionally, since it will appear in the address of your projects, provide an email address, and confirm it when GitHub sends a verification message. This indicates that the process is identical in spirit to creating any other web account you already use, requiring nothing technical beyond a working email inbox.
 
+![Signing up for GitHub — a username and an email is all it takes, just like any other account.](/images/walkthrough/github-signup-desktop.svg)
+
 Once you are signed in, the one new idea worth understanding is the repository, often shortened to "repo," which is simply a project folder that GitHub remembers every version of. For example, when you place your quiz app inside a repository, GitHub keeps a complete history of every change you make to it from that point forward, meaning that if a future edit goes badly, an earlier, working version is never more than a few clicks away. Such a safety net is one of the most valuable things GitHub offers a beginning builder, and you do not need to understand how it works internally to benefit from it; you only need to know it is there.
 
 You do not need to create a repository yet, and I want to be explicit about that, because the next module walks you through creating your first one at the exact moment you have a real project to put inside it. For example, an empty repository created too early is simply one more unused account artifact to keep track of; waiting until Module 7, when your quiz app exists and is ready to be stored, keeps this setup module focused purely on the two accounts themselves.`,
@@ -856,6 +860,8 @@ You do not need to create a repository yet, and I want to be explicit about that
         {
           heading: "Vercel account, step by step",
           body: `A Vercel account is also free, and the fastest way to create one is to sign up using the GitHub account you just made, rather than creating yet another separate password to remember. In order to sign up this way, go to [vercel.com](https://vercel.com), choose "continue with GitHub," and approve the connection when GitHub asks whether Vercel may access your account. This indicates that a single click accomplishes two things at once: it creates your Vercel account, and it begins the exact connection the next section relies on.
+
+![Signing up for Vercel with one click using your GitHub account — no second password to remember.](/images/walkthrough/vercel-signup-desktop.svg)
 
 The free plan Vercel offers is considerably more generous than most new builders expect, and it is worth saying plainly that you are unlikely to outgrow it during this entire course. For example, the free tier includes enough bandwidth and enough separate projects to host every build you make here, the quiz app, the flashcard site, the course portal, and your capstone, all at once, without any cost and without any prompt to upgrade. Such generosity is deliberate on Vercel's part, since it is designed to let individual builders like you ship real, working sites at no cost.
 
@@ -1153,6 +1159,8 @@ I want you to notice something about where this file currently lives: on your ow
         {
           heading: "Create your first repository",
           body: `Return to GitHub, and this time, rather than only exploring the interface, you will create your first real repository, the project folder Module 6 introduced. For example, in order to create one, look for a button labeled "New" or "New repository," give it a short, plain name such as class-quiz, choose "Public" so that Vercel and anyone with your link can reach it, and leave every other option at its default setting. This indicates that creating a repository requires no decisions beyond a name and a visibility setting; every advanced option GitHub offers here can simply be ignored for a project of this size.
+
+![Creating a repository on GitHub — a short name and "Public" is all you need; ignore every other option.](/images/walkthrough/github-new-repo-desktop.svg)
 
 Public, in this context, means only that the project files themselves can be seen by anyone who knows where to look, not that your quiz is somehow more exposed than any other website; every ordinary website you have ever visited is "public" in exactly this sense. For example, choosing "Private" instead would prevent Vercel's free plan from publishing the project at all for most account types, so "Public" is the correct choice for everything you build in this course, provided your build follows the responsible default from Module 1 of collecting no personal data.
 
@@ -1621,6 +1629,8 @@ Claude Code, by contrast, works directly on the files sitting on your own comput
         {
           heading: "The terminal without fear",
           body: `A terminal is simply a plain, text-based way of talking to your own computer, typing a short instruction and pressing enter rather than clicking an icon, and it has existed since long before graphical interfaces did. For example, where you might normally double-click a folder icon to open it, a terminal accomplishes the identical task by typing a short word and the folder's name; nothing about this is more dangerous than clicking, only less familiar.
+
+![A terminal is just a plain window where you type a short instruction instead of clicking an icon.](/images/walkthrough/terminal-empty-desktop.svg)
 
 It is worth being direct about the fear many non-programmers carry into this moment, because it is common and almost entirely unearned. For example, in order to work with Claude Code throughout this entire course, you will use roughly five commands, all of which this module and the next provide to you exactly as typed, with nothing to memorize and nothing to invent on your own. This indicates that you are not learning "the terminal" as a general skill; you are learning five specific, provided phrases, in the same way you learned five or six specific build-prompt phrases in Module 3.
 
