@@ -38,8 +38,9 @@ export default function AboutPage() {
           lecturers, adjuncts, instructional designers) or <strong>Academic Librarian</strong>
           {" "}(reference, instruction, scholarly communication, systems, special collections),
           and the worked examples and project ideas tune to your world — course tools on one
-          side, research guides and library tools on the other. Every module works for both;
-          you can switch tracks anytime from the top bar, and your choice is saved locally.
+          side, research guides and library tools on the other. You do not have to choose —
+          every module serves both audiences inline, with the faculty and academic-librarian
+          versions written side by side.
         </p>
 
         <h2>Responsible building, from the start</h2>

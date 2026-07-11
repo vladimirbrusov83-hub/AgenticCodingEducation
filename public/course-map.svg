@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 626" role="img" aria-label="Course map: 14 modules across three levels. Level 1 Foundations (modules 1-5): you can build software now, meet your AI builder, prompting for builders, what is a website, plan before you build. Level 2 Applied (modules 6-10): your toolbox, Build 1 a class quiz app, getting it online, fixing and changing things, Build 2 a flashcard study site. Level 3 Advanced (modules 11-14): meet Claude Code, Build 3 a full course portal, building responsibly, good habits costs and capstone. The three builds are live tools you ship to the internet.">
+  <style>
+    .t   { font: 800 25px -apple-system, "Segoe UI", Roboto, sans-serif; fill: #1a1f2b; }
+    .sub { font: 400 14px -apple-system, "Segoe UI", Roboto, sans-serif; fill: #5b6472; }
+    .lbl { font: 800 13px -apple-system, "Segoe UI", Roboto, sans-serif; letter-spacing: 1px; text-transform: uppercase; }
+    .num { font: 800 13px -apple-system, "Segoe UI", Roboto, sans-serif; fill: #fff; }
+    .ct  { font: 700 13px -apple-system, "Segoe UI", Roboto, sans-serif; fill: #1a1f2b; }
+    .bld { font: 800 10px -apple-system, "Segoe UI", Roboto, sans-serif; letter-spacing: .5px; }
+    .lg  { font: 600 13px -apple-system, "Segoe UI", Roboto, sans-serif; fill: #5b6472; }
+  </style>
+  <rect x="0" y="0" width="1000" height="626" fill="#fbfbfa"/>
+  <text class="t" x="500" y="44" text-anchor="middle">The 14-module course map</text>
+  <text class="sub" x="500" y="68" text-anchor="middle">Work through them in order. Along the way you ship three real, live tools ★</text>
+  <text class="lbl" x="24" y="104" fill="#0F6E56">Level 1 · Foundations</text>
+  <line x1="48" y1="164" x2="952" y2="164" stroke="#0F6E56" stroke-width="2" stroke-opacity="0.18"/>
+  <rect x="24" y="114" width="176" height="100" rx="16" fill="#ffffff" stroke="#e4e7ec" stroke-width="1.5"/>
+  <circle cx="50" cy="140" r="15" fill="#0F6E56"/>
+  <text class="num" x="50" y="144.5" text-anchor="middle">1</text>
+  <text class="ct" x="40" y="172">You can build</text>
+  <text class="ct" x="40" y="189">software now</text>
+  <rect x="218" y="114" width="176" height="100" rx="16" fill="#ffffff" stroke="#e4e7ec" stroke-width="1.5"/>
+  <circle cx="244" cy="140" r="15" fill="#0F6E56"/>
+  <text class="num" x="244" y="144.5" text-anchor="middle">2</text>
+  <text class="ct" x="234" y="172">Meet your</text>
+  <text class="ct" x="234" y="189">AI builder</text>
+  <rect x="412" y="114" width="176" height="100" rx="16" fill="#ffffff" stroke="#e4e7ec" stroke-width="1.5"/>
+  <circle cx="438" cy="140" r="15" fill="#0F6E56"/>
+  <text class="num" x="438" y="144.5" text-anchor="middle">3</text>
+  <text class="ct" x="428" y="172">Prompting</text>
+  <text class="ct" x="428" y="189">for builders</text>
+  <rect x="606" y="114" width="176" height="100" rx="16" fill="#ffffff" stroke="#e4e7ec" stroke-width="1.5"/>
+  <circle cx="632" cy="140" r="15" fill="#0F6E56"/>
+  <text class="num" x="632" y="144.5" text-anchor="middle">4</text>
+  <text class="ct" x="622" y="172">What is a</text>
+  <text class="ct" x="622" y="189">website, really?</text>
+  <rect x="800" y="114" width="176" height="100" rx="16" fill="#ffffff" stroke="#e4e7ec" stroke-width="1.5"/>
+  <circle cx="826" cy="140" r="15" fill="#0F6E56"/>
+  <text class="num" x="826" y="144.5" text-anchor="middle">5</text>
+  <text class="ct" x="816" y="172">Plan before</text>
+  <text class="ct" x="816" y="189">you build</text>
+  <text class="lbl" x="24" y="264" fill="#185FA5">Level 2 · Applied</text>
+  <line x1="48" y1="324" x2="952" y2="324" stroke="#185FA5" stroke-width="2" stroke-opacity="0.18"/>
+  <rect x="24" y="274" width="176" height="100" rx="16" fill="#ffffff" stroke="#e4e7ec" stroke-width="1.5"/>
+  <circle cx="50" cy="300" r="15" fill="#185FA5"/>
+  <text class="num" x="50" y="304.5" text-anchor="middle">6</text>
+  <text class="ct" x="40" y="332">Your toolbox:</text>
+  <text class="ct" x="40" y="349">Claude · GitHub</text>
+  <text class="ct" x="40" y="366">· Vercel</text>
+  <rect x="218" y="274" width="176" height="100" rx="16" fill="#E6F1FB" stroke="#185FA5" stroke-width="2"/>
+  <circle cx="244" cy="300" r="15" fill="#185FA5"/>
+  <text class="num" x="244" y="304.5" text-anchor="middle">7</text>
+  <rect x="316" y="286" width="66" height="22" rx="11" fill="#185FA5"/>
+  <text class="bld" x="349" y="301" text-anchor="middle" fill="#fff">★ BUILD 1</text>
+  <text class="ct" x="234" y="332">A class</text>
+  <text class="ct" x="234" y="349">quiz app</text>
+  <rect x="412" y="274" width="176" height="100" rx="16" fill="#ffffff" stroke="#e4e7ec" stroke-width="1.5"/>
+  <circle cx="438" cy="300" r="15" fill="#185FA5"/>
+  <text class="num" x="438" y="304.5" text-anchor="middle">8</text>
+  <text class="ct" x="428" y="332">Getting it</text>
+  <text class="ct" x="428" y="349">online</text>
+  <rect x="606" y="274" width="176" height="100" rx="16" fill="#ffffff" stroke="#e4e7ec" stroke-width="1.5"/>
+  <circle cx="632" cy="300" r="15" fill="#185FA5"/>
+  <text class="num" x="632" y="304.5" text-anchor="middle">9</text>
+  <text class="ct" x="622" y="332">Fixing &amp;</text>
+  <text class="ct" x="622" y="349">changing things</text>
+  <rect x="800" y="274" width="176" height="100" rx="16" fill="#E6F1FB" stroke="#185FA5" stroke-width="2"/>
+  <circle cx="826" cy="300" r="15" fill="#185FA5"/>
+  <text class="num" x="826" y="304.5" text-anchor="middle">10</text>
+  <rect x="898" y="286" width="66" height="22" rx="11" fill="#185FA5"/>
+  <text class="bld" x="931" y="301" text-anchor="middle" fill="#fff">★ BUILD 2</text>
+  <text class="ct" x="816" y="332">A flashcard</text>
+  <text class="ct" x="816" y="349">study site</text>
+  <text class="lbl" x="121" y="424" fill="#854F0B">Level 3 · Advanced</text>
+  <line x1="145" y1="484" x2="855" y2="484" stroke="#854F0B" stroke-width="2" stroke-opacity="0.18"/>
+  <rect x="121" y="434" width="176" height="100" rx="16" fill="#ffffff" stroke="#e4e7ec" stroke-width="1.5"/>
+  <circle cx="147" cy="460" r="15" fill="#854F0B"/>
+  <text class="num" x="147" y="464.5" text-anchor="middle">11</text>
+  <text class="ct" x="137" y="492">Meet</text>
+  <text class="ct" x="137" y="509">Claude Code</text>
+  <rect x="315" y="434" width="176" height="100" rx="16" fill="#FAEEDA" stroke="#854F0B" stroke-width="2"/>
+  <circle cx="341" cy="460" r="15" fill="#854F0B"/>
+  <text class="num" x="341" y="464.5" text-anchor="middle">12</text>
+  <rect x="413" y="446" width="66" height="22" rx="11" fill="#854F0B"/>
+  <text class="bld" x="446" y="461" text-anchor="middle" fill="#fff">★ BUILD 3</text>
+  <text class="ct" x="331" y="492">A full</text>
+  <text class="ct" x="331" y="509">course portal</text>
+  <rect x="509" y="434" width="176" height="100" rx="16" fill="#ffffff" stroke="#e4e7ec" stroke-width="1.5"/>
+  <circle cx="535" cy="460" r="15" fill="#854F0B"/>
+  <text class="num" x="535" y="464.5" text-anchor="middle">13</text>
+  <text class="ct" x="525" y="492">Building</text>
+  <text class="ct" x="525" y="509">responsibly</text>
+  <rect x="703" y="434" width="176" height="100" rx="16" fill="#ffffff" stroke="#e4e7ec" stroke-width="1.5"/>
+  <circle cx="729" cy="460" r="15" fill="#854F0B"/>
+  <text class="num" x="729" y="464.5" text-anchor="middle">14</text>
+  <text class="ct" x="719" y="492">Good habits,</text>
+  <text class="ct" x="719" y="509">costs &amp; capstone</text>
+  <circle cx="197" cy="586" r="7" fill="#0F6E56"/>
+  <text class="lg" x="212" y="591">Foundations</text>
+  <circle cx="327" cy="586" r="7" fill="#185FA5"/>
+  <text class="lg" x="342" y="591">Applied</text>
+  <circle cx="457" cy="586" r="7" fill="#854F0B"/>
+  <text class="lg" x="472" y="591">Advanced</text>
+  <text class="lg" x="586" y="591">★ = a real tool you ship live</text>
+</svg>

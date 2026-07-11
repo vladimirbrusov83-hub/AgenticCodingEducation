@@ -199,6 +199,29 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ─── Course map ─── */}
+      <section className="py-16 sm:py-20 bg-stone-50 border-y border-stone-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 mb-3">
+              The whole path, at a glance
+            </h2>
+            <p className="text-stone-500 text-base max-w-xl mx-auto">
+              Fourteen short modules across three levels. Work through them in order — the three
+              marked builds are real tools you put live on the internet.
+            </p>
+          </div>
+          <figure className="rounded-2xl border border-stone-200 bg-[#fbfbfa] p-4 sm:p-6 overflow-x-auto">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/course-map.svg"
+              alt="Course map: 14 modules across three levels. Foundations (1–5), Applied (6–10), and Advanced (11–14). Modules 7, 10, and 12 are the three real tools you ship live — a quiz app, a flashcard site, and a full course portal."
+              className="w-full min-w-[640px] h-auto"
+            />
+          </figure>
+        </div>
+      </section>
+
       {/* ─── Level previews ─── */}
       {levelPreviews.map((lvl, idx) => {
         const levelModules = modules

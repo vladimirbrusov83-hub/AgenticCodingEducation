@@ -19,10 +19,19 @@ export default function CurriculumView() {
         </h1>
         <p className="text-stone-600 leading-relaxed text-lg">
           Fourteen modules across three levels. Work through them in order, 1 to 14 —
-          each build stands on the one before it. Pick a track from the top bar and the
-          worked examples tune to faculty or academic-librarian work.
+          each build stands on the one before it. Every module serves both audiences
+          side by side — faculty and academic librarians each get their own worked example.
         </p>
       </div>
+
+      <figure className="mb-14 rounded-2xl border border-stone-200 bg-[#fbfbfa] p-4 sm:p-6 overflow-x-auto">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/course-map.svg"
+          alt="Course map: 14 modules across three levels. Foundations (1–5), Applied (6–10), and Advanced (11–14). Modules 7, 10, and 12 are the three real tools you ship live — a quiz app, a flashcard site, and a full course portal."
+          className="w-full min-w-[640px] h-auto"
+        />
+      </figure>
 
       {levels.map((levelKey) => {
         const meta = levelMeta[levelKey];
