@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { modules } from "@/content/modules";
 import ModuleCard from "@/components/module-card";
-import RoleEntry from "@/components/role-entry";
 
 export const metadata: Metadata = {
   title: "Agentic Coding for Educators",
@@ -30,6 +29,39 @@ const levelPreviews = [
     eyebrow: "Become a builder",
     title: "Level 3: Advanced",
     blurb: "Four modules. Claude Code, a full course portal, building responsibly, and your capstone.",
+    accent: "#854F0B",
+  },
+] as const;
+
+const builds = [
+  {
+    eyebrow: "Build #1 · Module 7",
+    title: "A class quiz app",
+    blurb:
+      "A ten-question quiz with instant scoring you can hand to a class or a library workshop.",
+    img: "/images/screenshots/quiz-question-desktop.png",
+    alt: "A finished quiz app showing question 1 of 10 with four answer choices.",
+    href: "/module/build-quiz-app",
+    accent: "#185FA5",
+  },
+  {
+    eyebrow: "Build #2 · Module 10",
+    title: "A flashcard study site",
+    blurb:
+      "Cards that flip, sort into “know it” or “still learning,” and track how many are left.",
+    img: "/images/screenshots/flashcard-flip-desktop.png",
+    alt: "A finished flashcard site showing a flipped card with its answer and progress counts.",
+    href: "/module/build-flashcard-site",
+    accent: "#185FA5",
+  },
+  {
+    eyebrow: "Build #3 · Module 12",
+    title: "A full course portal",
+    blurb:
+      "A multi-page site — home, lessons, and resources — built and shipped with Claude Code.",
+    img: "/images/screenshots/portal-home-desktop.png",
+    alt: "A finished course portal home page showing levels and lesson cards.",
+    href: "/module/build-course-portal",
     accent: "#854F0B",
   },
 ] as const;
@@ -110,19 +142,60 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── Choose your track ─── */}
+      {/* ─── What you'll build ─── */}
       <section className="py-16 sm:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 mb-3">
-              Pick your track
+              What you&apos;ll build
             </h2>
             <p className="text-stone-500 text-base max-w-xl mx-auto">
-              Every module works for both. The worked examples and project ideas come in a
-              faculty version and a librarian version, shown side by side throughout the course.
+              Three real tools, each one live on the internet by the end of its module. Faculty
+              and academic librarians each get their own version of every build.
             </p>
           </div>
-          <RoleEntry />
+
+          <div className="grid sm:grid-cols-3 gap-6">
+            {builds.map((b) => (
+              <div
+                key={b.title}
+                className="rounded-2xl border border-stone-200 bg-white overflow-hidden flex flex-col transition-shadow hover:shadow-md"
+              >
+                <div className="aspect-[16/10] overflow-hidden bg-stone-50 border-b border-stone-100">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={b.img}
+                    alt={b.alt}
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <div className="p-5 flex flex-col flex-1">
+                  <span
+                    className="inline-block text-xs font-semibold uppercase tracking-wide mb-1.5"
+                    style={{ color: b.accent }}
+                  >
+                    {b.eyebrow}
+                  </span>
+                  <h3 className="text-lg font-bold text-stone-900 mb-1.5">{b.title}</h3>
+                  <p className="text-sm text-stone-500 leading-relaxed flex-1">{b.blurb}</p>
+                  <Link
+                    href={b.href}
+                    className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium transition-colors"
+                    style={{ color: b.accent }}
+                  >
+                    See the module →
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-sm text-stone-500 mt-8">
+            Plus a fourth you design yourself — your capstone, the one tool you most wish existed.{" "}
+            <Link href="/curriculum" className="font-medium underline hover:text-stone-800 transition-colors">
+              Browse all 14 modules
+            </Link>
+          </p>
         </div>
       </section>
 
