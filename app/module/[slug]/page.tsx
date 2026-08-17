@@ -10,6 +10,7 @@ import ModuleToc from "@/components/module-toc";
 import CompleteButton from "@/components/complete-button";
 import { slugify } from "@/lib/slugify";
 import type { Level } from "@/lib/types";
+import { SITE_URL } from "@/lib/site";
 
 export function generateStaticParams() {
   return modules.map((m) => ({ slug: m.slug }));
@@ -28,8 +29,6 @@ export async function generateMetadata({
   };
 }
 
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://learn.brusovcoach.org";
 
 const levelAccent: Record<string, string> = {
   foundations: "#0F6E56",

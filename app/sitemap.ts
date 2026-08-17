@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { modules } from "@/content/modules";
+import { SITE_URL } from "@/lib/site";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://learn.brusovcoach.org";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [

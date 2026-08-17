@@ -100,9 +100,9 @@ for its sources). There are no per-module page files — every module renders th
 ## Configuration
 
 `NEXT_PUBLIC_SITE_URL` sets the canonical site URL used by metadata, `sitemap.ts`, `robots.ts`,
-and the module page's JSON-LD. It defaults to `https://learn.brusovcoach.org`, which is the
-intended domain — **not connected yet**. Set the variable in Vercel once the real domain is
-live.
+and the module page's JSON-LD. It is defined once in `lib/site.ts`; with no value set it falls
+back to the deployment's own production URL, so nothing ever points at a domain that isn't
+live. Set the variable in Vercel once a custom domain is connected.
 
 ## Deploying
 

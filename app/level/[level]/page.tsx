@@ -4,6 +4,7 @@ import Link from "next/link";
 import { modules, levelMeta } from "@/content/modules";
 import ModuleCard from "@/components/module-card";
 import type { Level } from "@/lib/types";
+import { SITE_URL } from "@/lib/site";
 
 const validLevels: Level[] = ["foundations", "applied", "advanced"];
 
@@ -58,8 +59,6 @@ const levelConfig: Record<
   },
 };
 
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://learn.brusovcoach.org";
 
 export default function LevelPage({ params }: { params: { level: string } }) {
   const level = params.level as Level;

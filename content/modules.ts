@@ -115,12 +115,12 @@ I want to close this module the way I opened it: I did not begin this work as a 
       {
         question: "What does “vibe coding” mean?",
         options: [
-          "Writing code faster by memorizing more shortcuts",
           "Describing what you want in plain language and letting the AI write and refine the code",
+          "Writing code faster by memorizing more shortcuts",
           "A programming language for beginners",
           "Copying finished code from other people's websites",
         ],
-        correctIndex: 1,
+        correctIndex: 0,
         explanation:
           "Vibe coding, a term introduced by Andrej Karpathy in 2025, means you state an intention in ordinary words, the AI produces the code, and you refine it through conversation. The key skill is describing an outcome clearly, not typing code.",
       },
@@ -129,11 +129,11 @@ I want to close this module the way I opened it: I did not begin this work as a 
           "How is agentic coding different from simply chatting with an AI?",
         options: [
           "It only works for professional developers",
-          "It requires you to learn a programming language first",
           "The AI can take actions for you, such as creating files and preparing a project to be published",
+          "It requires you to learn a programming language first",
           "It removes your ability to approve what happens",
         ],
-        correctIndex: 2,
+        correctIndex: 1,
         explanation:
           "An agentic tool behaves like a capable assistant that can create and organize files and set a project up for the internet, pausing to let you approve each step, rather than only returning text for you to copy.",
       },
@@ -155,23 +155,23 @@ I want to close this module the way I opened it: I did not begin this work as a 
           "What is the responsible default this course asks you to follow on every build?",
         options: [
           "Collect as much data as possible to improve the tool",
-          "Collect no personal data, stay within institutional policy, and verify what the AI produces",
-          "Publish everything publicly without checking it",
           "Avoid using AI for anything that touches students",
+          "Publish everything publicly without checking it",
+          "Collect no personal data, stay within institutional policy, and verify what the AI produces",
         ],
-        correctIndex: 1,
+        correctIndex: 3,
         explanation:
           "An AI does exactly what you ask, so the safe default is to collect no personal data, keep your work inside institution-approved boundaries, and always verify the AI's output. You remain responsible for what you build.",
       },
       {
         question: "What is the hands-on exercise at the end of this module?",
         options: [
-          "Install a programming environment on your computer",
-          "Build a complete website before the next module",
           "Write a one-sentence description of the one tool you wish existed for your students or patrons",
+          "Build a complete website before the next module",
+          "Install a programming environment on your computer",
           "Memorize the definitions of vibe coding and agentic coding",
         ],
-        correctIndex: 2,
+        correctIndex: 0,
         explanation:
           "You write down, in one plain sentence, the tool you most wish existed, plus who would use it and what they could do. That note becomes your capstone, the tool you build for yourself by the end of the course.",
       },
@@ -292,11 +292,11 @@ In order to make the exercise genuinely useful, choose a page you might actually
         question: "Which account do you need to start building in this module?",
         options: [
           "A paid developer account",
-          "A free Claude account",
           "A GitHub account",
+          "A free Claude account",
           "A campus IT account",
         ],
-        correctIndex: 1,
+        correctIndex: 2,
         explanation:
           "The free tier of Claude is enough for the single-page builds in the first half of the course. You begin there before paying for anything.",
       },
@@ -305,23 +305,23 @@ In order to make the exercise genuinely useful, choose a page you might actually
           "What is the best habit inside the “describe, look, describe” loop?",
         options: [
           "Ask for as many changes as possible in one message",
-          "Request one change at a time",
-          "Avoid changing anything after the first result",
           "Edit the code directly yourself",
+          "Avoid changing anything after the first result",
+          "Request one change at a time",
         ],
-        correctIndex: 1,
+        correctIndex: 3,
         explanation:
           "Requesting one change at a time keeps you in control: if a single change is wrong, you know exactly which request caused it and can correct just that one thing.",
       },
       {
         question: "When you download your build, what kind of file do you get?",
         options: [
-          "A .pdf",
           "A single file whose name ends in .html",
+          "A .pdf",
           "A .zip of raw code",
           "Nothing is saved",
         ],
-        correctIndex: 1,
+        correctIndex: 0,
         explanation:
           "The artifact downloads as one .html file, the standard format every browser can open. Your work then exists independently of the conversation that created it.",
       },
@@ -440,11 +440,11 @@ Once you have completed the comparison, add the "ask for it safe" sentence to yo
         question: "What are the four parts of a strong build prompt?",
         options: [
           "Length, tone, grammar, and punctuation",
-          "WHO it is for, WHAT it should do, HOW it should look, and one EXAMPLE",
           "A title, a date, a budget, and a deadline",
+          "WHO it is for, WHAT it should do, HOW it should look, and one EXAMPLE",
           "Only the exact code you want written",
         ],
-        correctIndex: 1,
+        correctIndex: 2,
         explanation:
           "The recipe covers who the tool is for, what it should do, how it should look or feel, and one concrete example of the content inside it. Covering all four leaves little for the AI to guess.",
       },
@@ -452,23 +452,23 @@ Once you have completed the comparison, add the "ask for it safe" sentence to yo
         question: "Why does a prompt like “make it better” usually produce a disappointing result?",
         options: [
           "Because Claude cannot process short sentences",
-          "Because it does not specify what “better” means, leaving Claude to guess",
-          "Because it is grammatically incorrect",
           "Because the free tier does not allow short prompts",
+          "Because it is grammatically incorrect",
+          "Because it does not specify what “better” means, leaving Claude to guess",
         ],
-        correctIndex: 1,
+        correctIndex: 3,
         explanation:
           "A vague request like “make it better” gives no specific direction, so Claude has to guess what you want changed. Naming the exact change gets a far more useful result.",
       },
       {
         question: "What is the benefit of requesting one change at a time?",
         options: [
-          "It is required by Claude's free tier",
           "If the result disappoints you, you know exactly which request caused it",
+          "It is required by Claude's free tier",
           "It makes the build take longer overall",
           "It prevents you from downloading the file",
         ],
-        correctIndex: 1,
+        correctIndex: 0,
         explanation:
           "Asking for several changes at once makes it hard to tell which request caused a problem. One change at a time keeps you in control of the build at every step.",
       },
@@ -476,11 +476,11 @@ Once you have completed the comparison, add the "ask for it safe" sentence to yo
         question: "What does the “ask for it safe” habit sentence actually do?",
         options: [
           "It slows down the build for no benefit",
-          "It is only useful for large software companies",
           "It tells Claude to avoid hardcoded secrets and check user input, and research shows explicit security prompts measurably reduce vulnerabilities",
+          "It is only useful for large software companies",
           "It replaces the need to test the tool yourself",
         ],
-        correctIndex: 2,
+        correctIndex: 1,
         explanation:
           "Research on prompting techniques for secure code generation found that explicit security instructions in a prompt measurably reduce weaknesses in the resulting code, so a single habit sentence has a real, evidenced effect.",
       },
@@ -596,23 +596,23 @@ Once you have looked, return to Claude and ask a direct question: "explain what 
           "Which analogy correctly matches HTML, CSS, and JavaScript to their roles?",
         options: [
           "HTML is the clothing, CSS is the muscles, JavaScript is the skeleton",
-          "HTML is the skeleton (structure), CSS is the clothing (look), JavaScript is the muscles (behavior)",
-          "HTML is the muscles, CSS is the skeleton, JavaScript is the clothing",
           "All three do exactly the same job",
+          "HTML is the muscles, CSS is the skeleton, JavaScript is the clothing",
+          "HTML is the skeleton (structure), CSS is the clothing (look), JavaScript is the muscles (behavior)",
         ],
-        correctIndex: 1,
+        correctIndex: 3,
         explanation:
           "HTML provides the structure of a page (the skeleton), CSS controls how it looks (the clothing), and JavaScript makes it do things when a visitor interacts with it (the muscles).",
       },
       {
         question: "What is a “single-file app”?",
         options: [
-          "A program that only opens once",
           "A website whose structure, look, and behavior all live inside one .html file",
+          "A program that only opens once",
           "A file that can only be viewed by one person",
           "A type of hosting service",
         ],
-        correctIndex: 1,
+        correctIndex: 0,
         explanation:
           "A single-file app keeps the HTML, CSS, and JavaScript together in one file, which is easy to save, share, and later put online, and avoids the problem of linked files going missing.",
       },
@@ -632,11 +632,11 @@ Once you have looked, return to Claude and ask a direct question: "explain what 
         question: "What is a URL?",
         options: [
           "A type of file extension",
-          "The address that points to a page online",
           "A programming language",
+          "The address that points to a page online",
           "A password used to protect a website",
         ],
-        correctIndex: 1,
+        correctIndex: 2,
         explanation:
           "A URL is the address other people can type or click to reach your page online, similar to a street address pointing to a physical location.",
       },
@@ -749,11 +749,11 @@ With this spec saved, you have now completed Level 1 of this course. Undoubtedly
         question: "What are the four questions in a one-page spec?",
         options: [
           "Budget, timeline, staff, and software license",
-          "Who uses it, what do they see first, what can they do, and what does “done” look like",
-          "Title, author, date, and word count",
           "Color scheme, font, logo, and slogan",
+          "Title, author, date, and word count",
+          "Who uses it, what do they see first, what can they do, and what does “done” look like",
         ],
-        correctIndex: 1,
+        correctIndex: 3,
         explanation:
           "A complete one-page spec answers who the tool is for, what they see first, what they can do (3–5 specific things), and what finished looks like.",
       },
@@ -787,11 +787,11 @@ With this spec saved, you have now completed Level 1 of this course. Undoubtedly
           "A colleague's version-1 plan includes a quiz, a login system, a grade book, a leaderboard, and a chat widget. What is the problem?",
         options: [
           "There is no problem — more features are always better",
-          "It is oversized for a version 1; it should be cut down to the one core feature the tool needs first",
           "The plan is missing a color scheme",
+          "It is oversized for a version 1; it should be cut down to the one core feature the tool needs first",
           "The plan should have five questions, not five features",
         ],
-        correctIndex: 1,
+        correctIndex: 2,
         explanation:
           "This spec tries to do everything at once instead of doing one thing well. A strong version 1 keeps only the core feature and saves the rest for later.",
       },
@@ -799,11 +799,11 @@ With this spec saved, you have now completed Level 1 of this course. Undoubtedly
         question: "What should you do with your spec before you start building?",
         options: [
           "Delete it, since specs are just for planning",
-          "Paste it into Claude and ask what questions it has and what to cut from version 1",
-          "Keep it private so the AI cannot see it",
           "Translate it into code yourself first",
+          "Keep it private so the AI cannot see it",
+          "Paste it into Claude and ask what questions it has and what to cut from version 1",
         ],
-        correctIndex: 1,
+        correctIndex: 3,
         explanation:
           "Asking Claude to critique the spec before building, what questions it has and what to cut, surfaces gaps and oversized features in a minute or two, before any building time is spent.",
       },
@@ -907,12 +907,12 @@ Take a moment, once your three accounts are open side by side, to notice that yo
       {
         question: "Which tool does which job in the workshop, filing cabinet, storefront analogy?",
         options: [
-          "GitHub builds, Claude stores, Vercel publishes",
           "Claude builds it, GitHub stores every version of it, Vercel publishes it live",
+          "GitHub builds, Claude stores, Vercel publishes",
           "Vercel builds it, Claude stores it, GitHub publishes it",
           "All three do the exact same job as a backup for each other",
         ],
-        correctIndex: 1,
+        correctIndex: 0,
         explanation:
           "Claude is the workshop where you build, GitHub is the filing cabinet that stores and tracks every version, and Vercel is the storefront that publishes the finished result live.",
       },
@@ -932,11 +932,11 @@ Take a moment, once your three accounts are open side by side, to notice that yo
         question: "Why sign up for Vercel using your GitHub account?",
         options: [
           "It is required and there is no other way to sign up",
-          "It creates the account and begins the GitHub connection in a single click, avoiding an extra password",
           "It makes the free plan more generous",
+          "It creates the account and begins the GitHub connection in a single click, avoiding an extra password",
           "It is only necessary for paid accounts",
         ],
-        correctIndex: 1,
+        correctIndex: 2,
         explanation:
           "Signing up for Vercel with GitHub accomplishes two things at once: creating your Vercel account and starting the exact connection needed to publish your projects, with one password instead of two.",
       },
@@ -945,11 +945,11 @@ Take a moment, once your three accounts are open side by side, to notice that yo
           "Once GitHub and Vercel are connected, what happens about thirty seconds after you update a file on GitHub?",
         options: [
           "Nothing, until you manually click “publish”",
-          "Your live website automatically rebuilds and updates itself",
-          "GitHub deletes the old version",
           "You must re-enter your password",
+          "GitHub deletes the old version",
+          "Your live website automatically rebuilds and updates itself",
         ],
-        correctIndex: 1,
+        correctIndex: 3,
         explanation:
           "Once a repository is connected, Vercel watches it for changes and automatically rebuilds and updates your live site roughly thirty seconds after a change is saved on GitHub, with no manual publishing step.",
       },
@@ -957,12 +957,12 @@ Take a moment, once your three accounts are open side by side, to notice that yo
         question:
           "Is the free plan on GitHub and Vercel enough for the projects in this course?",
         options: [
-          "No, a paid plan is required after Module 7",
           "Yes, the free plans comfortably cover every build in this course, including the capstone",
+          "No, a paid plan is required after Module 7",
           "Only GitHub's free plan is enough; Vercel always requires payment",
           "It depends on how many students are in your class",
         ],
-        correctIndex: 1,
+        correctIndex: 0,
         explanation:
           "Both GitHub's and Vercel's free tiers are generous enough to host every project you will build in this course, including your capstone, at no cost.",
       },
@@ -1082,11 +1082,11 @@ I want you to notice something about where this file currently lives: on your ow
         question: "What is the best way to hand Claude your own ten questions?",
         options: [
           "Describe them verbally without writing them down",
-          "As a plain numbered list with the four answer choices and the correct one marked",
           "As a spreadsheet formula",
+          "As a plain numbered list with the four answer choices and the correct one marked",
           "You cannot add your own questions; only placeholders are allowed",
         ],
-        correctIndex: 1,
+        correctIndex: 2,
         explanation:
           "A simple, plain-text numbered list, each question followed by its four choices with the correct one marked, is all Claude needs. No special formatting or technical structure is required.",
       },
@@ -1094,23 +1094,23 @@ I want you to notice something about where this file currently lives: on your ow
         question: "Why does the module ask you to get one answer wrong on purpose while testing?",
         options: [
           "To make the quiz harder for real students",
-          "Because a scoring bug often only shows up when an answer is incorrect, not when every answer is right",
-          "It is not necessary; testing a perfect run is always enough",
           "To check your typing speed",
+          "It is not necessary; testing a perfect run is always enough",
+          "Because a scoring bug often only shows up when an answer is incorrect, not when every answer is right",
         ],
-        correctIndex: 1,
+        correctIndex: 3,
         explanation:
           "A quiz that scores a perfect run correctly can still have a hidden bug, such as a score that does not reset properly, that only a deliberately wrong answer reveals during testing.",
       },
       {
         question: "What does making one change at a time during the improvement round prevent?",
         options: [
-          "It prevents the quiz from being downloaded",
           "It prevents several changes from tangling together and makes it clear which request caused any given result",
+          "It prevents the quiz from being downloaded",
           "It has no real benefit for a quiz app specifically",
           "It prevents you from adding a timer at all",
         ],
-        correctIndex: 1,
+        correctIndex: 0,
         explanation:
           "A quiz app has several moving parts, questions, scoring, a timer, a restart button, that can interact in confusing ways if changed all at once. One change at a time keeps each result traceable to its request.",
       },
@@ -1162,7 +1162,9 @@ I want you to notice something about where this file currently lives: on your ow
 
 ![Creating a repository on GitHub — a short name and "Public" is all you need; ignore every other option.](/images/walkthrough/github-new-repo-desktop.svg)
 
-Public, in this context, means only that the project files themselves can be seen by anyone who knows where to look, not that your quiz is somehow more exposed than any other website; every ordinary website you have ever visited is "public" in exactly this sense. For example, choosing "Private" instead would prevent Vercel's free plan from publishing the project at all for most account types, so "Public" is the correct choice for everything you build in this course, provided your build follows the responsible default from Module 1 of collecting no personal data.
+Public, in this context, means only that the project files themselves can be seen by anyone who knows where to look, not that your quiz is somehow more exposed than any other website; every ordinary website you have ever visited is "public" in exactly this sense. For example, "Public" is a perfectly appropriate choice for everything you build in this course, provided your build follows the responsible default from Module 1 of collecting no personal data, which every project here does.
+
+It is worth knowing that "Private" also works, since new builders are sometimes told otherwise. For example, a private repository created under your own personal GitHub account deploys on Vercel's free plan exactly as a public one does, and private is a reasonable choice for a draft you are not ready for anyone to read. This indicates that the choice is genuinely yours rather than forced; the single exception worth naming is a private repository owned by a GitHub organization rather than by you personally, which the free plan does not deploy, and which is not a situation you will encounter while working through this course on your own account.
 
 Once the repository exists, take a moment to look at what GitHub shows you: an empty file list and a name at the top of the page, class-quiz, that now belongs to your account. This indicates that you have created a real, permanent home for this project, distinct from every other repository you will create later in this course for the flashcard site, the course portal, and your capstone, each of which will get its own repository following exactly this same first step.`,
         },
@@ -1225,11 +1227,11 @@ Before you close this module, write your live URL down somewhere alongside your 
         question: "Why must the uploaded file be renamed to index.html?",
         options: [
           "It is only a stylistic preference with no real effect",
-          "It is the specific name hosting services, including Vercel, automatically open as a site's “front door”",
           "GitHub requires all files to be named index.html",
+          "It is the specific name hosting services, including Vercel, automatically open as a site's “front door”",
           "It makes the file load faster",
         ],
-        correctIndex: 1,
+        correctIndex: 2,
         explanation:
           "Hosting services look for a file named index.html and open it automatically when a visitor arrives at your address. Without this exact name, the site will not load correctly.",
       },
@@ -1237,23 +1239,23 @@ Before you close this module, write your live URL down somewhere alongside your 
         question: "What is the correct order for getting a build online?",
         options: [
           "Import to Vercel, then create a repository, then upload the file",
-          "Create a GitHub repository, upload and rename the file to index.html, then import and deploy on Vercel",
-          "Deploy on Vercel first, then build the quiz",
           "Upload to Vercel directly without GitHub",
+          "Deploy on Vercel first, then build the quiz",
+          "Create a GitHub repository, upload and rename the file to index.html, then import and deploy on Vercel",
         ],
-        correctIndex: 1,
+        correctIndex: 3,
         explanation:
           "The repository must exist and contain the correctly named file before Vercel can import and deploy it. Each step depends on the one before it.",
       },
       {
         question: "About how long does a Vercel deploy take?",
         options: [
-          "Several hours",
           "About thirty seconds",
+          "Several hours",
           "A full business day",
           "It happens instantly with no wait at all",
         ],
-        correctIndex: 1,
+        correctIndex: 0,
         explanation:
           "Once you click Deploy, or once you replace a file on GitHub, Vercel typically finishes building and publishing the update within about thirty seconds.",
       },
@@ -1273,11 +1275,11 @@ Before you close this module, write your live URL down somewhere alongside your 
         question: "Where do students or patrons go to use your finished quiz?",
         options: [
           "They must download and open the .html file themselves",
-          "The live .vercel.app URL Vercel gave you after deploying",
           "Your personal Claude conversation",
+          "The live .vercel.app URL Vercel gave you after deploying",
           "GitHub's homepage",
         ],
-        correctIndex: 1,
+        correctIndex: 2,
         explanation:
           "Anyone with the live URL, typically ending in .vercel.app, can visit and use the quiz directly in their browser, on any device, without needing any file of their own.",
       },
@@ -1378,11 +1380,11 @@ Completing this loop once, deliberately and without real pressure, is what turns
         question: "What are the three parts of a good bug report?",
         options: [
           "The date, the browser, and the file size",
-          "What I did, what I expected to happen, and what happened instead",
-          "A guess at what caused it, a fix, and a test",
           "Only a screenshot, with no written description",
+          "A guess at what caused it, a fix, and a test",
+          "What I did, what I expected to happen, and what happened instead",
         ],
-        correctIndex: 1,
+        correctIndex: 3,
         explanation:
           "A clear bug report follows the same recipe you would use to report any problem to IT: what you did, what you expected, and what actually happened. A screenshot strengthens it but does not replace it.",
       },
@@ -1390,12 +1392,12 @@ Completing this loop once, deliberately and without real pressure, is what turns
         question:
           "The chat where you built your quiz is gone. How do you get help fixing it?",
         options: [
-          "The quiz cannot be fixed without the original chat",
           "Paste the whole current .html file into a new conversation and describe what needs fixing",
+          "The quiz cannot be fixed without the original chat",
           "Rebuild the entire quiz from scratch",
           "Contact GitHub support",
         ],
-        correctIndex: 1,
+        correctIndex: 0,
         explanation:
           "The file itself, not the conversation, is the complete memory of the project. Pasting it into a fresh chat and describing the needed fix picks up exactly where the old conversation left off.",
       },
@@ -1416,12 +1418,12 @@ Completing this loop once, deliberately and without real pressure, is what turns
         question:
           "Why is “it looks like it works” a moment to be especially careful, according to the real cautionary tales in this module?",
         options: [
-          "Because a quick, smooth-looking demo can hide problems like exposed data or an AI agent acting outside its instructions",
-          "Because working software always looks broken at first",
           "Because it means the build is finished and needs no more testing",
+          "Because working software always looks broken at first",
+          "Because a quick, smooth-looking demo can hide problems like exposed data or an AI agent acting outside its instructions",
           "Because Claude cannot build anything that actually works",
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         explanation:
           "A tool that runs smoothly on a quick look can still hide a real problem, such as the Tea app's exposed database or the Replit agent that deleted a production database against explicit instructions. Deliberate testing, not a quick glance, is what catches this.",
       },
@@ -1430,11 +1432,11 @@ Completing this loop once, deliberately and without real pressure, is what turns
           "What is the difference between a bug fix and a change request?",
         options: [
           "They use completely different processes",
-          "Both use the same clear, specific recipe; only the “what I expected/wanted” part differs",
-          "A change request cannot be made once a site is live",
           "A bug fix does not need to be redeployed",
+          "A change request cannot be made once a site is live",
+          "Both use the same clear, specific recipe; only the “what I expected/wanted” part differs",
         ],
-        correctIndex: 1,
+        correctIndex: 3,
         explanation:
           "\"Everything works, now I also want…\" follows the identical shape as a bug report. Both are simply a clear description of the gap between what exists and what you want, and both redeploy through the same Module 8 loop.",
       },
@@ -1529,12 +1531,12 @@ I want to name one more thing this reflection often surfaces: a quiet shift in h
       {
         question: "What should you do before opening Claude to start this build?",
         options: [
-          "Nothing — jump straight into typing a prompt",
           "Write your own one-page spec using the four Module 5 questions",
+          "Nothing — jump straight into typing a prompt",
           "Wait for a step-by-step walkthrough like Build #1",
           "Copy someone else's flashcard site exactly",
         ],
-        correctIndex: 1,
+        correctIndex: 0,
         explanation:
           "This build is “shared control”: you write your own spec first, using who uses it, what they see first, what they can do, and what “done” looks like, before building anything.",
       },
@@ -1554,11 +1556,11 @@ I want to name one more thing this reflection often surfaces: a quiet shift in h
         question: "Why does this module give the phone check its own section?",
         options: [
           "Phones are irrelevant to most students and patrons",
-          "A large share of real users will open the tool on a phone, and a site that only works on a laptop fails them",
           "Only quizzes need to work on phones, not flashcard sites",
+          "A large share of real users will open the tool on a phone, and a site that only works on a laptop fails them",
           "It is purely a design preference with no real consequence",
         ],
-        correctIndex: 1,
+        correctIndex: 2,
         explanation:
           "Many students and patrons will use a phone, not a laptop. A flashcard site that breaks or cramps on a narrow screen effectively fails a significant part of its intended audience.",
       },
@@ -1567,11 +1569,11 @@ I want to name one more thing this reflection often surfaces: a quiet shift in h
           "How should you deploy the finished flashcard site?",
         options: [
           "A completely new, different process from Module 8",
-          "The same Module 8 sequence — repository, upload and rename to index.html, import to Vercel, deploy — worked from memory",
-          "It cannot be deployed without a paid Vercel plan",
           "By emailing the file to Vercel support",
+          "It cannot be deployed without a paid Vercel plan",
+          "The same Module 8 sequence — repository, upload and rename to index.html, import to Vercel, deploy — worked from memory",
         ],
-        correctIndex: 1,
+        correctIndex: 3,
         explanation:
           "Build #2 uses the exact same deploy sequence taught in Module 8. The difference this time is recalling and running it yourself rather than following a numbered walkthrough.",
       },
@@ -1579,12 +1581,12 @@ I want to name one more thing this reflection often surfaces: a quiet shift in h
         question:
           "According to the reflection, what is the real skill this module measures?",
         options: [
-          "How fast you can type",
           "The gap between what Build #1 required of you (fully guided) and what Build #2 required (independent decisions)",
+          "How fast you can type",
           "Whether the flashcard site has a leaderboard",
           "How many colors are used in the design",
         ],
-        correctIndex: 1,
+        correctIndex: 0,
         explanation:
           "Naming the concrete difference between the fully guided Build #1 and the independently planned, built, and deployed Build #2 is the reflection's whole point: that gap is evidence of a genuinely new skill.",
       },
@@ -1615,7 +1617,7 @@ I want to name one more thing this reflection often surfaces: a quiet shift in h
     estimatedMinutes: 40,
     status: "published",
     description:
-      "Artifacts are perfect for one file; Claude Code works directly on your computer's files, handles many of them, and does the GitHub steps for you — a contractor working in your house rather than mailing you furniture. This module demystifies the terminal (a handful of commands, all provided), walks through installing and logging in, and runs a first session where Claude Code creates files itself while you approve each step.",
+      "Artifacts are perfect for one file; Claude Code works directly on your computer's files, handles many of them, and does the GitHub steps for you — a contractor working in your house rather than mailing you furniture. This module demystifies the terminal (a handful of commands, all provided), walks through installing and logging in, and runs a first session where Claude Code creates files itself while you approve each step. This is also the first module that costs money: Claude Code needs a paid Claude plan (about $20/mo), and the module gives you two free ways to try it first.",
     content: {
       intro:
         "Everything so far has happened inside a browser tab: claude.ai, an artifact panel, a downloaded file you carried to GitHub by hand. That approach is genuinely sufficient for a single page, and it will remain your tool of choice for a quick draft or a one-off tool for the rest of your working life. This module introduces a second tool, Claude Code, built for exactly the moment your projects start to outgrow a single file, and it asks you to open something that intimidates many non-programmers on sight: a plain, dark window called a terminal. By the end of this module, I want that intimidation gone.",
@@ -1640,7 +1642,9 @@ Undoubtedly the single most reassuring fact about Claude Code is that it asks be
           heading: "Installing, step by step",
           body: `Claude Code installs through a single command typed into your terminal, and because installation instructions occasionally change as the tool improves, this module points you to the source that is always current rather than a fixed set of steps that could go stale. For example, visit Anthropic's official Claude Code documentation, find the installation section for your operating system, Mac, Windows, or Linux, and copy the exact command shown there into your terminal.
 
-Once the install finishes, you will be asked to log in with your Claude account, the same one you created in Module 2, connecting Claude Code to the account you already have rather than creating a new one. This indicates that Claude Code is not a separate product requiring a separate subscription decision; it is a different way of working with the same Claude you already know. For example, success looks like a simple, welcoming prompt inside your dark terminal window, ready for your first instruction, rather than any error message or stalled progress bar. If a screen looks different from what the documentation describes, remember Module 6's advice: the underlying ideas stay stable even when a specific screen changes, and asking Claude directly to help interpret what you are looking at is always available to you.
+Once the install finishes, you will be asked to log in with your Claude account, the same one you created in Module 2, rather than creating a new one. It is worth being direct about one thing at this point, because it is the first moment in this course where money genuinely enters the conversation: Claude Code is not included in Claude's free tier, and running it requires a paid Claude subscription, currently priced at roughly twenty dollars per month at the entry level. This indicates that everything through Module 10, all three of your accounts and both of the tools you have already shipped, genuinely cost you nothing, and that this module is the point at which a modest, ordinary subscription becomes necessary. For example, success looks like a simple, welcoming prompt inside your dark terminal window, ready for your first instruction, rather than any error message or stalled progress bar.
+
+If a monthly subscription is not something you are ready to commit to, two honest paths remain open to you. For example, a new account on Anthropic's developer platform includes a small amount of free credit, enough for several genuine sessions with Claude Code, which is sufficient to work through this module and the next one before deciding whether the tool earns a place in your budget. Alternatively, you may simply continue building in claude.ai exactly as you have through Module 10, since a multi-page portal can be assembled one file at a time in the artifact panel; it is more tedious, and the next module will assume you have Claude Code, but nothing in this course becomes impossible without it. If a screen looks different from what the documentation describes, remember Module 6's advice: the underlying ideas stay stable even when a specific screen changes, and asking Claude directly to help interpret what you are looking at is always available to you.
 
 It is worth naming one small but common snag before you begin: an install command occasionally fails on a first attempt because of an unrelated, outdated piece of software already on your computer. For example, if the exact error message means nothing to you, and it very well may not, copy it in full and paste it into a claude.ai conversation, asking plainly what it means and what to try next. This suggests that even a stalled install is not a dead end; it is simply one more moment where describing precisely what you see, the same habit from Module 9's bug reports, gets you unstuck.`,
         },
@@ -1691,11 +1695,11 @@ Once you have found those files sitting in your folder, exactly where Claude Cod
         question: "What is a terminal?",
         options: [
           "A specialized programming language only experts can learn",
-          "A plain, text-based way of instructing your computer, typing a command instead of clicking an icon",
           "A separate physical device you must purchase",
+          "A plain, text-based way of instructing your computer, typing a command instead of clicking an icon",
           "A type of virus scanner",
         ],
-        correctIndex: 1,
+        correctIndex: 2,
         explanation:
           "A terminal is simply a text-based way of talking to your computer. This course uses roughly five specific, provided commands, nothing you need to invent yourself.",
       },
@@ -1703,23 +1707,23 @@ Once you have found those files sitting in your folder, exactly where Claude Cod
         question: "Does Claude Code make changes to your files without asking first?",
         options: [
           "Yes, it acts freely with no approval needed",
-          "No — it shows you what it intends to do and waits for your approval before acting",
-          "Only on Windows computers",
           "Only if you disable a setting",
+          "Only on Windows computers",
+          "No — it shows you what it intends to do and waits for your approval before acting",
         ],
-        correctIndex: 1,
+        correctIndex: 3,
         explanation:
           "Claude Code narrates its intended action and waits for your approval before creating or changing a file, following the same describe, look, describe rhythm from Module 2.",
       },
       {
         question: "What does it mean that Claude Code “works on your files”?",
         options: [
-          "It uploads your files to a public website automatically",
           "It creates and edits real files sitting in a folder on your own computer, which you can find in your file browser",
+          "It uploads your files to a public website automatically",
           "It only works with files already on GitHub",
           "It replaces your computer's operating system",
         ],
-        correctIndex: 1,
+        correctIndex: 0,
         explanation:
           "Once you approve a step, Claude Code creates or edits actual files in the folder you opened it in. You can open your ordinary file browser afterward and find them there.",
       },
@@ -1826,11 +1830,11 @@ Once your portal is live, make one small, real change through the complete profe
         question: "What do “add,” “commit,” and “push” mean in plain words?",
         options: [
           "Delete, rename, and download",
-          "Gather the changed files, label the save point, and send it to GitHub",
           "Three different ways to start Claude Code",
+          "Gather the changed files, label the save point, and send it to GitHub",
           "Steps only professional developers are allowed to use",
         ],
-        correctIndex: 1,
+        correctIndex: 2,
         explanation:
           "Add gathers the changes, commit labels that group with a short note, and push sends it to GitHub, where the Vercel connection deploys it automatically.",
       },
@@ -1838,23 +1842,23 @@ Once your portal is live, make one small, real change through the complete profe
         question: "What should you do before Claude Code builds anything in this module?",
         options: [
           "Nothing — let it start building immediately",
-          "Hand it your full spec, ask it to plan first, and review that plan in plain words before approving",
-          "Write the code yourself first",
           "Skip planning since Claude Code always gets it right",
+          "Write the code yourself first",
+          "Hand it your full spec, ask it to plan first, and review that plan in plain words before approving",
         ],
-        correctIndex: 1,
+        correctIndex: 3,
         explanation:
           "For a project this size, hand over the whole spec, let Claude Code propose a plan, and review it carefully before saying “go,” the same spirit as Module 5's “let Claude improve your plan” step.",
       },
       {
         question: "Once your repository is connected to Vercel, how do changes reach the live site?",
         options: [
-          "You must manually re-upload a file to GitHub every time",
           "Asking Claude Code to “commit and push” sends the change to GitHub, and Vercel redeploys automatically within about thirty seconds",
+          "You must manually re-upload a file to GitHub every time",
           "Changes never reach the live site automatically",
           "You must reconnect Vercel every time you make a change",
         ],
-        correctIndex: 1,
+        correctIndex: 0,
         explanation:
           "Once connected, every push behaves like Module 8's update cycle: Vercel notices the change and rebuilds the live site automatically in about thirty seconds.",
       },
@@ -1874,11 +1878,11 @@ Once your portal is live, make one small, real change through the complete profe
         question: "What does “you're the architect” mean in this build?",
         options: [
           "You must design every visual detail by hand",
-          "You set the spec and goal, review the plan, and approve the direction, while Claude Code does the file-by-file work",
           "You are not involved in any decisions",
+          "You set the spec and goal, review the plan, and approve the direction, while Claude Code does the file-by-file work",
           "It means you must already know how to code",
         ],
-        correctIndex: 1,
+        correctIndex: 2,
         explanation:
           "Being the architect means directing the project: writing the spec, reviewing the proposed plan, and approving it, while Claude Code, as the crew, carries out the actual file creation.",
       },
@@ -1963,7 +1967,7 @@ This indicates that working with your campus IT or instructional-technology offi
           heading: "Public vs. private repositories",
           body: `It is worth returning to a term from Module 8 with more precision now that your projects may carry more sensitive content. For example, a public GitHub repository means exactly what it sounds like: anyone on Earth who knows or finds the address can read every file inside it, which is entirely appropriate for the quiz, flashcard, and portal projects you have built so far, none of which contain personal data.
 
-In order to make a repository private instead, GitHub's settings offer a straightforward toggle, and private is the correct choice whenever a project's content should not be publicly readable, for reasons unrelated to whether the project itself is otherwise appropriate to build. For example, a private repository is worth considering for an early, unfinished draft you are not ready to show anyone, though it is worth remembering that Vercel's free plan may require a public repository for automatic deployment on some account types, exactly as Module 8 noted. This suggests that the safest posture remains the one this entire module has repeated: keep real personal data out of your builds entirely, so that the public-versus-private question never becomes the only thing standing between a mistake and the public internet.`,
+In order to make a repository private instead, GitHub's settings offer a straightforward toggle, and private is the correct choice whenever a project's content should not be publicly readable, for reasons unrelated to whether the project itself is otherwise appropriate to build. For example, a private repository is worth considering for an early, unfinished draft you are not ready to show anyone, and, as Module 8 explained, a private repository under your own personal GitHub account deploys on Vercel's free plan exactly as a public one does, so choosing private costs you nothing. This suggests that the safest posture remains the one this entire module has repeated: keep real personal data out of your builds entirely, so that the public-versus-private question never becomes the only thing standing between a mistake and the public internet.`,
         },
         {
           heading: "Practical patterns: question banks, reading lists, calendars",
@@ -1995,12 +1999,12 @@ Once the rebuild works, run the accessibility prompt from Module 4 on the result
         question:
           "Which of these is safe to paste into an AI chat while building a class quiz?",
         options: [
-          "A spreadsheet of quiz questions and answers with no student names",
+          "An enrollment list with ID numbers",
           "A class roster with student names and grades",
           "A list of student email addresses",
-          "An enrollment list with ID numbers",
+          "A spreadsheet of quiz questions and answers with no student names",
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         explanation:
           "A question bank with no personal information is safe and high-value content. Rosters, grades, emails, and ID numbers are all student records protected by FERPA and must never be pasted into an AI tool.",
       },
@@ -2008,12 +2012,12 @@ Once the rebuild works, run the accessibility prompt from Module 4 on the result
         question:
           "What does the 2024 DOJ rule under ADA Title II require of public colleges and universities?",
         options: [
-          "Nothing — the rule only applies to K-12 schools",
           "Web content and mobile apps, including course content, must meet the WCAG 2.1 AA accessibility standard",
+          "Nothing — the rule only applies to K-12 schools",
           "Only new websites built after 2027 must be accessible",
           "It is a voluntary guideline with no compliance date",
         ],
-        correctIndex: 1,
+        correctIndex: 0,
         explanation:
           "The rule requires public higher-ed web content, including course content, to conform to WCAG 2.1 AA, with compliance dates of April 2027 for larger public entities and April 2028 for smaller ones after a 2026 extension.",
       },
@@ -2021,11 +2025,11 @@ Once the rebuild works, run the accessibility prompt from Module 4 on the result
         question: "Which of these tools needs a check with the IRB office before building?",
         options: [
           "A quiz you built for your own class",
-          "A room-booking widget for your library",
           "A survey designed to collect data from participants for a research study you plan to publish",
+          "A room-booking widget for your library",
           "A flashcard site for your own students",
         ],
-        correctIndex: 2,
+        correctIndex: 1,
         explanation:
           "The IRB gate turns on purpose: a survey built specifically to generate research data for publication needs a check before launch, while tools built purely to teach or run a library service almost never do.",
       },
@@ -2034,11 +2038,11 @@ Once the rebuild works, run the accessibility prompt from Module 4 on the result
           "According to the IP self-check, who may own a tool built heavily on university time and systems that the institution comes to depend on?",
         options: [
           "It is always entirely yours, with no exceptions",
-          "It may belong to the institution, depending on your campus's IP policy — know the policy and ask when in doubt",
           "It automatically becomes public domain",
+          "It may belong to the institution, depending on your campus's IP policy — know the policy and ask when in doubt",
           "Ownership never applies to software, only to written scholarship",
         ],
-        correctIndex: 1,
+        correctIndex: 2,
         explanation:
           "Many institutions claim ownership of software built using significant university resources or tied to job duties, even while letting faculty keep traditional scholarly works. Knowing the policy before building, and asking when unsure, is the professional move.",
       },
@@ -2047,11 +2051,11 @@ Once the rebuild works, run the accessibility prompt from Module 4 on the result
           "Why does this module recommend “collect no personal data” combined with “build inside the golden path”?",
         options: [
           "Because it is required by every single campus without exception",
-          "Because together they are the safest default: no real data ever touches an AI prompt, and any tool you build stays inside institutionally approved, governed channels",
-          "Because it removes the need to ever think about accessibility",
           "Because it means you never need to ask your IT office anything",
+          "Because it removes the need to ever think about accessibility",
+          "Because together they are the safest default: no real data ever touches an AI prompt, and any tool you build stays inside institutionally approved, governed channels",
         ],
-        correctIndex: 1,
+        correctIndex: 3,
         explanation:
           "Collecting no personal data removes the risk at its source, and building inside institutionally approved tools and channels, rather than around them, keeps you aligned with how most campuses now choose to govern AI use rather than ban it.",
       },
@@ -2081,7 +2085,7 @@ Once the rebuild works, run the accessibility prompt from Module 4 on the result
     estimatedMinutes: 45,
     status: "published",
     description:
-      "The finish line. You'll get honest monthly cost numbers (the free tiers are genuinely enough), the habits of people whose projects don't break, and a clear-eyed look at the limits where a real developer is warranted. Then you build and ship your capstone — the tool from your Module 1 index card — against a ship checklist: no personal data, accessibility checked, no secrets, tested with odd input, and the IRB and ownership gates cleared. A closing reflection names what you can now do that you couldn't before.",
+      "The finish line. You'll get honest monthly cost numbers (free through Module 10; a paid Claude plan from Module 11 on), the habits of people whose projects don't break, and a clear-eyed look at the limits where a real developer is warranted. Then you build and ship your capstone — the tool from your Module 1 index card — against a ship checklist: no personal data, accessibility checked, no secrets, tested with odd input, and the IRB and ownership gates cleared. A closing reflection names what you can now do that you couldn't before.",
     content: {
       intro:
         "You have built three real, working tools and shipped every one of them to a live address. This closing module asks three last, practical questions before you build the one project that started this entire course: what does this actually cost, what habits keep a shipped tool from quietly rotting, and where exactly do your own limits sit. Then it hands the rest of the module to you, because the only thing left to teach is the tool you have been carrying in your pocket since Module 1.",
@@ -2090,7 +2094,9 @@ Once the rebuild works, run the accessibility prompt from Module 4 on the result
           heading: "What this hobby costs — free tiers and honest numbers",
           body: `It is worth answering the cost question directly rather than leaving it vague, because uncertainty about price is a genuine reason some builders hesitate. For example, GitHub's free tier and Vercel's free tier, the two services behind every deploy in this course, remain free indefinitely for the kind of small, single-builder projects you have made here; neither ever required a credit card at any point in this course.
 
-Claude itself offers a free tier sufficient for a considerable amount of building, and a paid subscription, priced similarly to a modest streaming service, for anyone who outgrows it through heavier daily use. For example, in order to make sense of what you might see mentioned as "tokens" if you ever explore a paid plan more closely, think of a token roughly as the meter on an old prepaid phone plan: a rough unit of usage that a subscription simply covers a generous allotment of, rather than something you need to track sentence by sentence. This indicates that for the scope of this course, and very likely for your capstone and the projects that follow it, the honest monthly cost of everything you have learned here is zero, and it remains reasonable even if your habits grow considerably more ambitious than this course required.
+Claude is where the honest accounting becomes slightly more complicated, and I want to give you the real figure rather than a comfortable one. For example, Claude's free tier covers everything through Module 10, which includes both of your first two shipped tools, but Claude Code, introduced in Module 11 and used for the course portal in Module 12, requires a paid Claude subscription, currently around twenty dollars per month at the entry level. This indicates that the honest monthly cost of this course is zero for the first ten modules and roughly the price of a modest streaming service from Module 11 onward, and that the subscription is the only payment any part of this course has ever asked of you.
+
+It is worth adding one plain-language note about a word you will encounter if you ever examine a paid plan closely. For example, in order to make sense of "tokens," think of a token roughly as the meter on an old prepaid phone plan: a rough unit of usage that a subscription simply covers a generous allotment of, rather than something you need to track sentence by sentence. Undoubtedly the practical question for most readers is not how tokens are counted but whether the subscription is worth keeping, and that is a question your own capstone will answer better than any figure I could offer here: if you build with it monthly, it pays for itself immediately; if you build twice a year, cancel between projects and subscribe again when you need it.
 
 Pricing details for any of these services can shift over time, so treat the specific numbers here as a snapshot rather than a permanent guarantee, and check each service's own pricing page if a firm figure ever matters to your decision. This suggests that the durable fact worth remembering is not a dollar amount at all, but the shape of the arrangement: free tiers exist specifically to let an individual builder like you work seriously, at real scale, before money ever enters the conversation.`,
         },
@@ -2126,7 +2132,7 @@ Write one final sentence, in your own words, naming something you can now do tha
         },
       ],
       summary: [
-        "State the honest monthly cost of everything in this course: free, using GitHub's and Vercel's free tiers and Claude's free tier, with a modest paid option only for heavier use.",
+        "State the honest monthly cost of this course: free through Module 10 on the free tiers of Claude, GitHub, and Vercel, and roughly twenty dollars a month from Module 11, where Claude Code requires a paid Claude subscription.",
         "Adopt the habits that keep a shipped tool from decaying: commit and push often, test after every change, keep a one-line changelog, and never edit only the live version mid-semester.",
         "Recognize the honest edge of vibe-coding — real payments, real student-account logins, and sensitive data at scale — as the signal to bring in a professional developer.",
         "Build and ship the capstone against a full checklist: solves the real problem, live URL, works on a phone, tested by a real person, and every Module 13 compliance check cleared.",
@@ -2138,12 +2144,12 @@ Write one final sentence, in your own words, naming something you can now do tha
       {
         question: "In plain words, what is a “token” in the context of an AI subscription?",
         options: [
-          "A physical device you must buy separately",
           "A rough unit of AI usage, similar to minutes on an old prepaid phone plan, that a subscription covers a generous allotment of",
+          "A physical device you must buy separately",
           "A password required to log in",
           "A type of file format",
         ],
-        correctIndex: 1,
+        correctIndex: 0,
         explanation:
           "A token is roughly a unit of usage, the same idea as minutes on an old phone plan. A subscription covers a generous allotment, so you do not need to track usage sentence by sentence.",
       },
@@ -2151,11 +2157,11 @@ Write one final sentence, in your own words, naming something you can now do tha
         question: "Which of these projects has crossed into territory where a professional developer is warranted?",
         options: [
           "A quiz app for your own class",
-          "A flashcard site for research-skills vocabulary",
           "A tool handling real payments and logins tied to real student accounts",
+          "A flashcard site for research-skills vocabulary",
           "A course portal with four connected pages",
         ],
-        correctIndex: 2,
+        correctIndex: 1,
         explanation:
           "Real payments, logins tied to real student accounts, and sensitive data at scale sit outside what vibe-coding is meant to cover. Recognizing this boundary is a sign of a mature builder, not a limited one.",
       },
@@ -2163,11 +2169,11 @@ Write one final sentence, in your own words, naming something you can now do tha
         question: "What is the key version-safety habit this module emphasizes?",
         options: [
           "Never make any changes once a tool is live",
-          "Never edit only the live version of a tool students are actively using mid-semester — make and test the change first, then push it live",
           "Delete old versions to save space",
+          "Never edit only the live version of a tool students are actively using mid-semester — make and test the change first, then push it live",
           "Only GitHub's paid plan keeps version history",
         ],
-        correctIndex: 1,
+        correctIndex: 2,
         explanation:
           "GitHub already keeps every version automatically. The habit that protects real users is testing a change before pushing it live, never editing the live version directly while people depend on it.",
       },
@@ -2175,11 +2181,11 @@ Write one final sentence, in your own words, naming something you can now do tha
         question: "What does the capstone's ship checklist require?",
         options: [
           "Only that the tool loads without crashing",
-          "It solves the real problem, has a live URL, works on a phone, was tested by a real person, and clears every Module 13 compliance check",
-          "A minimum of ten pages",
           "A paid subscription to Claude, GitHub, and Vercel",
+          "A minimum of ten pages",
+          "It solves the real problem, has a live URL, works on a phone, was tested by a real person, and clears every Module 13 compliance check",
         ],
-        correctIndex: 1,
+        correctIndex: 3,
         explanation:
           "Shipping responsibly means more than “it runs”: solving the real problem, a working live URL, a working phone experience, real feedback, and the full set of Module 13 checks, no personal data, accessibility, no secrets, odd-input testing, and the IRB/IP gates where relevant.",
       },

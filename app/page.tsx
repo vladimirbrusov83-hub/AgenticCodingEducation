@@ -111,7 +111,8 @@ export default function HomePage() {
           </div>
 
           <p className="text-xs text-stone-400 mt-4">
-            No math, no coding classes, no expensive software. Just a free Claude account.
+            No math, no coding classes, no expensive software. A free Claude account gets you
+            through the first ten modules.
           </p>
         </div>
       </section>
@@ -135,7 +136,8 @@ export default function HomePage() {
             <div>
               <p className="text-2xl font-bold text-stone-900">$0 to start</p>
               <p className="text-sm text-stone-500 mt-0.5">
-                Free tiers of Claude, GitHub, and Vercel are genuinely enough
+                Free tiers of Claude, GitHub, and Vercel carry you through Module 10 — Claude
+                Code needs a paid Claude plan (about $20/mo) after that
               </p>
             </div>
           </div>

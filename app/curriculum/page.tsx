@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CurriculumView from "@/components/curriculum-view";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Full Curriculum — 14 Modules Across 3 Levels",
@@ -7,8 +8,6 @@ export const metadata: Metadata = {
     "Browse all 14 modules in Agentic Coding for Educators — from your first build in Claude to a live course portal — across three progressive levels.",
 };
 
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://learn.brusovcoach.org";
 
 const courseJsonLd = {
   "@context": "https://schema.org",

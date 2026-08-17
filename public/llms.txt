@@ -7,7 +7,6 @@
 > study site, and a full course portal. Responsible building (privacy, accessibility,
 > FERPA, IRB, IP ownership, campus policy) is built in throughout.
 
-Site: https://learn.brusovcoach.org
 Audience: higher-ed faculty and academic librarians (academic higher-ed only; not K-12 or public libraries).
 Tracks: Faculty and Academic Librarian — same modules, worked examples tuned to each.
 Modules are sequential (1 → 14); each has a hands-on exercise and a 5-question quiz.

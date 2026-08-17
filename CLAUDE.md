@@ -33,6 +33,8 @@ without also wiring the module renderer to actually swap content. `Role` / `audi
   — never rewrite the whole file (it's ~2,250 lines).
 - Shape: `content.intro` + ~6–7 `sections` + `summary[]` ("What you can now do"), a hands-on
   exercise section, and a 5-question `quiz`. Then `status: "published"`.
+- Quiz answers: spread `correctIndex` across 0–3. The whole course was rebalanced on
+  2026-08-16 after 60 of 70 answers turned out to be option B — don't drift back.
 - References go in `content/references.ts`, keyed by module **id** (not slug). They must be
   real and verifiable — no invented sources. `text` supports `*italic*` and inline links.
 - After writing: `npm run build`, then commit and push.
@@ -77,6 +79,6 @@ headings are their own field and become anchor ids via `lib/slugify.ts`.
 
 All 14 modules published. Screenshots in `public/images/screenshots/` and the tool-walkthrough
 mockups in `public/images/walkthrough/` are in place; the walkthrough images are drawn mockups,
-not real captures. Still open: connect Vercel and the `learn.brusovcoach.org` subdomain (it
-currently 404s), then a final polish pass — 375px mobile, take every quiz, walk prev/next
-through all 14 modules.
+not real captures. Still open: connect Vercel and a custom domain (set `NEXT_PUBLIC_SITE_URL`
+to it — `lib/site.ts` falls back to the deployment URL until then), then a final polish pass —
+375px mobile, take every quiz, walk prev/next through all 14 modules.
